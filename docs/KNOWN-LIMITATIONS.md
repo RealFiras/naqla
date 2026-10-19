@@ -1,5 +1,10 @@
 # Development limitations — 0.8
 
+- Public beta setup needs Microsoft's current Visual C++ x64 runtime and an explicit
+  one-time download for FFmpeg/HEIF. Processing afterward is local/offline. Five
+  public optional packs are available; **no Office pack is distributed in this beta**.
+  Historical private Office conversion tests do not imply it is bundled publicly.
+
 - Actual Explorer/Desktop drag, Tab during OLE, live RTL entry, tray clicks, DPI,
   clean-PC install/upgrade/uninstall and physically disconnected networking are
   **MANUAL PENDING**, even where backend tests pass.

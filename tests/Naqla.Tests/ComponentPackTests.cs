@@ -12,10 +12,15 @@ using PdfSharp.Pdf.IO;
 internal static partial class Program
 {
     private static void ComponentPackAcceptance()
+        => VerifyComponentPacks(false);
+    private static void PublicComponentPackAcceptance()
+        => VerifyComponentPacks(true);
+    private static void VerifyComponentPacks(bool publicOnly)
     {
-        var repository = Path.GetFullPath(Path.Combine(Components, "../..")); var packs = Path.Combine(repository, "artifacts", "component-packs");
+        var repository = Path.GetFullPath(Path.Combine(Components, "../..")); var packs = Path.Combine(repository, "artifacts", publicOnly ? "public-components" : "component-packs");
         var root = Path.Combine(folder, "installed-packs-full"); var store = new ComponentStore(root); var timings = new List<object>();
-        foreach (var feature in new[] { "ocr", "background", "speech", "archives", "pdf-metadata", "office" })
+        var features = publicOnly ? new[] { "ocr", "background", "speech", "archives", "pdf-metadata" } : new[] { "ocr", "background", "speech", "archives", "pdf-metadata", "office" };
+        foreach (var feature in features)
         {
             var watch = Stopwatch.StartNew(); var zip = Path.Combine(packs, "Naqla-component-" + feature + ".zip");
             store.InstallAsync(zip).GetAwaiter().GetResult(); Check(store.Status().Single(x => x.Feature == feature).Installed, "Actual imported pack status: " + feature);
@@ -36,10 +41,13 @@ internal static partial class Program
         var pdf = PdfFixture("pack-source.pdf", 2); var privatePdf = Path.Combine(folder, "خصائص الحزمة.pdf"); using (var document = PdfReader.Open(pdf, PdfDocumentOpenMode.Modify)) { document.Info.Author = "Disposable fixture author"; document.Save(privatePdf); }
         var analysis = service.Privacy.AnalyzeAsync(FileClassifier.Inspect(privatePdf)).GetAwaiter().GetResult();
         var clean = service.ConvertAsync(new([analysis.Source], "PRIVACY", Privacy: new([analysis], new(["Author"])))).GetAwaiter().GetResult(); Check(clean.Privacy is { Removed.Count: > 0 }, "Imported qpdf dispatch/report missing");
-        var text = Path.Combine(folder, "مستند الحزمة.txt"); File.WriteAllText(text, "Naqla imported office component\nمرحبا بالعالم");
-        var docx = service.ConvertAsync(FileClassifier.Inspect(text), "DOCX").GetAwaiter().GetResult(); using (var zip = ZipFile.OpenRead(docx.OutputPath)) { using var content = zip.GetEntry("word/document.xml")!.Open(); Check(System.Xml.Linq.XDocument.Load(content).Root!.Value.Contains("مرحبا"), "Imported office conversion"); }
-        Check(store.Status().All(x => x.Installed), "Pack processing modified static owned component files");
-        File.WriteAllText(Path.Combine(folder, "component-packs.json"), JsonSerializer.Serialize(new { CatalogVersion = ComponentStore.CatalogVersion, Status = "PASSED", AllSixImported = true, RealOcrSegmentationSpeechArchivePrivacyOffice = true, Packs = timings, PhysicalOfflineNetworkDisabled = false, CleanPc = "MANUAL PENDING" }, new JsonSerializerOptions { WriteIndented = true }));
+        if (!publicOnly)
+        {
+            var text = Path.Combine(folder, "مستند الحزمة.txt"); File.WriteAllText(text, "Naqla imported office component\nمرحبا بالعالم");
+            var docx = service.ConvertAsync(FileClassifier.Inspect(text), "DOCX").GetAwaiter().GetResult(); using var zip = ZipFile.OpenRead(docx.OutputPath); using var content = zip.GetEntry("word/document.xml")!.Open(); Check(System.Xml.Linq.XDocument.Load(content).Root!.Value.Contains("مرحبا"), "Imported office conversion");
+        }
+        Check(store.Status().Where(x => features.Contains(x.Feature)).All(x => x.Installed), "Pack processing modified static owned component files");
+        File.WriteAllText(Path.Combine(folder, "component-packs.json"), JsonSerializer.Serialize(new { CatalogVersion = ComponentStore.CatalogVersion, Status = "PASSED", AllSixImported = !publicOnly, AllFivePublicPacksImported = publicOnly, RealOcrSegmentationSpeechArchivePrivacy = true, OfficeExecuted = !publicOnly, Packs = timings, PhysicalOfflineNetworkDisabled = false, CleanPc = "MANUAL PENDING" }, new JsonSerializerOptions { WriteIndented = true }));
         ComponentStore.ReleaseVerificationHandles();
     }
 }

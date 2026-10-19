@@ -16,10 +16,10 @@
     <None Include="../../assets/pdf-test-files/*" Link="testing/pdf-fixtures/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../assets/Naqla-logo-transparent.png" Link="preview/LOGO.png" CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../docs/TESTING.html" Link="TESTING.html" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../docs/TESTING.html')" />
-    <None Include="../../artifacts/media-engine/*" Link="media-engine/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
-    <None Include="../../artifacts/heif-engine/**/*" Link="heif-engine/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../artifacts/media-engine/*" Link="media-engine/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" Condition="'$(NaqlaPublicRelease)' != 'true'" />
+    <None Include="../../artifacts/heif-engine/**/*" Link="heif-engine/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" Condition="'$(NaqlaPublicRelease)' != 'true'" />
     <None Include="../../assets/licenses/**/*" Link="licenses/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
-    <None Include="../../assets/native-crt/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../assets/native-crt/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" Condition="'$(NaqlaPublicRelease)' != 'true'" />
     <None Include="../../assets/native-crt/sources.json" Link="licenses/native-crt-sources.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
   <ItemGroup><InternalsVisibleTo Include="Naqla.Tests" /></ItemGroup>

@@ -7,33 +7,39 @@ actual Explorer/Desktop, DPI and clean-PC acceptance remain pending.
 
 ## Get a runnable copy
 
-There is currently **no public installer release**. The public repository contains
-source, documentation, fixtures and a visual preview. GitHub's **Download ZIP**
-button downloads source; it does not install Naqla. Developers can follow
-[BUILDING.md](BUILDING.md). Future packaged builds belong on the repository's
-[Releases page](https://github.com/RealFiras/naqla/releases), with checksums,
-third-party notices and an explicit development/stable label.
+Download the [Windows x64 beta installer](https://github.com/RealFiras/naqla/releases/download/v0.8.0-beta.1/Naqla-Setup-0.8.0-beta.1-win-x64.exe).
+The [release page](https://github.com/RealFiras/naqla/releases/tag/v0.8.0-beta.1)
+contains checksums, notes and five optional packs. This is a **pre-release**, not
+a stable certification. GitHub's **Code → Download ZIP** contains source; developers
+can follow [BUILDING.md](BUILDING.md).
 
 <a id="install"></a>
 
 ## Install step by step
 
-Naqla is a standalone Windows application. These steps apply when an installer is
-published in Releases, or if the maintainer supplied a development installer
-separately; they do not imply that a public installer is available now.
+Naqla is a standalone Windows application. Setup downloads selected conversion
+engines only after you explicitly choose to install them; processing never uploads
+files or downloads engines/models in the background.
 
 1. Check that the PC runs **Windows 10 or 11, x64**.
 2. Open the [official Releases page](https://github.com/RealFiras/naqla/releases).
    Read the version notes and development/stable label. If no installer appears
    under **Assets**, that release does not provide a ready-to-install package.
-3. When available, download **`Naqla-Dev-Setup-win-x64.exe`** from Assets.
+3. Download **`Naqla-Setup-0.8.0-beta.1-win-x64.exe`** from Assets.
    **Source code (zip)** and **Source code (tar.gz)** contain source, not an installer.
    Compare its SHA-256 with the published checksum. Development packages are unsigned
    and Windows may show a warning; verify the source and checksum before proceeding.
-4. Open the installer as your ordinary user. Keep **Launch Naqla after installation**
+4. The native tools need Microsoft's current **Visual C++ x64 Redistributable**.
+   If setup reports it missing, use its official Microsoft link, install that runtime,
+   then reopen Naqla setup. This is not the .NET SDK. Runtime installation may require
+   Windows administrator approval; Naqla itself installs per user.
+5. Open the installer as your ordinary user. Keep **Launch Naqla after installation**
    checked to start immediately. **Start Naqla with Windows** controls automatic startup.
-5. Click **Install development build** and wait for the completion message.
-6. Find the tray icon beside the clock or under hidden icons. No main window is
+   Keep **Download FFmpeg / HEIF once from official sources (internet)** checked for
+   media and HEIC conversion. It needs a connection during setup; the downloaded
+   archives and native files are hash-checked. Unchecking it leaves those actions unavailable.
+6. Click **Install development build** and wait for the completion message.
+7. Find the tray icon beside the clock or under hidden icons. No main window is
    expected. Follow **First conversion** below to try a disposable PNG.
 
 Installation is per user under `%LOCALAPPDATA%\Programs\Naqla`. The self-contained
@@ -53,7 +59,7 @@ Finish active work and choose **Exit** from the tray, then run the new matching
 installer with the same Windows user account.
 
 To remove Naqla, open **Settings → Apps → Installed apps** on Windows 11 or
-**Apps & features** on Windows 10. Find **Naqla (development prototype)** and
+**Apps & features** on Windows 10. Find **Naqla (beta)** and
 choose **Uninstall**. Removal is designed to preserve original and converted files;
 actual clean-account install/upgrade/uninstall acceptance remains pending in the
 [manual checklist](MANUAL-WINDOWS-TESTS.md).
@@ -94,8 +100,11 @@ The current format is hidden when no meaningful same-format action exists.
 ## Optional tools
 
 From the tray, open **Local components / plugins…** and explicitly import a matching
-local ZIP pack built for this catalog. No model or pack downloads automatically.
-Packs are not hosted in the source checkout or the visual preview.
+local ZIP pack built for this exact release. No model or pack downloads automatically.
+Download the five published packs from [release Assets](https://github.com/RealFiras/naqla/releases/tag/v0.8.0-beta.1).
+The Office row below describes a backend requiring a separately prepared pack;
+**no Office pack is distributed in this beta**, so Office conversions remain unavailable
+in an ordinary public installation. Do not mix older private development packs with public ones.
 
 | Pack | Adds |
 |---|---|
@@ -106,8 +115,8 @@ Packs are not hosted in the source checkout or the visual preview.
 | `pdf-metadata` | Selective PDF metadata cleanup using qpdf |
 | `office` | Local Office document conversion using LibreOffice |
 
-HEIC uses a separate local HEIF engine already included in the maintainer's
-development build. Source builders must prepare it. Renaming a random ZIP will
+HEIC uses the local HEIF engine obtained by the explicit setup download. Source
+builders must prepare it. Renaming a random ZIP will
 not turn it into a compatible pack: catalog version and exact hashes are checked.
 Office is large and its first import/integrity check can take several minutes.
 

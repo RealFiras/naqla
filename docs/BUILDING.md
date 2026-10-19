@@ -135,4 +135,39 @@ the illustrated public READMEs.
 Do not publish the generated installer or optional packs until the applicable
 GPL/LGPL/MPL/Microsoft notices, corresponding-source/relink requirements and
 redistribution rights have been reviewed. The MIT license covers Naqla's own code.
-This repository currently publishes **source and design previews**, not a stable binary release.
+The repository publishes source/design previews and a **public beta installer**, not a stable release.
+
+## 6. Public beta packaging
+
+After the exact private development inputs/packs have been verified, prepare the
+public variants and build the public installer:
+
+```powershell
+py -3 scripts/prepare-public-components.py
+& .\scripts\package-public-beta.ps1
+```
+
+This filters standalone Microsoft CRT files out of the public component catalog,
+creates five matching packs, verifies the corresponding 7-Zip source, and compiles
+the app with that catalog. It excludes the private CLI engine trees and app-local
+CRT from the public payload. Setup uses SharpCompress for verified upstream
+Zstandard packages; no target-PC tar/7-Zip/development tools are required. The PC
+needs Microsoft's official Visual C++ x64 runtime.
+
+`--installer-only` exercises corrupt/untrusted/cancelled cache refusal and real
+FFmpeg/HEIF extraction/native execution. `--public-packs-only` imports the five
+public packs and executes OCR/background/speech/archive/PDF privacy processing;
+build that runner with `-p:NaqlaComponentCatalogPath=<absolute public catalog path>`.
+The legacy full acceptance snapshot remains separate from these focused checks.
+
+Explicit unattended install, using the same staged GUI transaction:
+
+```powershell
+.\Naqla-Setup-0.8.0-beta.1-win-x64.exe --install --start-with-windows --download-engines --launch
+```
+
+`--engine-cache <directory> --offline-cache` may use already verified local engine
+archives; it refuses absent/corrupt data instead of downloading. Exit codes: 0 success,
+1 install failure, 2 invalid arguments, 3 missing Microsoft runtime. The app's explicit
+`--import-component <zip>` maintenance command imports a matching local pack without
+opening the tray/hooks or accessing the network. Ordinary users use the tray manager.

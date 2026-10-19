@@ -1,5 +1,10 @@
 # Naqla feature audit — 0.8 development
 
+Public beta scope: see [0.8.0-beta.1](docs/releases/v0.8.0-beta.1.md). Five matching
+optional packs are distributed; Office is not. The larger historical private
+acceptance matrix below is not a claim that Office is bundled publicly or that
+physical Windows gates passed. The approved wheel and key behavior are retained.
+
 The current evidence and complete 180-row matrix are in
 [FINAL-FEATURE-AUDIT.md](docs/FINAL-FEATURE-AUDIT.md). Backend fixture verification
 and physical Windows acceptance are separate; this is not a public stable release.

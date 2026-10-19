@@ -31,10 +31,12 @@
 - **طريقة الاستخدام:** [الدليل العربي](docs/GETTING-STARTED.ar.md) · [English guide](docs/GETTING-STARTED.md).
 - **كيف أثبّته؟** [خطوات تنزيل المثبّت وتثبيته وتشغيله وتحديثه وإزالته](docs/GETTING-STARTED.ar.md#install).
 - **تجربة الشكل:** [معاينة الواجهة](https://realfiras.github.io/naqla/)، وهي عرض بصري لا يحوّل الملفات ولا يرفعها.
-- **التنزيل:** لا يوجد مثبّت عام منشور حاليًا. المستودع يوزّع الكود؛ **Code → Download ZIP** ينزّل المصدر وليس برنامج تثبيت. أي نسخة مستقبلية ستظهر في [Releases](https://github.com/RealFiras/naqla/releases) مع توضيح حالتها.
+- **تحميل Windows x64:** [مثبّت نقلة 0.8.0-beta.1](https://github.com/RealFiras/naqla/releases/download/v0.8.0-beta.1/Naqla-Setup-0.8.0-beta.1-win-x64.exe) · [تفاصيل الإصدار والبصمات والحزم](https://github.com/RealFiras/naqla/releases/tag/v0.8.0-beta.1).
 - **للمطورين:** [خطوات البناء](docs/BUILDING.md) · [المساهمة](CONTRIBUTING.md).
 
 ## كيف تعمل
+
+المثبّت العام يحتاج [حزمة Microsoft Visual C++ x64 الرسمية](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist). عند اختيار تنزيل المحركات، يجلب المثبّت FFmpeg وHEIF مباشرة من مصادريهما مرة واحدة وببصمات متحقّق منها؛ المعالجة بعد ذلك دون إنترنت. لا يحتاج جهاز المستخدم SDK أو Python أو Node. الإصدار يوفّر خمس حزم اختيارية؛ حزمة تحويل Office غير موزّعة في هذه النسخة التجريبية. [خطوات التثبيت](docs/GETTING-STARTED.ar.md#install).
 
 | | |
 |:--:|---|

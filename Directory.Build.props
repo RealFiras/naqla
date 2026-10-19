@@ -7,7 +7,7 @@
     <Deterministic>true</Deterministic>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <Version>0.8.0</Version>
-    <InformationalVersion>0.8.0-development.1</InformationalVersion>
+    <InformationalVersion>0.8.0-beta.1</InformationalVersion>
     <!-- Keep the development PC's SDK/runtime untouched; self-contained releases
          carry the verified security patch published 2026-10-13. -->
     <RuntimeFrameworkVersion Condition="'$(SelfContained)' == 'true'">10.0.13</RuntimeFrameworkVersion>

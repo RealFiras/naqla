@@ -1,4 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup><OutputType>WinExe</OutputType><UseWindowsForms>true</UseWindowsForms><ApplicationManifest>../Naqla.App/app.manifest</ApplicationManifest><ApplicationIcon>../../assets/Naqla.ico</ApplicationIcon></PropertyGroup>
-  <ItemGroup><EmbeddedResource Include="../../artifacts/payload.zip" LogicalName="Naqla.Payload.zip" Condition="Exists('../../artifacts/payload.zip')" /></ItemGroup>
+  <PropertyGroup><NaqlaPayloadPath Condition="'$(NaqlaPayloadPath)' == ''">../../artifacts/payload.zip</NaqlaPayloadPath></PropertyGroup>
+  <ItemGroup><EmbeddedResource Include="$(NaqlaPayloadPath)" LogicalName="Naqla.Payload.zip" Condition="Exists('$(NaqlaPayloadPath)')" /></ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SharpCompress" Version="[0.50.5]" />
+    <EmbeddedResource Include="../../scripts/heif-engine.lock.json" LogicalName="Naqla.HeifLock.json" />
+    <EmbeddedResource Include="../../assets/licenses/heif/x265/COPYING" LogicalName="Naqla.X265License" />
+  </ItemGroup>
 </Project>

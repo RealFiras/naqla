@@ -18,6 +18,12 @@ public static class Program
     {
         if (args.FirstOrDefault() == "--internal-ocr") return OcrWorker.Run(args);
         if (args.FirstOrDefault() == "--internal-plugin") return PluginService.RunHost(args);
+        if (args is ["--import-component", var componentZip])
+        {
+            // Explicit local maintenance command; no tray/hooks/network are started.
+            try { new ComponentStore().InstallAsync(Path.GetFullPath(componentZip)).GetAwaiter().GetResult(); return 0; }
+            catch { return 1; }
+        }
         if (args.Contains("--quit"))
         {
             try { using var existing = EventWaitHandle.OpenExisting(@"Local\Naqla.Exit.0.1"); existing.Set(); }

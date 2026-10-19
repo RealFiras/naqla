@@ -1,5 +1,13 @@
 # Naqla progress — 0.8.0-development.1
 
+Public beta 0.8.0-beta.1: installer-only network code fetches pinned FFmpeg/HEIF
+explicitly during setup, then all processing remains offline. Added unattended
+per-user install/startup, a guarded Start-menu shortcut and local component import.
+Public packs exclude standalone Microsoft CRT; the official system runtime is a
+prerequisite. Five public packs passed actual import/engine checks; Office is not
+distributed. Installer cache/refusal/cancellation and real Zstandard/native engine
+tests pass. The historical processing/physical acceptance distinction remains.
+
 Public repository preparation (2026-10-20): added English/Arabic usage guides,
 source-build prerequisites, contribution/issue templates, clean Windows build CI,
 Pages documentation navigation, and an allowlisted historical test snapshot.

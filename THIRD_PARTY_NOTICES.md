@@ -3,8 +3,16 @@
 The public Git repository distributes Naqla's MIT source, notices and attributed
 test fixtures. Native redistributable DLLs and generated engines/models/installers
 are excluded from the current tree. They remain separately licensed if prepared
-locally or distributed in a future reviewed package. Microsoft CRT provenance and
+locally or distributed in a release package. Microsoft CRT provenance and
 terms are retained; the source license grants no Microsoft redistribution rights.
+
+Public beta 0.8.0-beta.1 uses explicit setup downloads for unmodified FFmpeg/HEIF
+from their upstream providers; these CLI binaries are not embedded in its installer.
+Public optional packs exclude standalone Microsoft CRT files. The archive pack is
+accompanied by the exact unmodified 7-Zip 26.04 source archive in release Assets
+(SHA-256 `6bcfd2679d178174df06d09d50147dd7b5980d7beac896136689dfc9d51e0fd9`).
+No Office pack is distributed in this beta. Other native/model/license notices
+accompany their respective optional packs and the app's `licenses/` directory.
 
 This local development build includes separately licensed components. Their
 copyrights and licenses remain with their respective authors. Preserve the full

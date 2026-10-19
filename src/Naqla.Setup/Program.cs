@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.IO.Compression;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using Microsoft.Win32;
 
@@ -22,6 +23,25 @@ internal static class Program
             var index = Array.IndexOf(args, "--extract-only");
             Extract(Path.GetFullPath(args[index + 1])); return 0;
         }
+        if (args.Contains("--install"))
+        {
+            // Explicit unattended installation uses the exact GUI transaction.
+            try
+            {
+                var allowed = new HashSet<string>(["--install", "--start-with-windows", "--launch", "--download-engines", "--engine-cache", "--offline-cache"], StringComparer.Ordinal);
+                string? cache = null;
+                for (var i = 0; i < args.Length; i++)
+                {
+                    if (!allowed.Contains(args[i])) return 2;
+                    if (args[i] == "--engine-cache") { if (++i >= args.Length) return 2; cache = Path.GetFullPath(args[i]); }
+                }
+                if (EngineDownloads.MissingRuntime().Length != 0) return 3;
+                Install(args.Contains("--start-with-windows"), args.Contains("--download-engines"), cache, !args.Contains("--offline-cache"), null).GetAwaiter().GetResult();
+                if (args.Contains("--launch")) Launch();
+                return 0;
+            }
+            catch { return 1; }
+        }
         if (args.Contains("--remove-from-temp"))
         {
             try { Uninstall(); MessageBox.Show("Naqla development build was removed. Your files are preserved.", "Naqla"); return 0; }
@@ -39,30 +59,41 @@ internal static class Program
     }
     private static Form CreateForm()
     {
-        var form = new Form { Text = "Install Naqla — نقلة", ClientSize = new Size(510, 350), FormBorderStyle = FormBorderStyle.FixedDialog, MaximizeBox = false, StartPosition = FormStartPosition.CenterScreen, Font = new Font("Segoe UI", 10) };
+        var form = new Form { Text = "Install Naqla — نقلة", ClientSize = new Size(510, 410), FormBorderStyle = FormBorderStyle.FixedDialog, MaximizeBox = false, StartPosition = FormStartPosition.CenterScreen, Font = new Font("Segoe UI", 10) };
         form.Icon = Icon.ExtractAssociatedIcon(Environment.ProcessPath!);
-        var title = new Label { Text = "Naqla · development build 0.8.0", AutoSize = true, Font = new Font("Segoe UI", 17, FontStyle.Bold), Location = new Point(24, 22) };
+        var title = new Label { Text = "Naqla · 0.8.0-beta.1", AutoSize = true, Font = new Font("Segoe UI", 17, FontStyle.Bold), Location = new Point(24, 22) };
         var description = new Label { Text = "Background tray utility · Drag a file, then press Shift.\nPixel wheel · local image, video, audio and PDF conversion.\nLocal diagnostics ON · no filenames or paths logged.\n\nInstalls for your Windows account, without administrator access.", AutoSize = false, Size = new Size(460, 110), Location = new Point(24, 65) };
         using var existingRun = Registry.CurrentUser.OpenSubKey(RunKey);
         var startup = new CheckBox { Text = "Start Naqla with Windows", Checked = !Directory.Exists(InstallDirectory) || existingRun?.GetValue("Naqla") is string existing && existing == $"\"{Path.Combine(InstallDirectory, "Naqla.App.exe")}\"", AutoSize = true, Location = new Point(26, 188) };
         var launch = new CheckBox { Text = "Launch Naqla after installation", Checked = true, AutoSize = true, Location = new Point(26, 220) };
-        var button = new Button { Text = "Install development build", Size = new Size(230, 40), Location = new Point(250, 280) };
+        var engines = new CheckBox { Text = "Download FFmpeg / HEIF once from official sources (internet)", Checked = true, AutoSize = true, Location = new Point(26, 252), Font = new Font("Segoe UI", 9) };
+        var status = new Label { Text = "Files stay local. Optional model packs are installed separately.", AutoSize = false, Size = new Size(460, 40), Location = new Point(26, 285), Font = new Font("Segoe UI", 9) };
+        var prerequisites = new LinkLabel { Text = "Microsoft Visual C++ x64 runtime", AutoSize = true, Location = new Point(26, 342), Font = new Font("Segoe UI", 8) };
+        prerequisites.LinkClicked += (_, _) => Process.Start(new ProcessStartInfo("https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist") { UseShellExecute = true });
+        var button = new Button { Text = "Install development build", Size = new Size(230, 40), Location = new Point(250, 340) };
         button.Click += async (_, _) =>
         {
-            button.Enabled = startup.Enabled = launch.Enabled = false;
+            if (EngineDownloads.MissingRuntime().Length != 0)
+            {
+                MessageBox.Show("Install Microsoft's current Visual C++ x64 Redistributable using the official link, then run this installer again. No SDK is required.", "Naqla prerequisite"); return;
+            }
+            button.Enabled = startup.Enabled = launch.Enabled = engines.Enabled = false; form.ControlBox = false;
             try
             {
                 // Copy checkbox state before leaving UI thread.
                 var startWithWindows = startup.Checked;
-                await Task.Run(() => Install(startWithWindows));
-                if (launch.Checked) Process.Start(new ProcessStartInfo(Path.Combine(InstallDirectory, "Naqla.App.exe")) { UseShellExecute = false });
+                var downloadEngines = engines.Checked;
+                var progress = new Progress<string>(text => status.Text = text);
+                await Task.Run(() => Install(startWithWindows, downloadEngines, null, true, progress));
+                if (launch.Checked) Launch();
                 MessageBox.Show("Installed. Naqla runs in the system tray with no main window.\nRight-click its icon → Manual testing guide…\nDiagnostics → Show diagnostic status… / Open log folder", "Naqla development build");
                 form.Close();
             }
-            catch (Exception error) { MessageBox.Show(error.Message, "Naqla installation failed"); button.Enabled = startup.Enabled = launch.Enabled = true; }
+            catch (Exception error) { MessageBox.Show(error.Message, "Naqla installation failed"); button.Enabled = startup.Enabled = launch.Enabled = engines.Enabled = true; form.ControlBox = true; }
         };
-        form.Controls.AddRange([title, description, startup, launch, button]); return form;
+        form.Controls.AddRange([title, description, startup, launch, engines, status, prerequisites, button]); return form;
     }
+    private static void Launch() => Process.Start(new ProcessStartInfo(Path.Combine(InstallDirectory, "Naqla.App.exe")) { UseShellExecute = false });
     private static List<string> Extract(string directory)
     {
         using var payload = Assembly.GetExecutingAssembly().GetManifestResourceStream("Naqla.Payload.zip") ?? throw new InvalidOperationException("Payload missing. Build using scripts/build.ps1.");
@@ -82,7 +113,7 @@ internal static class Program
         catch (WaitHandleCannotBeOpenedException) { }
         catch (AbandonedMutexException) { }
     }
-    private static void Install(bool startup)
+    private static async Task Install(bool startup, bool downloadEngines, string? cache, bool allowNetwork, IProgress<string>? progress)
     {
         StopApp();
         var parent = Path.GetDirectoryName(InstallDirectory)!; InstallationFiles.GuardDirectory(InstallDirectory);
@@ -96,6 +127,11 @@ internal static class Program
         try
         {
         var files = Extract(stage);
+        if (downloadEngines)
+        {
+            await EngineDownloads.Prepare(stage, cache ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Naqla", "InstallerCache"), allowNetwork, progress).ConfigureAwait(false);
+            files = Directory.GetFiles(stage, "*", SearchOption.AllDirectories).Select(x => Path.GetRelativePath(stage, x)).ToList();
+        }
         var uninstaller = Path.Combine(InstallDirectory, "Uninstall-Naqla.exe");
         File.Copy(Environment.ProcessPath!, Path.Combine(stage, "Uninstall-Naqla.exe"), false); files.Add("Uninstall-Naqla.exe");
         InstallationFiles.WriteManifest(stage, files);
@@ -109,11 +145,12 @@ internal static class Program
             if (startup) key.SetValue("Naqla", $"\"{executable}\""); else key.DeleteValue("Naqla", false);
         }
         using var uninstall = Registry.CurrentUser.CreateSubKey(UninstallKey);
-        uninstall.SetValue("DisplayName", "Naqla (development prototype)");
-        uninstall.SetValue("DisplayVersion", "0.8.0"); uninstall.SetValue("Publisher", "Naqla");
+        uninstall.SetValue("DisplayName", "Naqla (beta)");
+        uninstall.SetValue("DisplayVersion", "0.8.0-beta.1"); uninstall.SetValue("Publisher", "Naqla");
         uninstall.SetValue("InstallLocation", InstallDirectory); uninstall.SetValue("DisplayIcon", executable);
         uninstall.SetValue("UninstallString", $"\"{uninstaller}\" --uninstall");
         uninstall.SetValue("NoModify", 1); uninstall.SetValue("NoRepair", 1);
+        StartMenuShortcut(remove: false);
         committed = true;
         }
         catch (Exception installError)
@@ -144,6 +181,7 @@ internal static class Program
         StopApp();
         var manifestPath = Path.Combine(InstallDirectory, Manifest);
         if (!File.Exists(manifestPath)) throw new IOException("Installation file manifest is missing; automatic removal stopped to protect unrelated files.");
+        StartMenuShortcut(remove: true);
         InstallationFiles.RemoveKnown(InstallDirectory);
         using (var run = Registry.CurrentUser.OpenSubKey(RunKey, true))
         {
@@ -160,5 +198,40 @@ internal static class Program
         var script = $"Wait-Process -Id {Environment.ProcessId} -ErrorAction SilentlyContinue; Remove-Item -LiteralPath '{literal}' -Force -ErrorAction SilentlyContinue";
         var encoded = Convert.ToBase64String(System.Text.Encoding.Unicode.GetBytes(script));
         Process.Start(new ProcessStartInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"WindowsPowerShell\v1.0\powershell.exe"), $"-NoProfile -NonInteractive -WindowStyle Hidden -EncodedCommand {encoded}") { UseShellExecute = false, CreateNoWindow = true });
+    }
+    private static void StartMenuShortcut(bool remove)
+    {
+        // Shell-link files need an STA COM apartment, including unattended installs.
+        var thread = new Thread(() =>
+        {
+            object? shell = null, shortcut = null;
+            try
+            {
+                var directory = Environment.GetFolderPath(Environment.SpecialFolder.Programs);
+                if (string.IsNullOrWhiteSpace(directory)) return;
+                InstallationFiles.GuardDirectory(directory);
+                Directory.CreateDirectory(directory);
+                var path = InstallationFiles.Target(directory, "Naqla.lnk");
+                if (remove && !File.Exists(path)) return;
+                var type = Type.GetTypeFromProgID("WScript.Shell"); if (type is null) return;
+                shell = Activator.CreateInstance(type)!; shortcut = ((dynamic)shell).CreateShortcut(path);
+                var executable = Path.Combine(InstallDirectory, "Naqla.App.exe");
+                if (File.Exists(path) && !string.Equals((string)((dynamic)shortcut).TargetPath, executable, StringComparison.OrdinalIgnoreCase)) return;
+                if (remove) { File.Delete(path); return; }
+                ((dynamic)shortcut).TargetPath = executable;
+                ((dynamic)shortcut).Arguments = "";
+                ((dynamic)shortcut).WorkingDirectory = InstallDirectory;
+                ((dynamic)shortcut).Description = "Naqla — Drag a file, then press Shift";
+                ((dynamic)shortcut).IconLocation = executable + ",0";
+                ((dynamic)shortcut).Save();
+            }
+            catch (Exception) { /* Optional shortcut must not corrupt an otherwise valid installation. */ }
+            finally
+            {
+                if (shortcut is not null && Marshal.IsComObject(shortcut)) Marshal.FinalReleaseComObject(shortcut);
+                if (shell is not null && Marshal.IsComObject(shell)) Marshal.FinalReleaseComObject(shell);
+            }
+        });
+        thread.SetApartmentState(ApartmentState.STA); thread.Start(); thread.Join();
     }
 }

@@ -2,6 +2,12 @@
 
 Naqla processes files locally and does not upload content or download models at runtime.
 
+The public beta's separate installer offers an explicit one-time FFmpeg/HEIF download
+from pinned upstream URLs. It verifies SHA-256 before extraction and before activating
+the staged installation. The tray application does not call this network code. The
+official Microsoft Visual C++ runtime is a separate prerequisite, not an automatic
+system installation. [Release details](docs/releases/v0.8.0-beta.1.md).
+
 ## Reporting a vulnerability
 
 Please **do not** open a public issue for a security problem. Report it privately through

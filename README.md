@@ -29,10 +29,12 @@
 - **Using Naqla:** [English guide](docs/GETTING-STARTED.md) · [الدليل العربي](docs/GETTING-STARTED.ar.md).
 - **How to install:** [Download, install, launch, update and uninstall](docs/GETTING-STARTED.md#install).
 - **Trying the design:** [Live UI preview](https://realfiras.github.io/naqla/). This browser demonstration does not convert or upload files.
-- **Installing:** no public installer release is published yet. The repository currently distributes source; **Code → Download ZIP** is source code, not an installer. Check [Releases](https://github.com/RealFiras/naqla/releases) for future explicitly labeled builds.
+- **Download Windows x64:** [Naqla 0.8.0-beta.1 installer](https://github.com/RealFiras/naqla/releases/download/v0.8.0-beta.1/Naqla-Setup-0.8.0-beta.1-win-x64.exe) · [Release notes, checksums and optional packs](https://github.com/RealFiras/naqla/releases/tag/v0.8.0-beta.1).
 - **Developing:** [Build guide](docs/BUILDING.md) · [Contributing](CONTRIBUTING.md).
 
 ## How it works
+
+The public beta installer needs the official [Microsoft Visual C++ x64 runtime](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist). With its explicit download checkbox selected, setup obtains pinned FFmpeg/HEIF engines directly from their upstream providers once. Processing afterward is offline. No SDK/Python/Node is needed on the target PC. Five optional packs are available in the release; the Office conversion pack is not distributed in this beta. [Installation details](docs/GETTING-STARTED.md#install).
 
 | | |
 |:--:|---|

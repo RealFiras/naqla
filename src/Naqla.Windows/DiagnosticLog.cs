@@ -11,7 +11,7 @@ namespace Naqla.Windows;
 
 public sealed class DiagnosticLog : IDiagnostics, IDisposable
 {
-    public const string Build = "0.8.0-development.1";
+    public const string Build = "0.8.0-beta.1";
     private readonly Channel<Entry> queue = Channel.CreateBounded<Entry>(new BoundedChannelOptions(512)
         { SingleReader = true, FullMode = BoundedChannelFullMode.Wait });
     private readonly ConcurrentDictionary<DiagnosticEvent, long> counts = new();

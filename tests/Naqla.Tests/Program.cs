@@ -31,7 +31,9 @@ internal static partial class Program
         Directory.CreateDirectory(folder);
         try
         {
-            if (args.Contains("--stress-only")) { Run("Real 10/50/200-image repeated batch stress preserves hashes, output decodes and all job counts", BatchStress); Run("Actual GPS/XMP/IPTC privacy fixtures and explicitly approved AVIF lossless-PNG fallback", PrivacyMetadataCoverage); }
+            if (args.Contains("--installer-only")) RunInstallerDownloadTests();
+            else if (args.Contains("--public-packs-only")) Run("Five public packs without proprietary CRT install and execute actual OCR/background/speech/archive/privacy engines", PublicComponentPackAcceptance);
+            else if (args.Contains("--stress-only")) { Run("Real 10/50/200-image repeated batch stress preserves hashes, output decodes and all job counts", BatchStress); Run("Actual GPS/XMP/IPTC privacy fixtures and explicitly approved AVIF lossless-PNG fallback", PrivacyMetadataCoverage); }
             else if (args.Contains("--component-packs-only")) { Run("All six actual offline packs install by pinned catalog and execute their real engines", ComponentPackAcceptance); }
             else if (args.Contains("--ocr-only")) { Run("Actual English/Arabic/mixed OCR performance workload", LocalOcr); }
             else if (args.Contains("--background-only")) { Run("Actual local segmentation performance workload", LocalSegmentation); }
