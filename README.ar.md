@@ -29,6 +29,7 @@
 ## ابدأ من هون
 
 - **طريقة الاستخدام:** [الدليل العربي](docs/GETTING-STARTED.ar.md) · [English guide](docs/GETTING-STARTED.md).
+- **كيف أثبّته؟** [خطوات تنزيل المثبّت وتثبيته وتشغيله وتحديثه وإزالته](docs/GETTING-STARTED.ar.md#install).
 - **تجربة الشكل:** [معاينة الواجهة](https://realfiras.github.io/naqla/)، وهي عرض بصري لا يحوّل الملفات ولا يرفعها.
 - **التنزيل:** لا يوجد مثبّت عام منشور حاليًا. المستودع يوزّع الكود؛ **Code → Download ZIP** ينزّل المصدر وليس برنامج تثبيت. أي نسخة مستقبلية ستظهر في [Releases](https://github.com/RealFiras/naqla/releases) مع توضيح حالتها.
 - **للمطورين:** [خطوات البناء](docs/BUILDING.md) · [المساهمة](CONTRIBUTING.md).

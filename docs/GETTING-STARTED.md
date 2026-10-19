@@ -14,9 +14,49 @@ button downloads source; it does not install Naqla. Developers can follow
 [Releases page](https://github.com/RealFiras/naqla/releases), with checksums,
 third-party notices and an explicit development/stable label.
 
-If the maintainer supplied a development installer separately, install it per user
-and choose whether to launch afterward/start with Windows. A self-contained package
-needs no SDK, Python, Node or administrator privileges on the target PC.
+<a id="install"></a>
+
+## Install step by step
+
+Naqla is a standalone Windows application. These steps apply when an installer is
+published in Releases, or if the maintainer supplied a development installer
+separately; they do not imply that a public installer is available now.
+
+1. Check that the PC runs **Windows 10 or 11, x64**.
+2. Open the [official Releases page](https://github.com/RealFiras/naqla/releases).
+   Read the version notes and development/stable label. If no installer appears
+   under **Assets**, that release does not provide a ready-to-install package.
+3. When available, download **`Naqla-Dev-Setup-win-x64.exe`** from Assets.
+   **Source code (zip)** and **Source code (tar.gz)** contain source, not an installer.
+   Compare its SHA-256 with the published checksum. Development packages are unsigned
+   and Windows may show a warning; verify the source and checksum before proceeding.
+4. Open the installer as your ordinary user. Keep **Launch Naqla after installation**
+   checked to start immediately. **Start Naqla with Windows** controls automatic startup.
+5. Click **Install development build** and wait for the completion message.
+6. Find the tray icon beside the clock or under hidden icons. No main window is
+   expected. Follow **First conversion** below to try a disposable PNG.
+
+Installation is per user under `%LOCALAPPDATA%\Programs\Naqla`. The self-contained
+package needs no SDK, Python, Node or administrator rights on the target PC. If you
+exited or unchecked launch after installation, press **Win+R** and run:
+
+```text
+"%LOCALAPPDATA%\Programs\Naqla\Naqla.App.exe"
+```
+
+To change startup later, right-click the tray icon and toggle **Start with Windows**.
+Optional components are a separate step below; PNG → JPG does not require their import.
+
+## Update and uninstall
+
+Finish active work and choose **Exit** from the tray, then run the new matching
+installer with the same Windows user account.
+
+To remove Naqla, open **Settings → Apps → Installed apps** on Windows 11 or
+**Apps & features** on Windows 10. Find **Naqla (development prototype)** and
+choose **Uninstall**. Removal is designed to preserve original and converted files;
+actual clean-account install/upgrade/uninstall acceptance remains pending in the
+[manual checklist](MANUAL-WINDOWS-TESTS.md).
 
 ## First conversion
 

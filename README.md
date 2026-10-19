@@ -27,6 +27,7 @@
 ## Start here
 
 - **Using Naqla:** [English guide](docs/GETTING-STARTED.md) · [الدليل العربي](docs/GETTING-STARTED.ar.md).
+- **How to install:** [Download, install, launch, update and uninstall](docs/GETTING-STARTED.md#install).
 - **Trying the design:** [Live UI preview](https://realfiras.github.io/naqla/). This browser demonstration does not convert or upload files.
 - **Installing:** no public installer release is published yet. The repository currently distributes source; **Code → Download ZIP** is source code, not an installer. Check [Releases](https://github.com/RealFiras/naqla/releases) for future explicitly labeled builds.
 - **Developing:** [Build guide](docs/BUILDING.md) · [Contributing](CONTRIBUTING.md).
