@@ -128,7 +128,9 @@ The installer is `artifacts/Naqla-Dev-Setup-win-x64.exe`. Self-contained builds 
 .NET **10.0.13**. `package-development.ps1` without `-RunAcceptance` is for a
 maintainer who already has a current passing source inventory/report; a clean clone
 will correctly fail that gate. Generated reports/packaging scripts are maintainer
-tools and may replace local development summaries; they are not the public README editor.
+tools and may replace local development summaries. Package-specific READMEs go to
+`artifacts/release-guides` and are copied into the payload; they do not overwrite
+the illustrated public READMEs.
 
 Do not publish the generated installer or optional packs until the applicable
 GPL/LGPL/MPL/Microsoft notices, corresponding-source/relink requirements and

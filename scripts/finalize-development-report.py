@@ -291,8 +291,10 @@ Logs are local typed diagnostics without paths/names/content. If activation fail
 return the marked session log and cropped recording described in the manual checklist;
 never send sensitive rename recovery records.
 '''
-write(ROOT/'README.md',readme)
-write(ROOT/'README.ar.md','''# نقلة — Naqla · نسخة تطوير 0.8
+# Release-local guides must not replace the public, illustrated contribution docs.
+release_guides=A/'release-guides'; release_guides.mkdir(exist_ok=True)
+write(release_guides/'README.md',readme)
+write(release_guides/'README.ar.md','''# نقلة — Naqla · نسخة تطوير 0.8
 
 اسحب ملفاً محلياً من Explorer أو سطح المكتب، استمر بضغط زر الفأرة الأيسر ثم اضغط
 Shift. تظهر العجلة الحالية؛ بيانات الملف تأتي من OLE الفعلي، ولا يخمّنها اختصار لوحة

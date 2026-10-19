@@ -55,7 +55,12 @@ try {
         if ([IO.Directory]::GetFileSystemEntries($x86).Length -eq 0) { Remove-Item -LiteralPath $x86 }
     }
     foreach ($file in Get-ChildItem -LiteralPath $publish -File -Recurse | Where-Object { $_.Extension -in @('.pdb','.lib') }) { Remove-Item -LiteralPath $file.FullName }
-    foreach ($guide in @('README.md','README.ar.md','PROGRESS.md','FEATURE-AUDIT.md','THIRD_PARTY_NOTICES.md')) { Copy-Item -LiteralPath (Join-Path $projectRoot $guide) -Destination $publish -Force }
+    foreach ($guide in @('README.md','README.ar.md','PROGRESS.md','FEATURE-AUDIT.md','THIRD_PARTY_NOTICES.md')) {
+        $guideSource = Join-Path $projectRoot $guide
+        $releaseGuide = Join-Path $projectRoot ('artifacts\release-guides\' + $guide)
+        if ($guide -in @('README.md','README.ar.md') -and (Test-Path -LiteralPath $releaseGuide)) { $guideSource = $releaseGuide }
+        Copy-Item -LiteralPath $guideSource -Destination $publish -Force
+    }
     $publishedDocs = Join-Path $publish 'docs'; New-Item -ItemType Directory -Path $publishedDocs -Force | Out-Null
     Get-ChildItem -LiteralPath (Join-Path $projectRoot 'docs') -File | Where-Object { $_.Extension -eq '.md' -and $_.Name -notlike '*.initial.*' } | ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination $publishedDocs -Force }
     Copy-Item -LiteralPath (Join-Path $projectRoot 'docs\TESTING.html') -Destination $publish -Force
