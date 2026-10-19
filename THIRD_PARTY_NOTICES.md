@@ -1,5 +1,11 @@
 # Naqla third-party notices
 
+The public Git repository distributes Naqla's MIT source, notices and attributed
+test fixtures. Native redistributable DLLs and generated engines/models/installers
+are excluded from the current tree. They remain separately licensed if prepared
+locally or distributed in a future reviewed package. Microsoft CRT provenance and
+terms are retained; the source license grants no Microsoft redistribution rights.
+
 This local development build includes separately licensed components. Their
 copyrights and licenses remain with their respective authors. Preserve the full
 texts under `licenses/`, `media-engine/`, `heif-engine/` and each optional pack.

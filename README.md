@@ -5,7 +5,7 @@
 
   **Drag a file. Press Shift. Everything you need appears around it.**
 
-  A native Windows tray utility that turns any local file into a radial command hub.<br>
+  A native Windows tray utility for supported local images, media and documents.<br>
   No main window. No uploads. No telemetry.
 
   <br>
@@ -24,6 +24,13 @@
 > [!WARNING]
 > **Development build 0.8.** Real local processing and automated acceptance evidence are included, but physical Windows acceptance and clean-PC installation are still pending. This is not a public stable release.
 
+## Start here
+
+- **Using Naqla:** [English guide](docs/GETTING-STARTED.md) · [الدليل العربي](docs/GETTING-STARTED.ar.md).
+- **Trying the design:** [Live UI preview](https://realfiras.github.io/naqla/). This browser demonstration does not convert or upload files.
+- **Installing:** no public installer release is published yet. The repository currently distributes source; **Code → Download ZIP** is source code, not an installer. Check [Releases](https://github.com/RealFiras/naqla/releases) for future explicitly labeled builds.
+- **Developing:** [Build guide](docs/BUILDING.md) · [Contributing](CONTRIBUTING.md).
+
 ## How it works
 
 | | |
@@ -32,7 +39,7 @@
 | **2** | **Hold** the left mouse button and press **Shift**. |
 | **3** | **Release** over a sector. Naqla processes it or opens its compact editor. |
 
-The wheel is drawn from the real OLE drag payload, never from a guessed path. Tap **Ctrl** for Tools; press **Tab** / **Shift+Tab** to move between sectors; **Esc** cancels.
+Shift arms the overlay; only an actual OLE file payload confirms file identity. Tap **Ctrl** to toggle Convert/Tools; releasing Ctrl keeps the selected mode. In Tools, **Tab** / **Shift+Tab** change **pages**, with at most six sectors per page. Release Shift before using Tab alone. Move the pointer to select a sector; **Esc** cancels.
 
 ## One hub, every file type
 
@@ -57,7 +64,9 @@ The wheel is drawn from the real OLE drag payload, never from a guessed path. Ta
 | **Documents** | DOCX · RTF · TXT ↔ PDF and native text extraction |
 | **Files** | Smart Rename with preview/undo, ZIP/7Z/TAR, Privacy Clean |
 
-`136` real conversion pairs are covered by the acceptance matrix. HEIC, OCR, background removal, subtitles, 7Z writing, qpdf metadata cleanup and Office export are **optional local packs** — no automatic downloads.
+`136` real conversion pairs passed the recorded local acceptance matrix. OCR, background removal, subtitles, 7Z writing, selective PDF metadata cleanup and Office conversion require **optional local packs** — no automatic downloads. HEIC uses the separate local HEIF engine bundled in the development build; source builders prepare it explicitly.
+
+PDF → DOCX/RTF extracts native text; it does not reconstruct the original layout. Speech/OCR/masks need review. Plugins currently support a constrained declarative API, not arbitrary third-party code. See the [limits](docs/KNOWN-LIMITATIONS.md).
 
 ## Tools stay out of the way
 
@@ -95,24 +104,26 @@ The wheel is drawn from the real OLE drag payload, never from a guessed path. Ta
 
 ## Build from source
 
-**Requirements:** Windows 10/11 x64 and the .NET 10 SDK. `global.json` pins `10.0.102` with roll-forward.
+**Requirements:** Windows 10/11 x64, Git and the .NET 10 SDK. `global.json` pins `10.0.102` with roll-forward. NuGet restore needs a connection; installed processing is local.
 
 ```powershell
 git clone https://github.com/RealFiras/naqla.git
 cd naqla
-dotnet build Naqla.sln -c Release
+dotnet restore Naqla.sln
+dotnet build Naqla.sln -c Release --no-restore
 dotnet run --project src/Naqla.App -c Release
 ```
 
-Optional engines are developer-only fetches; normal processing never needs the network:
+This builds and starts the tray shell and NuGet-provided features. It does **not** prepare every native engine/model or create an installer. Exit an existing Naqla instance first; the singleton otherwise keeps that older instance running.
+
+Explicit developer fetches prepare the FFmpeg and HEIF engines:
 
 ```powershell
 scripts\fetch-media-engine.ps1
 scripts\fetch-heif-engine.ps1
-py -3 scripts\fetch-optional-components.py
 ```
 
-Office and qpdf packs require their own pinned inputs. See [dependencies](docs/DEPENDENCIES.md).
+For model packs, CRT requirements, full acceptance and packaging, follow [BUILDING.md](docs/BUILDING.md). The source repository excludes native redistributable DLLs and generated engines; third-party licensing is separate from Naqla's MIT source license.
 
 ## Tests
 
@@ -120,7 +131,7 @@ Office and qpdf packs require their own pinned inputs. See [dependencies](docs/D
 dotnet run --project tests/Naqla.Tests -c Release -- artifacts/my-tests --release-acceptance
 ```
 
-Each run needs a fresh, owned output directory. Extended packaging and stress acceptance:
+The full suite needs the prepared engines and all six component packs; it is not a clean-clone smoke command. Each run needs a fresh, owned output directory. Extended packaging and stress acceptance:
 
 ```powershell
 dotnet run --project tests/Naqla.Tests -c Release -- artifacts/stress-tests --stress-only
@@ -137,7 +148,7 @@ dotnet run --project tests/Naqla.Tests -c Release -- artifacts/pack-tests --comp
 | Clean-PC install / upgrade / uninstall | **Manual pending** |
 | Disconnected-network run | **Manual pending** |
 
-The full evidence and every retained failure are in the [end-to-end report](docs/END-TO-END-TEST-REPORT.md). Known boundaries are in [KNOWN-LIMITATIONS.md](docs/KNOWN-LIMITATIONS.md).
+The [public test snapshot](docs/test-results/0.8-development.json) contains the historical groups and conversion matrix. Raw fixtures/logs/installers remain local under ignored `artifacts/`; they are not shipped in a source checkout. The [end-to-end report](docs/END-TO-END-TEST-REPORT.md) explains the retained failure and rerun. GitHub CI verifies source build and repository checks; it does not certify Explorer dragging or rerun the full local matrix.
 
 ## Documentation
 
@@ -152,6 +163,8 @@ The full evidence and every retained failure are in the [end-to-end report](docs
 | [Security review](docs/SECURITY-REVIEW.md) | Threat model and process boundaries |
 | [Dependencies](docs/DEPENDENCIES.md) | Pinned engines, licenses and offline packs |
 | [Manual tests](docs/MANUAL-WINDOWS-TESTS.md) | Physical Windows acceptance checklist |
+| [Getting started](docs/GETTING-STARTED.md) | Install/build status, keyboard controls, optional packs and troubleshooting |
+| [Contributing](CONTRIBUTING.md) | Development workflow and useful bug reports |
 
 ## License
 

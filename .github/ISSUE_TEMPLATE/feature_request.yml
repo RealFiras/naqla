@@ -1,0 +1,23 @@
+name: Feature proposal / اقتراح
+description: Propose an offline tool or focused improvement.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should Naqla solve?
+      description: Arabic or English; describe the file type and practical workflow without sharing private files.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed behavior and output
+      description: Include original preservation, cancellation, offline backend and validation if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives, limitations and design impact
+      description: Explain any change to the wheel/gesture and any proposed dependency's license.

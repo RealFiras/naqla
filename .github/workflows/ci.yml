@@ -1,0 +1,37 @@
+name: Source checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: source-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  public-repository:
+    name: Public files and documentation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python scripts/verify-public-repository.py
+      - run: python scripts/prepare-pages.py
+
+  windows-build:
+    name: Windows x64 source build (not native acceptance)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - run: dotnet restore Naqla.sln
+      - run: dotnet build Naqla.sln -c Release --no-restore -p:ContinuousIntegrationBuild=true

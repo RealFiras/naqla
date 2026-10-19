@@ -1,5 +1,11 @@
 # Naqla progress — 0.8.0-development.1
 
+Public repository preparation (2026-10-20): added English/Arabic usage guides,
+source-build prerequisites, contribution/issue templates, clean Windows build CI,
+Pages documentation navigation, and an allowlisted historical test snapshot.
+Native CRT DLLs are kept local and excluded from the current public source tree.
+No new public binary release or physical Windows acceptance is claimed.
+
 **DEVELOPMENT READY for local testing.** Processing implementation, focused fixes,
 real test outputs and optional local packs are complete for the documented scope;
 physical Windows/clean-PC/disconnected acceptance and public release gates remain pending.

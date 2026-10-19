@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - preview/**
+      - docs/**
+      - scripts/prepare-pages.py
       - .github/workflows/pages.yml
   workflow_dispatch:
 
@@ -26,8 +28,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python scripts/prepare-pages.py
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: preview
+          path: artifacts/pages
       - id: deployment
         uses: actions/deploy-pages@v4

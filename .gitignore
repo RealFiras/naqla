@@ -9,3 +9,16 @@ TestResults/
 coverage/
 *.tmp
 *.cache
+
+# Local engines/models, credentials and rename recovery data never belong in source.
+assets/native-crt/*.dll
+__pycache__/
+node_modules/
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+Naqla-Rename-Recovery-*
+session-*.jsonl

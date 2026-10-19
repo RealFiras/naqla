@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage / طريقة الاستخدام
+    url: https://github.com/RealFiras/naqla/blob/main/docs/GETTING-STARTED.ar.md
+    about: Start here for controls, local packs and troubleshooting.
+  - name: Security reporting
+    url: https://github.com/RealFiras/naqla/blob/main/SECURITY.md
+    about: Report vulnerabilities privately; do not create a public bug report.

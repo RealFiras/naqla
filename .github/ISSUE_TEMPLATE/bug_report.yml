@@ -1,0 +1,47 @@
+name: Bug report / بلاغ مشكلة
+description: Report a reproducible non-security problem in Naqla.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Arabic and English are welcome. Never attach private files, credentials or rename recovery records.
+        Use SECURITY.md for vulnerabilities. Preview behavior is separate from the Windows application.
+  - type: input
+    id: build
+    attributes:
+      label: Version / commit and source
+      description: Build header or commit, source build versus separately supplied installer; native app or browser preview.
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows and display setup
+      description: Windows version, x64, display scaling and monitor count. No device serial numbers.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behavior and actual behavior
+      description: Include exact key order, Desktop/Explorer, extension and approximate size; omit personal paths.
+    validations:
+      required: true
+  - type: textarea
+    id: components
+    attributes:
+      label: Installed local components
+      description: List relevant OCR/speech/background/Office/qpdf/7Z packs and action parameters.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe evidence
+      description: Marked diagnostics session or cropped recording. Review every attachment for private data first.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the usage guide and removed private data from the report and attachments.
+          required: true

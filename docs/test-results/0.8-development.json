@@ -1,0 +1,1590 @@
+{
+  "Schema": 1,
+  "Build": "0.8.0-development.1",
+  "AcceptanceRecordedUtc": "2026-10-19T17:34:27.427125+00:00",
+  "Type": "Historical local acceptance snapshot; not a new GitHub CI run or independent certification",
+  "BundledRuntime": "10.0.13",
+  "Classification": "DEVELOPMENT READY",
+  "GroupExecutions": 124,
+  "PassedExecutions": 123,
+  "RetainedFailedExecutions": 1,
+  "FailureExplanation": "The full run reused a directory containing a deliberately modified model; the product correctly refused overwrite. The affected pack test passed after test fixture roots were separated.",
+  "AcceptedDistinctGroups": 123,
+  "UnresolvedAutomatedFailures": 0,
+  "ConversionPairsPassed": 136,
+  "PhysicalWindows": "MANUAL PENDING",
+  "DisconnectedPc": "MANUAL PENDING",
+  "CleanPcInstaller": "MANUAL PENDING",
+  "Groups": [
+    {
+      "Test": "Requested extension classification and source aliases",
+      "Passed": true,
+      "Milliseconds": 0
+    },
+    {
+      "Test": "Real Arabic file metadata, size, and location",
+      "Passed": true,
+      "Milliseconds": 4
+    },
+    {
+      "Test": "Radial sector boundaries and hub exclusion",
+      "Passed": true,
+      "Milliseconds": 0
+    },
+    {
+      "Test": "Source omission and engine capabilities gate every visible action",
+      "Passed": true,
+      "Milliseconds": 10
+    },
+    {
+      "Test": "PNG→JPG decode, white alpha matte, collision safety, original hash",
+      "Passed": true,
+      "Milliseconds": 347
+    },
+    {
+      "Test": "Corrupt and disguised PNG failure leaves no output",
+      "Passed": true,
+      "Milliseconds": 17
+    },
+    {
+      "Test": "Cancellation before conversion leaves no output",
+      "Passed": true,
+      "Milliseconds": 2
+    },
+    {
+      "Test": "Diagnostic schema excludes private paths and exception text; enable/disable and flush",
+      "Passed": true,
+      "Milliseconds": 156
+    },
+    {
+      "Test": "Diagnostic size cap and bounded retention preserve unrelated files",
+      "Passed": true,
+      "Milliseconds": 23
+    },
+    {
+      "Test": "Diagnostic storage failure does not throw into the app",
+      "Passed": true,
+      "Milliseconds": 3
+    },
+    {
+      "Test": "Real image codecs: JPG, PNG, WebP, AVIF, TIFF, HEIC, PDF; source hash and collisions",
+      "Passed": true,
+      "Milliseconds": 3181
+    },
+    {
+      "Test": "Image tools rotate pixels, strip metadata, and reduce a JPEG",
+      "Passed": true,
+      "Milliseconds": 208
+    },
+    {
+      "Test": "All five MP4 destinations and reverse video formats decode fully",
+      "Passed": true,
+      "Milliseconds": 4030
+    },
+    {
+      "Test": "All audio destinations and source audio formats decode fully",
+      "Passed": true,
+      "Milliseconds": 5459
+    },
+    {
+      "Test": "Media cancellation, corrupt inputs, and missing audio preserve originals",
+      "Passed": true,
+      "Milliseconds": 262
+    },
+    {
+      "Test": "PDF all-page PNG/JPG and text TXT/DOCX/RTF; scanned text fails honestly",
+      "Passed": true,
+      "Milliseconds": 1547
+    },
+    {
+      "Test": "Native pixel wheel renders five palettes with transparent exterior",
+      "Passed": true,
+      "Milliseconds": 662
+    },
+    {
+      "Test": "Ctrl press toggles persist through release; repeat and per-drag reset",
+      "Passed": true,
+      "Milliseconds": 2
+    },
+    {
+      "Test": "Tools before OLE file confirmation, MP4/audio/PDF modes and stale selection",
+      "Passed": true,
+      "Milliseconds": 58
+    },
+    {
+      "Test": "Real video/audio tools: compression, rotation, mute, metadata and source hashes",
+      "Passed": true,
+      "Milliseconds": 4952
+    },
+    {
+      "Test": "Crop marquee coordinates, reverse drags, bounds and invalid input",
+      "Passed": true,
+      "Milliseconds": 3
+    },
+    {
+      "Test": "Crop real pixels/alpha/orientation; missing parameters and collision safety",
+      "Passed": true,
+      "Milliseconds": 132
+    },
+    {
+      "Test": "Real multi-image payload order, total size and actionable wheel capabilities",
+      "Passed": true,
+      "Milliseconds": 20
+    },
+    {
+      "Test": "Merge PDF all pages/colors/order, first-source folder, hashes and collisions",
+      "Passed": true,
+      "Milliseconds": 163
+    },
+    {
+      "Test": "Merge corruption/cancellation leaves no partial output or temporary files",
+      "Passed": true,
+      "Milliseconds": 472
+    },
+    {
+      "Test": "HEIC genuine HEVC brands, alpha, tiny/odd sizes, Arabic folders and tools",
+      "Passed": true,
+      "Milliseconds": 627
+    },
+    {
+      "Test": "Lossless PNG/TIFF/BMP compression and metadata removal across image formats",
+      "Passed": true,
+      "Milliseconds": 699
+    },
+    {
+      "Test": "Every image input converts to every requested non-source image/PDF destination",
+      "Passed": true,
+      "Milliseconds": 1706
+    },
+    {
+      "Test": "Native crop editor layout and pixel fields render without displaying a window",
+      "Passed": true,
+      "Milliseconds": 977
+    },
+    {
+      "Test": "In-flight HEIC encoder cancellation removes child/temp output and preserves source",
+      "Passed": true,
+      "Milliseconds": 4268
+    },
+    {
+      "Test": "Batch real selections intersect capabilities, mixed categories, validation and absent backends",
+      "Passed": true,
+      "Milliseconds": 19
+    },
+    {
+      "Test": "Batch single/multiple PNGs, Arabic duplicate names, source folders, collisions and real progress",
+      "Passed": true,
+      "Milliseconds": 123
+    },
+    {
+      "Test": "Batch mixed image formats and individual PDF outputs preserve originals",
+      "Passed": true,
+      "Milliseconds": 196
+    },
+    {
+      "Test": "Batch multiple real videos convert and decode fully",
+      "Passed": true,
+      "Milliseconds": 657
+    },
+    {
+      "Test": "Mixed image/audio shared tools process every actual source",
+      "Passed": true,
+      "Milliseconds": 303
+    },
+    {
+      "Test": "Corrupt mid-batch source reports failure and preserves unrelated successes",
+      "Passed": true,
+      "Milliseconds": 59
+    },
+    {
+      "Test": "Actual denied destination reports partial failure without losing writable results",
+      "Passed": true,
+      "Milliseconds": 77
+    },
+    {
+      "Test": "Mid-batch/pre-cancellation preserves successes and never invents completion",
+      "Passed": true,
+      "Milliseconds": 221
+    },
+    {
+      "Test": "Batch crop reports incompatible pixel bounds without clamping or losing success",
+      "Passed": true,
+      "Milliseconds": 36
+    },
+    {
+      "Test": "Queue scheduling bounds concurrency across submissions (explicit test double)",
+      "Passed": true,
+      "Milliseconds": 208
+    },
+    {
+      "Test": "Batch hub/progress native render preserves geometry and honest job counts",
+      "Passed": true,
+      "Milliseconds": 62
+    },
+    {
+      "Test": "200 real files capability timing versus baseline SetFile (not Shift latency)",
+      "Passed": true,
+      "Milliseconds": 370
+    },
+    {
+      "Test": "Manual fixture/verifier scripts validate actual outputs and never fake Explorer acceptance",
+      "Passed": true,
+      "Milliseconds": 2553
+    },
+    {
+      "Test": "Smart Rename all transforms/date/regex/padding preserve extension and preview is read-only",
+      "Passed": true,
+      "Milliseconds": 49
+    },
+    {
+      "Test": "Smart Rename validates reserved/invalid names, collisions, duplicate sources and output paths",
+      "Passed": true,
+      "Milliseconds": 40
+    },
+    {
+      "Test": "Real confirmed rename/undo retain file identity, bytes and MOTW without copying",
+      "Passed": true,
+      "Milliseconds": 68
+    },
+    {
+      "Test": "Batch swaps, case-only renames and source directories retain every file",
+      "Passed": true,
+      "Milliseconds": 77
+    },
+    {
+      "Test": "Stale preview, occupied undo target and modified undo file are refused",
+      "Passed": true,
+      "Milliseconds": 25
+    },
+    {
+      "Test": "Locked source and in-flight cancellation do not lose original names/content",
+      "Passed": true,
+      "Milliseconds": 23
+    },
+    {
+      "Test": "Injected commit failure rolls back real Windows rename operations",
+      "Passed": true,
+      "Milliseconds": 25
+    },
+    {
+      "Test": "Blocked rollback retains both original data and unrelated file with recovery record",
+      "Passed": true,
+      "Milliseconds": 29
+    },
+    {
+      "Test": "Advanced regex is bounded and invalid patterns do not change files",
+      "Passed": true,
+      "Milliseconds": 105
+    },
+    {
+      "Test": "Rename uses shared queue and remains in contextual image tools",
+      "Passed": true,
+      "Milliseconds": 41
+    },
+    {
+      "Test": "Native pixel buttons retain automation names; rename preview needs explicit confirmation",
+      "Passed": true,
+      "Milliseconds": 235
+    },
+    {
+      "Test": "Target-size presets/custom Arabic units, resize and format validation",
+      "Passed": true,
+      "Milliseconds": 7
+    },
+    {
+      "Test": "Actual iterative JPEG optimization meets all presets at maximal integer quality",
+      "Passed": true,
+      "Milliseconds": 503
+    },
+    {
+      "Test": "All six optimizer encoders decode with alpha or explicit white JPEG matte",
+      "Passed": true,
+      "Milliseconds": 305
+    },
+    {
+      "Test": "Every supported image source optimizes and retains original hashes",
+      "Passed": true,
+      "Milliseconds": 495
+    },
+    {
+      "Test": "Lossless PNG/TIFF recipes retain pixels and report impossible measured previews",
+      "Passed": true,
+      "Milliseconds": 196
+    },
+    {
+      "Test": "Optimizer preserves oriented dimensions, bounds aspect ratio, prevents upscale and handles color",
+      "Passed": true,
+      "Milliseconds": 167
+    },
+    {
+      "Test": "Unattainable targets, corrupt/multiframe files and absent settings never publish success",
+      "Passed": true,
+      "Milliseconds": 820
+    },
+    {
+      "Test": "Unicode optimizer outputs stay beside originals and never replace files or directories",
+      "Passed": true,
+      "Milliseconds": 40
+    },
+    {
+      "Test": "In-flight/pre-cancelled optimization cleans candidates, locks and preserves source",
+      "Passed": true,
+      "Milliseconds": 63
+    },
+    {
+      "Test": "Target-size batch propagates settings, independent outcomes and actual result reports",
+      "Passed": true,
+      "Milliseconds": 168
+    },
+    {
+      "Test": "Target-size batch cancellation retains published successes and honest counts",
+      "Passed": true,
+      "Milliseconds": 36
+    },
+    {
+      "Test": "Native optimizer preview/settings, stale/failed Save gates and 6/7-sector tool renders",
+      "Passed": true,
+      "Milliseconds": 313
+    },
+    {
+      "Test": "Optimizer diagnostics retain only typed operations and numeric measurements",
+      "Passed": true,
+      "Milliseconds": 20
+    },
+    {
+      "Test": "Manual optimizer helpers independently decode outputs/check bytes and never invent Explorer acceptance",
+      "Passed": true,
+      "Milliseconds": 3356
+    },
+    {
+      "Test": "PDF page ranges validate Arabic digits, bounds, duplicates and ordered extraction",
+      "Passed": true,
+      "Milliseconds": 2
+    },
+    {
+      "Test": "Single-page PDF real preview/extract/rotate and vector content remain valid",
+      "Passed": true,
+      "Milliseconds": 464
+    },
+    {
+      "Test": "PDF reorder retains every page exactly once and preserves text/vector streams",
+      "Passed": true,
+      "Milliseconds": 155
+    },
+    {
+      "Test": "PDF extraction respects requested order and separate pages publish atomically",
+      "Passed": true,
+      "Milliseconds": 152
+    },
+    {
+      "Test": "PDF deletion previews/saves remaining pages and rejects deleting everything",
+      "Passed": true,
+      "Milliseconds": 95
+    },
+    {
+      "Test": "Multiple PDFs merge in document order, keep each internal order and mixed geometry",
+      "Passed": true,
+      "Milliseconds": 73
+    },
+    {
+      "Test": "Page numbers honor start, position, size, colors, English/Arabic fonts and selected pages",
+      "Passed": true,
+      "Milliseconds": 1155
+    },
+    {
+      "Test": "English/Arabic shaped text watermarks render offline with alpha/rotation/scale/position",
+      "Passed": true,
+      "Milliseconds": 570
+    },
+    {
+      "Test": "Image watermark retains alpha, changes selected pages only and never rasterizes originals",
+      "Passed": true,
+      "Milliseconds": 142
+    },
+    {
+      "Test": "PDF selected page rotation handles existing rotations, mixed sizes and all three angles",
+      "Passed": true,
+      "Milliseconds": 196
+    },
+    {
+      "Test": "PDF numbering/watermark placement follows visible cropped pages at all four rotations",
+      "Passed": true,
+      "Milliseconds": 270
+    },
+    {
+      "Test": "PDF encrypted/corrupt/forms/layers are refused without changing originals",
+      "Passed": true,
+      "Milliseconds": 156
+    },
+    {
+      "Test": "PDF plan validation rejects omitted/duplicate/out-of-range pages and invalid settings",
+      "Passed": true,
+      "Milliseconds": 13
+    },
+    {
+      "Test": "Arabic PDF output filenames stay beside originals, file/directory collisions never overwrite",
+      "Passed": true,
+      "Milliseconds": 42
+    },
+    {
+      "Test": "PDF pre/in-flight cancellation, source locks and stale-preview hashes preserve originals",
+      "Passed": true,
+      "Milliseconds": 59
+    },
+    {
+      "Test": "PDF contextual tools/real queue honor every source and aggregate merge",
+      "Passed": true,
+      "Milliseconds": 65
+    },
+    {
+      "Test": "Native PDF editor draft renders real thumbnails, all contexts, responsive sizes and stale Save gates",
+      "Passed": true,
+      "Milliseconds": 1551
+    },
+    {
+      "Test": "PDF diagnostics retain closed operations/counts, never filenames or watermark text",
+      "Passed": true,
+      "Milliseconds": 15
+    },
+    {
+      "Test": "Advanced settings reject invalid ranges, nonfinite values and unsafe frame counts",
+      "Passed": true,
+      "Milliseconds": 11
+    },
+    {
+      "Test": "30-second video: real frames every five seconds, requested/actual timing, decode and collisions",
+      "Passed": true,
+      "Milliseconds": 1000
+    },
+    {
+      "Test": "Accurate video/audio trims validate duration and retain original hashes",
+      "Passed": true,
+      "Milliseconds": 290
+    },
+    {
+      "Test": "Two-pass normalization independently measures LUFS/true peak; silence edges and channels",
+      "Passed": true,
+      "Milliseconds": 1316
+    },
+    {
+      "Test": "Advanced media cancellation, corrupt input and impossible options publish nothing",
+      "Passed": true,
+      "Milliseconds": 41
+    },
+    {
+      "Test": "Approved contextual Tools pagination wraps/clamps, six visible sectors and unchanged Convert/Ctrl",
+      "Passed": true,
+      "Milliseconds": 31
+    },
+    {
+      "Test": "Local exact-catalog component import, modification rejection, cancellation and safe uninstall",
+      "Passed": true,
+      "Milliseconds": 1165
+    },
+    {
+      "Test": "Local child jobs enforce deadlines, kill descendants and leave the parent usable",
+      "Passed": true,
+      "Milliseconds": 917
+    },
+    {
+      "Test": "Installer staged ownership preserves user files, refuses traversal and retains modified content",
+      "Passed": true,
+      "Milliseconds": 85
+    },
+    {
+      "Test": "New contextual native editors render offscreen with shared pixel controls and gated model save",
+      "Passed": true,
+      "Milliseconds": 344
+    },
+    {
+      "Test": "Folder OLE payload metadata and real aggregate archive dispatch preserve sources",
+      "Passed": true,
+      "Milliseconds": 262
+    },
+    {
+      "Test": "Reviewed model dispatch rejects stale sources and retains editable actual OCR output",
+      "Passed": true,
+      "Milliseconds": 30
+    },
+    {
+      "Test": "Archive actual ZIP symlinks, TAR hardlinks, expansion bombs and mid-creation cancellation fail safely",
+      "Passed": true,
+      "Milliseconds": 133
+    },
+    {
+      "Test": "Optional document engine with job/integrity guard converts real Arabic text and keeps source",
+      "Passed": true,
+      "Milliseconds": 98948
+    },
+    {
+      "Test": "ZIP/7Z/TAR real creation/extraction preserves nested/empty directories, Unicode and hashes",
+      "Passed": true,
+      "Milliseconds": 458
+    },
+    {
+      "Test": "Archive traversal, device names, ADS, absolute and case/path collisions are refused",
+      "Passed": true,
+      "Milliseconds": 127
+    },
+    {
+      "Test": "Archive expansion limits, corruption, cancellation and original preservation",
+      "Passed": true,
+      "Milliseconds": 36
+    },
+    {
+      "Test": "Declarative plugins install disabled; explicit enable, context, change invalidation and uninstall",
+      "Passed": true,
+      "Milliseconds": 132
+    },
+    {
+      "Test": "Separate trusted plugin host computes real SHA256/text statistics and preserves source",
+      "Passed": true,
+      "Milliseconds": 420
+    },
+    {
+      "Test": "Plugin API/capability/executable/path/duplicate packages are refused without execution",
+      "Passed": true,
+      "Milliseconds": 72
+    },
+    {
+      "Test": "Plugin worker failure/cancellation keeps parent usable and cleans owned work",
+      "Passed": true,
+      "Milliseconds": 259
+    },
+    {
+      "Test": "Privacy JPEG/PNG/TIFF/WebP: real metadata removed, pixel equality, orientation and originals",
+      "Passed": true,
+      "Milliseconds": 316
+    },
+    {
+      "Test": "Privacy Office DOCX/XLSX/PPTX properties change while bodies/assets/relationships remain identical",
+      "Passed": true,
+      "Milliseconds": 113
+    },
+    {
+      "Test": "Privacy PDF properties/XMP removal preserves page text/vector rendering and original hash",
+      "Passed": true,
+      "Milliseconds": 335
+    },
+    {
+      "Test": "Privacy MP4/MP3/FLAC stream-copy keeps encoded packet hashes and removes selected tags",
+      "Passed": true,
+      "Milliseconds": 1211
+    },
+    {
+      "Test": "Privacy selective cleanup, empty detection, stale/corrupt/cancelled inputs and collisions",
+      "Passed": true,
+      "Milliseconds": 96
+    },
+    {
+      "Test": "Privacy complete DOCX/XLSX/PPTX packages pass independent Open XML schema validation before/after",
+      "Passed": true,
+      "Milliseconds": 1182
+    },
+    {
+      "Test": "Real local Tesseract English/Arabic/mixed OCR, blank rejection, Unicode and source hashes",
+      "Passed": true,
+      "Milliseconds": 1640
+    },
+    {
+      "Test": "Real CPU U2NetP inference generates validated nontrivial alpha without changing source",
+      "Passed": true,
+      "Milliseconds": 1237
+    },
+    {
+      "Test": "Real multilingual whisper.cpp JFK transcription produces monotonic editable SRT/WebVTT",
+      "Passed": true,
+      "Milliseconds": 4861
+    },
+    {
+      "Test": "Subtitle timestamp validation and missing/tampered local model rejection",
+      "Passed": true,
+      "Milliseconds": 11
+    },
+    {
+      "Test": "Offline document real-handler matrix: Arabic/English, table/image, multipage, DOCX/PDF/TXT/RTF/HTML/ODT",
+      "Passed": true,
+      "Milliseconds": 517448
+    },
+    {
+      "Test": "Document active HTML/external resources/macros/corruption/cancellation are rejected",
+      "Passed": true,
+      "Milliseconds": 96
+    },
+    {
+      "Test": "Fresh actual-handler image/video/audio/PDF source-destination matrix",
+      "Passed": true,
+      "Milliseconds": 33012
+    },
+    {
+      "Test": "Real 10/50/200-image repeated batch stress preserves hashes, output decodes and all job counts",
+      "Passed": true,
+      "Milliseconds": 6988
+    },
+    {
+      "Test": "Actual GPS/XMP/IPTC privacy fixtures and explicitly approved AVIF lossless-PNG fallback",
+      "Passed": true,
+      "Milliseconds": 203
+    },
+    {
+      "Test": "All six actual offline packs install by pinned catalog and execute their real engines",
+      "Passed": true,
+      "Milliseconds": 504882
+    }
+  ],
+  "ConversionPairs": [
+    {
+      "Source": "PNG",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 22
+    },
+    {
+      "Source": "PNG",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 20
+    },
+    {
+      "Source": "PNG",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 31
+    },
+    {
+      "Source": "PNG",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 42
+    },
+    {
+      "Source": "PNG",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 24
+    },
+    {
+      "Source": "PNG",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 109
+    },
+    {
+      "Source": "JPG",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 39
+    },
+    {
+      "Source": "JPG",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 29
+    },
+    {
+      "Source": "JPG",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 14
+    },
+    {
+      "Source": "JPG",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 45
+    },
+    {
+      "Source": "JPG",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 32
+    },
+    {
+      "Source": "JPG",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 127
+    },
+    {
+      "Source": "JPEG",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 35
+    },
+    {
+      "Source": "JPEG",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 36
+    },
+    {
+      "Source": "JPEG",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 19
+    },
+    {
+      "Source": "JPEG",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 55
+    },
+    {
+      "Source": "JPEG",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 30
+    },
+    {
+      "Source": "JPEG",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 116
+    },
+    {
+      "Source": "WEBP",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 62
+    },
+    {
+      "Source": "WEBP",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 34
+    },
+    {
+      "Source": "WEBP",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 29
+    },
+    {
+      "Source": "WEBP",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 61
+    },
+    {
+      "Source": "WEBP",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 33
+    },
+    {
+      "Source": "WEBP",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 114
+    },
+    {
+      "Source": "BMP",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 32
+    },
+    {
+      "Source": "BMP",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 22
+    },
+    {
+      "Source": "BMP",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 33
+    },
+    {
+      "Source": "BMP",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 15
+    },
+    {
+      "Source": "BMP",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 46
+    },
+    {
+      "Source": "BMP",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 35
+    },
+    {
+      "Source": "BMP",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 137
+    },
+    {
+      "Source": "TIFF",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 49
+    },
+    {
+      "Source": "TIFF",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 29
+    },
+    {
+      "Source": "TIFF",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 30
+    },
+    {
+      "Source": "TIFF",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 15
+    },
+    {
+      "Source": "TIFF",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 48
+    },
+    {
+      "Source": "TIFF",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 112
+    },
+    {
+      "Source": "AVIF",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 52
+    },
+    {
+      "Source": "AVIF",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 48
+    },
+    {
+      "Source": "AVIF",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 56
+    },
+    {
+      "Source": "AVIF",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 74
+    },
+    {
+      "Source": "AVIF",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 55
+    },
+    {
+      "Source": "AVIF",
+      "Destination": "HEIC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 143
+    },
+    {
+      "Source": "HEIC",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 59
+    },
+    {
+      "Source": "HEIC",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 36
+    },
+    {
+      "Source": "HEIC",
+      "Destination": "WEBP",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 41
+    },
+    {
+      "Source": "HEIC",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 30
+    },
+    {
+      "Source": "HEIC",
+      "Destination": "AVIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 72
+    },
+    {
+      "Source": "HEIC",
+      "Destination": "TIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 38
+    },
+    {
+      "Source": "MP4",
+      "Destination": "MOV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 626
+    },
+    {
+      "Source": "MP4",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 515
+    },
+    {
+      "Source": "MP4",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 444
+    },
+    {
+      "Source": "MP4",
+      "Destination": "GIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 522
+    },
+    {
+      "Source": "MP4",
+      "Destination": "WEBM",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 558
+    },
+    {
+      "Source": "MOV",
+      "Destination": "MP4",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 560
+    },
+    {
+      "Source": "MOV",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 531
+    },
+    {
+      "Source": "MOV",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 477
+    },
+    {
+      "Source": "MOV",
+      "Destination": "GIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 436
+    },
+    {
+      "Source": "MOV",
+      "Destination": "WEBM",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 328
+    },
+    {
+      "Source": "MKV",
+      "Destination": "MP4",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 433
+    },
+    {
+      "Source": "MKV",
+      "Destination": "MOV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 382
+    },
+    {
+      "Source": "MKV",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 354
+    },
+    {
+      "Source": "MKV",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 349
+    },
+    {
+      "Source": "MKV",
+      "Destination": "GIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 578
+    },
+    {
+      "Source": "MKV",
+      "Destination": "WEBM",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 372
+    },
+    {
+      "Source": "WEBM",
+      "Destination": "MP4",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 487
+    },
+    {
+      "Source": "WEBM",
+      "Destination": "MOV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 482
+    },
+    {
+      "Source": "WEBM",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 622
+    },
+    {
+      "Source": "WEBM",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 427
+    },
+    {
+      "Source": "WEBM",
+      "Destination": "GIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 502
+    },
+    {
+      "Source": "AVI",
+      "Destination": "MP4",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 487
+    },
+    {
+      "Source": "AVI",
+      "Destination": "MOV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 580
+    },
+    {
+      "Source": "AVI",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 429
+    },
+    {
+      "Source": "AVI",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 357
+    },
+    {
+      "Source": "AVI",
+      "Destination": "GIF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 515
+    },
+    {
+      "Source": "AVI",
+      "Destination": "WEBM",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 385
+    },
+    {
+      "Source": "MP3",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 802
+    },
+    {
+      "Source": "MP3",
+      "Destination": "WAV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 364
+    },
+    {
+      "Source": "MP3",
+      "Destination": "FLAC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 447
+    },
+    {
+      "Source": "MP3",
+      "Destination": "AIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 460
+    },
+    {
+      "Source": "MP3",
+      "Destination": "OPUS",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 360
+    },
+    {
+      "Source": "M4A",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 382
+    },
+    {
+      "Source": "M4A",
+      "Destination": "WAV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 451
+    },
+    {
+      "Source": "M4A",
+      "Destination": "FLAC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 529
+    },
+    {
+      "Source": "M4A",
+      "Destination": "AIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 397
+    },
+    {
+      "Source": "M4A",
+      "Destination": "OPUS",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 590
+    },
+    {
+      "Source": "WAV",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 495
+    },
+    {
+      "Source": "WAV",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 832
+    },
+    {
+      "Source": "WAV",
+      "Destination": "FLAC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 592
+    },
+    {
+      "Source": "WAV",
+      "Destination": "AIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 459
+    },
+    {
+      "Source": "WAV",
+      "Destination": "OPUS",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 457
+    },
+    {
+      "Source": "FLAC",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 418
+    },
+    {
+      "Source": "FLAC",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 409
+    },
+    {
+      "Source": "FLAC",
+      "Destination": "WAV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 363
+    },
+    {
+      "Source": "FLAC",
+      "Destination": "AIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 320
+    },
+    {
+      "Source": "FLAC",
+      "Destination": "OPUS",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 337
+    },
+    {
+      "Source": "AIFF",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 359
+    },
+    {
+      "Source": "AIFF",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 404
+    },
+    {
+      "Source": "AIFF",
+      "Destination": "WAV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 362
+    },
+    {
+      "Source": "AIFF",
+      "Destination": "FLAC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 332
+    },
+    {
+      "Source": "AIFF",
+      "Destination": "OPUS",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 319
+    },
+    {
+      "Source": "OPUS",
+      "Destination": "MP3",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 509
+    },
+    {
+      "Source": "OPUS",
+      "Destination": "M4A",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 475
+    },
+    {
+      "Source": "OPUS",
+      "Destination": "WAV",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 348
+    },
+    {
+      "Source": "OPUS",
+      "Destination": "FLAC",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 325
+    },
+    {
+      "Source": "OPUS",
+      "Destination": "AIFF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 330
+    },
+    {
+      "Source": "PDF",
+      "Destination": "PNG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 333
+    },
+    {
+      "Source": "PDF",
+      "Destination": "JPG",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 176
+    },
+    {
+      "Source": "PDF",
+      "Destination": "TXT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 15
+    },
+    {
+      "Source": "PDF",
+      "Destination": "DOCX",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 18
+    },
+    {
+      "Source": "PDF",
+      "Destination": "RTF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 18
+    },
+    {
+      "Source": "HTML",
+      "Destination": "DOCX",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 11266
+    },
+    {
+      "Source": "HTML",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 11765
+    },
+    {
+      "Source": "HTML",
+      "Destination": "TXT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 10737
+    },
+    {
+      "Source": "HTML",
+      "Destination": "RTF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 10874
+    },
+    {
+      "Source": "HTML",
+      "Destination": "ODT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 22770
+    },
+    {
+      "Source": "DOCX",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 34154
+    },
+    {
+      "Source": "DOCX",
+      "Destination": "TXT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 16016
+    },
+    {
+      "Source": "DOCX",
+      "Destination": "RTF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 17416
+    },
+    {
+      "Source": "DOCX",
+      "Destination": "HTML",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 14128
+    },
+    {
+      "Source": "DOCX",
+      "Destination": "ODT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 15936
+    },
+    {
+      "Source": "ODT",
+      "Destination": "DOCX",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 18086
+    },
+    {
+      "Source": "ODT",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 22041
+    },
+    {
+      "Source": "ODT",
+      "Destination": "TXT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 16346
+    },
+    {
+      "Source": "ODT",
+      "Destination": "RTF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 23178
+    },
+    {
+      "Source": "ODT",
+      "Destination": "HTML",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 26864
+    },
+    {
+      "Source": "RTF",
+      "Destination": "DOCX",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 18240
+    },
+    {
+      "Source": "RTF",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 16542
+    },
+    {
+      "Source": "RTF",
+      "Destination": "TXT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 21291
+    },
+    {
+      "Source": "RTF",
+      "Destination": "HTML",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 19043
+    },
+    {
+      "Source": "RTF",
+      "Destination": "ODT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 21012
+    },
+    {
+      "Source": "TXT",
+      "Destination": "DOCX",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 18382
+    },
+    {
+      "Source": "TXT",
+      "Destination": "PDF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 20321
+    },
+    {
+      "Source": "TXT",
+      "Destination": "RTF",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 21458
+    },
+    {
+      "Source": "TXT",
+      "Destination": "HTML",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 21057
+    },
+    {
+      "Source": "TXT",
+      "Destination": "ODT",
+      "Status": "PASSED",
+      "OriginalHashPreserved": true,
+      "Milliseconds": 20552
+    }
+  ],
+  "Excluded": "No source filenames, user directories, diagnostic/recovery logs, file contents or installer binaries are included."
+}

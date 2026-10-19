@@ -1,5 +1,9 @@
 # Dependencies and offline packs
 
+Source checkout: native DLLs/models/generated engine trees are excluded. Follow
+[BUILDING.md](BUILDING.md) to distinguish a shell build, native preparation and
+maintainer-only packaging. Naqla's MIT license does not relicense dependencies.
+
 The app is Windows x64/.NET 10 self-contained. No target-PC SDK, Python, Node,
 installed Office, cloud API or model download is required. Developer build/fetch
 steps use network access explicitly; normal file processing does not.

@@ -1,5 +1,10 @@
 # End-to-end processing report — 0.8.0-development.1
 
+Public readers: [the historical test snapshot](test-results/0.8-development.json)
+contains allowlisted groups and conversion results. Paths under `artifacts/` below
+refer to retained local evidence, not files distributed in this source repository.
+GitHub CI checks source build/hygiene separately; it is not the full native suite.
+
 Verified 2026-10-19T17:34:27.427125+00:00. Classification: **DEVELOPMENT READY for local testing**.
 Physical Windows acceptance, clean-PC installation and disconnected networking remain
 **MANUAL PENDING**. No simulated Explorer drag was used as evidence.
