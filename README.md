@@ -18,7 +18,7 @@
 
   <br>
 
-  [العربية](README.ar.md) · [Feature audit](docs/FINAL-FEATURE-AUDIT.md) · [Limitations](docs/KNOWN-LIMITATIONS.md) · [Security](docs/SECURITY-REVIEW.md)
+  [Live UI preview](https://realfiras.github.io/naqla/) · [العربية](README.ar.md) · [Feature audit](docs/FINAL-FEATURE-AUDIT.md) · [Limitations](docs/KNOWN-LIMITATIONS.md) · [Security](docs/SECURITY-REVIEW.md)
 </div>
 
 > [!WARNING]

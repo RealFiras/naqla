@@ -18,7 +18,7 @@
 
   <br>
 
-  [English](README.md) · [التدقيق الكامل](docs/FINAL-FEATURE-AUDIT.md) · [القيود](docs/KNOWN-LIMITATIONS.md) · [الأمان](docs/SECURITY-REVIEW.md)
+  [معاينة الواجهة مباشرة](https://realfiras.github.io/naqla/) · [English](README.md) · [التدقيق الكامل](docs/FINAL-FEATURE-AUDIT.md) · [القيود](docs/KNOWN-LIMITATIONS.md) · [الأمان](docs/SECURITY-REVIEW.md)
 </div>
 
 <div dir="rtl">
