@@ -1,0 +1,25 @@
+* text=auto
+
+*.cs text
+*.csproj text
+*.props text
+*.targets text
+*.json text
+*.md text eol=lf
+*.sln text eol=crlf
+*.ps1 text eol=crlf
+*.cjs text
+*.py text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.wav binary
+*.pdf binary
+*.dll binary
+*.exe binary
+*.zip binary
+*.7z binary

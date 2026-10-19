@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+artifacts/
+.vs/
+*.user
+*.suo
+*.log
+TestResults/
+coverage/
+*.tmp
+*.cache

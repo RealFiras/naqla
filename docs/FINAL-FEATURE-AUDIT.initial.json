@@ -1,0 +1,3474 @@
+{
+  "schema": 1,
+  "stage": "INITIAL AUDIT — fresh execution pending",
+  "created_utc": "2026-10-19T11:54:09.502692+00:00",
+  "statuses": [
+    "VERIFIED",
+    "IMPLEMENTED / UNVERIFIED",
+    "PARTIAL",
+    "BROKEN",
+    "MISSING",
+    "UNSUPPORTED"
+  ],
+  "features": [
+    {
+      "feature": "Image: PNG → JPG",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: PNG → WEBP",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: PNG → PDF",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: PNG → AVIF",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: PNG → TIFF",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: PNG → HEIC",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPG → PNG",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPG → WEBP",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPG → PDF",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPG → AVIF",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPG → TIFF",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPG → HEIC",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPEG → PNG",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPEG → WEBP",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPEG → PDF",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPEG → AVIF",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPEG → TIFF",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: JPEG → HEIC",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: WEBP → PNG",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: WEBP → JPG",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: WEBP → PDF",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: WEBP → AVIF",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: WEBP → TIFF",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: WEBP → HEIC",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → PNG",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → JPG",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → WEBP",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → PDF",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → AVIF",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → TIFF",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: BMP → HEIC",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: TIFF → PNG",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: TIFF → JPG",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: TIFF → WEBP",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: TIFF → PDF",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: TIFF → AVIF",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: TIFF → HEIC",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: AVIF → PNG",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: AVIF → JPG",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: AVIF → WEBP",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: AVIF → PDF",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: AVIF → TIFF",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: AVIF → HEIC",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: HEIC → PNG",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: HEIC → JPG",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: HEIC → WEBP",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: HEIC → PDF",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: HEIC → AVIF",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Image: HEIC → TIFF",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MP4 → MOV",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MP4 → WEBM",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MP4 → GIF",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MP4 → MP3",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MP4 → M4A",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MOV → MP4",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MOV → WEBM",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MOV → GIF",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MOV → MP3",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MOV → M4A",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MKV → MP4",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MKV → MOV",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MKV → WEBM",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MKV → GIF",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MKV → MP3",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: MKV → M4A",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: WEBM → MP4",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: WEBM → MOV",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: WEBM → GIF",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: WEBM → MP3",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: WEBM → M4A",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: AVI → MP4",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: AVI → MOV",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: AVI → WEBM",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: AVI → GIF",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: AVI → MP3",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Video: AVI → M4A",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: MP3 → M4A",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: MP3 → WAV",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: MP3 → FLAC",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: MP3 → AIFF",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: MP3 → OPUS",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: M4A → MP3",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: M4A → WAV",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: M4A → FLAC",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: M4A → AIFF",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: M4A → OPUS",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: WAV → MP3",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: WAV → M4A",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: WAV → FLAC",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: WAV → AIFF",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: WAV → OPUS",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: FLAC → MP3",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: FLAC → M4A",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: FLAC → WAV",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: FLAC → AIFF",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: FLAC → OPUS",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: AIFF → MP3",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: AIFF → M4A",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: AIFF → WAV",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: AIFF → FLAC",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: AIFF → OPUS",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: OPUS → MP3",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: OPUS → M4A",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: OPUS → WAV",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: OPUS → FLAC",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Audio: OPUS → AIFF",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "PDF: PDF → PNG",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Images fixed 144 DPI; text-only DOCX/RTF reconstruction; scanned text needs OCR",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "PDF: PDF → JPG",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Images fixed 144 DPI; text-only DOCX/RTF reconstruction; scanned text needs OCR",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "PDF: PDF → TXT",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Images fixed 144 DPI; text-only DOCX/RTF reconstruction; scanned text needs OCR",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "PDF: PDF → DOCX",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Images fixed 144 DPI; text-only DOCX/RTF reconstruction; scanned text needs OCR",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "PDF: PDF → RTF",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Images fixed 144 DPI; text-only DOCX/RTF reconstruction; scanned text needs OCR",
+      "required_fixes": "Execute fresh production-handler matrix and independent validation"
+    },
+    {
+      "feature": "Document: DOCX → PDF",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: DOCX → TXT",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: DOCX → RTF",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: DOCX → HTML",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: DOCX → ODT",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: TXT → DOCX",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: TXT → PDF",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: TXT → RTF",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: TXT → HTML",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: TXT → ODT",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: RTF → DOCX",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: RTF → PDF",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: RTF → TXT",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: RTF → HTML",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: RTF → ODT",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: HTML → DOCX",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: HTML → PDF",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: HTML → TXT",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: HTML → RTF",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: HTML → ODT",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: ODT → DOCX",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: ODT → PDF",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: ODT → TXT",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: ODT → RTF",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Document: ODT → HTML",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No Office/headless document backend packaged",
+      "required_fixes": "Implement licensed offline backend, capability gate and content/layout tests"
+    },
+    {
+      "feature": "Image compression",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original format or PNG"
+      ],
+      "backend": "ImageConversions",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed quality; no settings/size report",
+      "required_fixes": "Add settings and actual-size result"
+    },
+    {
+      "feature": "Image crop",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original image format"
+      ],
+      "backend": "CropWindow / CropSelection",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Freeform/numeric crop exists; no ratio presets/resize handles/zoom",
+      "required_fixes": "Complete editor, mapping and pixel tests"
+    },
+    {
+      "feature": "Image rotation",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original image format"
+      ],
+      "backend": "ImageConversions",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "90° clockwise only",
+      "required_fixes": "Add 90° counterclockwise and 180° choices"
+    },
+    {
+      "feature": "Image metadata strip",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original image format"
+      ],
+      "backend": "ImageConversions",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Re-encodes lossy formats; color profile removal needs appearance validation",
+      "required_fixes": "Verify targeted removal and correct color/orientation"
+    },
+    {
+      "feature": "Images to PDF merge",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImagePdf",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Raster image PDF; aspect fit, selected source order",
+      "required_fixes": "Fresh page/pixel/order/source-hash tests"
+    },
+    {
+      "feature": "Target-size optimizer",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "PNG JPG WEBP AVIF TIFF HEIC"
+      ],
+      "backend": "TargetSizeOptimizer",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Q8/40 MP, exhaustive integer-quality search can be slow",
+      "required_fixes": "Fresh strict-cap, cancellation and source-hash tests"
+    },
+    {
+      "feature": "Remove background",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No local segmentation engine/model pack",
+      "required_fixes": "Implement lazy local inference, preview and alpha tests"
+    },
+    {
+      "feature": "OCR",
+      "inputs": [
+        "Images",
+        "scanned PDFs"
+      ],
+      "outputs": [
+        "TXT",
+        "clipboard"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No local Arabic/English OCR engine or language packs",
+      "required_fixes": "Implement offline OCR, result editor and real text tests"
+    },
+    {
+      "feature": "Video compression",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "MP4 MOV WEBM"
+      ],
+      "backend": "MediaConverter",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed quality/preset; no settings",
+      "required_fixes": "Add real selectable presets, validate codecs/duration/frames"
+    },
+    {
+      "feature": "Video trim",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Video"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No timeline or trim handler",
+      "required_fixes": "Implement exact cut/re-encode and AV sync tests"
+    },
+    {
+      "feature": "Video rotation",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Video"
+      ],
+      "backend": "MediaConverter",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "90° clockwise only",
+      "required_fixes": "Add all requested angles and orientation tests"
+    },
+    {
+      "feature": "Video metadata removal",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Original container"
+      ],
+      "backend": "MediaConverter packet copy",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Technical/container tags may be regenerated",
+      "required_fixes": "Independent metadata and stream-content validation"
+    },
+    {
+      "feature": "Video mute",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Original container"
+      ],
+      "backend": "MediaConverter packet copy",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Primary video only",
+      "required_fixes": "Re-test silent output and original hashes"
+    },
+    {
+      "feature": "Frame extraction",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "PNG JPG folder"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No timestamp/count/range extraction",
+      "required_fixes": "Implement local FFmpeg and real 30-second timing test"
+    },
+    {
+      "feature": "Subtitles",
+      "inputs": [
+        "Video",
+        "audio"
+      ],
+      "outputs": [
+        "SRT VTT"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No local recognition backend/model/editor",
+      "required_fixes": "Implement optional local model pack, timestamps, cancellation and spoken-reference validation"
+    },
+    {
+      "feature": "Audio compression",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "MP3 M4A OPUS FLAC"
+      ],
+      "backend": "MediaConverter",
+      "wheel": "Registered",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed quality, no settings",
+      "required_fixes": "Add selectable encoding settings and measurement"
+    },
+    {
+      "feature": "Audio trim",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Audio"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No timeline or handler",
+      "required_fixes": "Implement duration-accurate cut and decode tests"
+    },
+    {
+      "feature": "Audio metadata removal",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Original container"
+      ],
+      "backend": "MediaConverter packet copy",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Technical tags may remain",
+      "required_fixes": "Independent tag and audible-content validation"
+    },
+    {
+      "feature": "Audio normalization",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Audio"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No measured loudnorm",
+      "required_fixes": "Two-pass local loudness/true-peak settings and independent measurement"
+    },
+    {
+      "feature": "Trim silence",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Audio"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No silence detector/trimmer",
+      "required_fixes": "Remove edges only by default; test preserved internal pauses"
+    },
+    {
+      "feature": "Channel conversion",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Mono",
+        "stereo"
+      ],
+      "backend": "None",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No channel settings/handler",
+      "required_fixes": "Implement mixes and independent sample/channel validation"
+    },
+    {
+      "feature": "Smart Rename",
+      "inputs": [
+        "Known regular files"
+      ],
+      "outputs": [
+        "Actual filesystem rename"
+      ],
+      "backend": "SmartRenameService / WindowsRenameFileSystem",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Undo session-only; rollback recovery files contain original data",
+      "required_fixes": "Fresh real rename/undo/identity/hash/locked/collision/cycle tests"
+    },
+    {
+      "feature": "Batch processing",
+      "inputs": [
+        "Supported multi-file selections"
+      ],
+      "outputs": [
+        "Per-file",
+        "aggregate outputs"
+      ],
+      "backend": "BatchProcessor",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Single heavy job at a time; backend queue has no explicit waiting-capacity limit",
+      "required_fixes": "Stress, 10/50 images, partial failures and cleanup"
+    },
+    {
+      "feature": "Privacy Clean",
+      "inputs": [
+        "Images PDF DOCX XLSX PPTX media"
+      ],
+      "outputs": [
+        "New file + cleanup report"
+      ],
+      "backend": "No dedicated service",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Legacy STRIP is not a complete privacy workflow",
+      "required_fixes": "Implement selection/report/independent reinspection; preserve content"
+    },
+    {
+      "feature": "Plugin manifests/install/manager",
+      "inputs": [
+        "Local packages"
+      ],
+      "outputs": [
+        "Versioned enabled registrations"
+      ],
+      "backend": "Threat-model document only",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No host, package validation, API or samples",
+      "required_fixes": "Implement constrained isolated host, lifecycle, package validation and two samples"
+    },
+    {
+      "feature": "System tray/singleton/Exit",
+      "inputs": [
+        "Windows desktop"
+      ],
+      "outputs": [
+        "Background app"
+      ],
+      "backend": "Program / NotifyIcon / named mutex+event",
+      "wheel": "N/A",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Prior process smoke exists; actual tray click/Explorer restart pending",
+      "required_fixes": "Fresh repeated lifecycle/cleanup smoke and manual guide"
+    },
+    {
+      "feature": "Drag+Shift/OLE",
+      "inputs": [
+        "Explorer/Desktop CF_HDROP"
+      ],
+      "outputs": [
+        "Contextual wheel + actual dropped files"
+      ],
+      "backend": "DragGestureMonitor / OverlayWindow / OleDropSession",
+      "wheel": "Existing wheel",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Keyboard hook only arms; actual file requires OLE. No native GUI automation exposed",
+      "required_fixes": "Re-test hooks/lifecycle and mark physical gestures MANUAL PENDING"
+    },
+    {
+      "feature": "Ctrl/Escape/wheel geometry",
+      "inputs": [
+        "Active drag"
+      ],
+      "outputs": [
+        "Tools/Convert",
+        "cancellation"
+      ],
+      "backend": "WheelModeState / PixelWheel / hooks",
+      "wheel": "Existing wheel",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No secondary page implementation exists; new actions will exceed practical capacity",
+      "required_fixes": "Preserve existing appearance; preview navigation before adopting any major change"
+    },
+    {
+      "feature": "Installer/upgrade/uninstall",
+      "inputs": [
+        "Per-user Windows"
+      ],
+      "outputs": [
+        "Self-contained development build"
+      ],
+      "backend": "Naqla.Setup",
+      "wheel": "N/A",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Startup defaults true on upgrade; extraction/uninstall need stronger reparse/ownership protections",
+      "required_fixes": "Preserve preference, protect links/modified files, transaction-safe upgrade tests"
+    },
+    {
+      "feature": "PDF editor refinement",
+      "inputs": [
+        "PDF sessions"
+      ],
+      "outputs": [
+        "Working three-column editor"
+      ],
+      "backend": "PdfToolkitWindow",
+      "wheel": "PDF tools",
+      "status": "PARTIAL",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Missing fit-width/zoom/pan; settings/RTL/spacing need polish",
+      "required_fixes": "Preserve columns, add working preview controls and refreshed native screenshots"
+    },
+    {
+      "feature": "PDF Toolkit: Reorder",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Extract",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Delete",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Merge",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Page numbers",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Text watermark",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Image watermark",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "PDF Toolkit: Rotate",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Fresh varied-structure/order/visible-content/opacity/geometry/source-hash tests"
+    },
+    {
+      "feature": "Archive: Create ZIP",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "None (7-Zip installed on development PC only)",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No packaged backend or traversal/link/bomb protections",
+      "required_fixes": "Implement bounded safe archive service, independent inspection and malicious-fixture tests"
+    },
+    {
+      "feature": "Archive: Create 7Z",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "None (7-Zip installed on development PC only)",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No packaged backend or traversal/link/bomb protections",
+      "required_fixes": "Implement bounded safe archive service, independent inspection and malicious-fixture tests"
+    },
+    {
+      "feature": "Archive: Create TAR",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "None (7-Zip installed on development PC only)",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No packaged backend or traversal/link/bomb protections",
+      "required_fixes": "Implement bounded safe archive service, independent inspection and malicious-fixture tests"
+    },
+    {
+      "feature": "Archive: Extract ZIP",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "None (7-Zip installed on development PC only)",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No packaged backend or traversal/link/bomb protections",
+      "required_fixes": "Implement bounded safe archive service, independent inspection and malicious-fixture tests"
+    },
+    {
+      "feature": "Archive: Extract 7Z",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "None (7-Zip installed on development PC only)",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No packaged backend or traversal/link/bomb protections",
+      "required_fixes": "Implement bounded safe archive service, independent inspection and malicious-fixture tests"
+    },
+    {
+      "feature": "Archive: Extract TAR",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "None (7-Zip installed on development PC only)",
+      "wheel": "Not registered",
+      "status": "MISSING",
+      "automated": "NOT RUN IN THIS AUDIT",
+      "real_processing": "NOT RUN IN THIS AUDIT",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No packaged backend or traversal/link/bomb protections",
+      "required_fixes": "Implement bounded safe archive service, independent inspection and malicious-fixture tests"
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "src/Naqla.App/BatchProgressWindow.cs",
+      "bytes": 9057,
+      "sha256": "33cb1b83bd933ba09c0608b51262dffb270516f21526971a486347070afcd0d6"
+    },
+    {
+      "path": "src/Naqla.App/CropWindow.cs",
+      "bytes": 8156,
+      "sha256": "c62681315f90edf13431ecc4132f7b568601701460cb0a157f0682f37ecae827"
+    },
+    {
+      "path": "src/Naqla.App/Naqla.App.csproj",
+      "bytes": 2120,
+      "sha256": "63c6810ce74da1e2c9d7a1db732452cba4132221cc0b46123729ddf91da0c9b2"
+    },
+    {
+      "path": "src/Naqla.App/PdfToolkitWindow.cs",
+      "bytes": 34328,
+      "sha256": "45de461222212bfb8073ccc21b03d723a658a0a0e003a7410355a56c50025768"
+    },
+    {
+      "path": "src/Naqla.App/PixelButton.cs",
+      "bytes": 6469,
+      "sha256": "645703b354db6796165eaa3e8364a0bf03d808ea45aa21998e990c819425df65"
+    },
+    {
+      "path": "src/Naqla.App/Program.cs",
+      "bytes": 28258,
+      "sha256": "62ec9fd29826d00b7d5cb81591e28b88f7bcc4c6770edafa59b9ed64e8a161e0"
+    },
+    {
+      "path": "src/Naqla.App/RenameWindow.cs",
+      "bytes": 10972,
+      "sha256": "f5dbde2956310394f8140a7e3ae51757dab6a959ac69bd4dc141d8c5544eabd6"
+    },
+    {
+      "path": "src/Naqla.App/TargetSizeWindow.cs",
+      "bytes": 17241,
+      "sha256": "066c8813f8ffd70e91a4b7a4a1ec0412c36d9f5d7ee36752fb070d0e7a7fb2b5"
+    },
+    {
+      "path": "src/Naqla.Conversion/BatchProcessor.cs",
+      "bytes": 4026,
+      "sha256": "475794d2c92f5d92184c340be7fe9832508245a345caaf360705a0f834bdf5e6"
+    },
+    {
+      "path": "src/Naqla.Conversion/HeicEncoder.cs",
+      "bytes": 1802,
+      "sha256": "6a37544677da980fe0583b9b479328a5d5f054e99572c29e070e15d946288269"
+    },
+    {
+      "path": "src/Naqla.Conversion/ImageConversions.cs",
+      "bytes": 3731,
+      "sha256": "727ab2cc171486025fd9632700811c0a99aae0a5420a6535ea80a9073e1b9263"
+    },
+    {
+      "path": "src/Naqla.Conversion/ImagePdf.cs",
+      "bytes": 3089,
+      "sha256": "9cbde471ff89c99fb06d39b6e49e38fe32a90eba76b82dfab8940e263440a498"
+    },
+    {
+      "path": "src/Naqla.Conversion/LocalConversionService.cs",
+      "bytes": 8087,
+      "sha256": "b5d0135fb6c5cf46007451e3e7a0142386a6330d8d958a6705a5963990ffe474"
+    },
+    {
+      "path": "src/Naqla.Conversion/LocalProcess.cs",
+      "bytes": 2304,
+      "sha256": "526aed6aad60b1ad1acbaec414e870074aa04258ff8000d92945151976afd484"
+    },
+    {
+      "path": "src/Naqla.Conversion/MediaConverter.cs",
+      "bytes": 7637,
+      "sha256": "5e550142a5332cfe8b1667b3041f161fe69b7656b6235fd0c33ef8b9db8f691a"
+    },
+    {
+      "path": "src/Naqla.Conversion/Naqla.Conversion.csproj",
+      "bytes": 567,
+      "sha256": "d765bc96c979636050c9068936843d8689ace29d668401cd41817a5807a90244"
+    },
+    {
+      "path": "src/Naqla.Conversion/OutputFile.cs",
+      "bytes": 1236,
+      "sha256": "246ea27db9d052850207bfc8cf29fa4828e20a5e794a8155f1dd936ea6305d9d"
+    },
+    {
+      "path": "src/Naqla.Conversion/PdfConversions.cs",
+      "bytes": 8242,
+      "sha256": "b095f969fdd43a9adbb4b0c005d9f957182ed04f2980b4c6f8f31dbb99ed5585"
+    },
+    {
+      "path": "src/Naqla.Conversion/PdfToolkitService.cs",
+      "bytes": 21664,
+      "sha256": "c8db2e462fa3263ec5a1dd60c36a9efb75b8d348fb94d3704dfcf74cee5e26eb"
+    },
+    {
+      "path": "src/Naqla.Conversion/PngToJpegConverter.cs",
+      "bytes": 4573,
+      "sha256": "659244f14ce1641dd27eb29077975d6af7393c3510437b2f3667b04cfd839018"
+    },
+    {
+      "path": "src/Naqla.Conversion/RasterImages.cs",
+      "bytes": 2401,
+      "sha256": "0fe2941ddf50e58b8c747daa2a4ce5b7fd88881a1163a9988eaa7deb1d3868fe"
+    },
+    {
+      "path": "src/Naqla.Conversion/SmartRenameService.cs",
+      "bytes": 13311,
+      "sha256": "4fa19b0e80c0a0d6a37e17c8bb36d59ac4df4f2be13fd018272c061e087531ff"
+    },
+    {
+      "path": "src/Naqla.Conversion/TargetSizeOptimizer.cs",
+      "bytes": 8108,
+      "sha256": "487d65b2d634f3071a875dcebcf72bf81bf291b7a636158f1aa2225dbca97f25"
+    },
+    {
+      "path": "src/Naqla.Core/BatchProcessing.cs",
+      "bytes": 3081,
+      "sha256": "1cc2ccd7770cacc783bc76e09f6e208f40656d87a8ec5b24747f742c3a84305a"
+    },
+    {
+      "path": "src/Naqla.Core/ConversionRequest.cs",
+      "bytes": 3382,
+      "sha256": "576c367e9a0ef4c0e58b6b28b9779e21a3979bef3d0a4876ce12f359d21f78dd"
+    },
+    {
+      "path": "src/Naqla.Core/CropSelection.cs",
+      "bytes": 1026,
+      "sha256": "32af704bd615519aa723fbff6d0718ac505340e5b267b33ec38d0d25f724d659"
+    },
+    {
+      "path": "src/Naqla.Core/Diagnostics.cs",
+      "bytes": 6405,
+      "sha256": "30fbffecb52570f0077a19baacc5bf25cbcd41087768b236e9920d19278cb49c"
+    },
+    {
+      "path": "src/Naqla.Core/Files.cs",
+      "bytes": 6065,
+      "sha256": "a3464cd6fc7d81a204f7daec9b7be1e7f796cc3d411af3f9c0647539594a5c6c"
+    },
+    {
+      "path": "src/Naqla.Core/ImageOptimization.cs",
+      "bytes": 3010,
+      "sha256": "4b050c52da636e8081d214ae96ba443af3ebef50d96a7ba651cd74fddb03d626"
+    },
+    {
+      "path": "src/Naqla.Core/Naqla.Core.csproj",
+      "bytes": 36,
+      "sha256": "8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3"
+    },
+    {
+      "path": "src/Naqla.Core/PdfEditing.cs",
+      "bytes": 8111,
+      "sha256": "51dc90cc3c2edfb5841aac96db86256575eccaac00c1ad42fdf840cd8456ba37"
+    },
+    {
+      "path": "src/Naqla.Core/Renaming.cs",
+      "bytes": 2702,
+      "sha256": "c87769d8992d6d0c237d59cf95969b4d838a96f69e3600a5605afc4500de79ca"
+    },
+    {
+      "path": "src/Naqla.Core/WheelModeState.cs",
+      "bytes": 646,
+      "sha256": "cc3af11bcdbe2fe1c55096ad1f0a42aff66badfd35e0ffb16083bab4e1db3d95"
+    },
+    {
+      "path": "src/Naqla.Setup/Naqla.Setup.csproj",
+      "bytes": 440,
+      "sha256": "f38e316936256da2423ad672478ec908185b607122acd5caceab4ab5c9336adc"
+    },
+    {
+      "path": "src/Naqla.Setup/Program.cs",
+      "bytes": 10147,
+      "sha256": "5fd11b7ba41ab1ee4103992f2a95d44370dbfb01fcfd6de6339264b8787a4b83"
+    },
+    {
+      "path": "src/Naqla.Wheel/Naqla.Wheel.csproj",
+      "bytes": 249,
+      "sha256": "902f529c39589cc7c8e75a7ee06b25f06b1f32ef2675601451a3c007a7916c23"
+    },
+    {
+      "path": "src/Naqla.Wheel/PixelWheel.cs",
+      "bytes": 12714,
+      "sha256": "c37a199624def320d3d86ec138e1295221fccf65308d52ea6109316f442c410c"
+    },
+    {
+      "path": "src/Naqla.Windows/DiagnosticLog.cs",
+      "bytes": 7276,
+      "sha256": "4cb26a673e0d3a87dc99f427ce7192e2e5aa49a073ad4a3781b8e85ea52c2d51"
+    },
+    {
+      "path": "src/Naqla.Windows/DragGestureMonitor.cs",
+      "bytes": 7566,
+      "sha256": "c44f4c9345a7a878b405ca3a241dabb3ef4396fd2ee711029dd84428c233700a"
+    },
+    {
+      "path": "src/Naqla.Windows/Naqla.Windows.csproj",
+      "bytes": 188,
+      "sha256": "3862f8e40788d413f96627f0839652d2b17cdf80cf99cb02be9388dec6c872bf"
+    },
+    {
+      "path": "src/Naqla.Windows/Native.cs",
+      "bytes": 2687,
+      "sha256": "e1cc71d026372cc681b1a3d20a017b5f5a13e44e8b9ef1f8485b5888a59192fc"
+    },
+    {
+      "path": "src/Naqla.Windows/OleDropSession.cs",
+      "bytes": 6530,
+      "sha256": "c2510fbea322b79797babe9e71c3512d1c2ed80160b65e7ff46dacf0119fe01a"
+    },
+    {
+      "path": "src/Naqla.Windows/OverlayWindow.cs",
+      "bytes": 3523,
+      "sha256": "8b7fea3e729106b0862fb7327991e288bc7b5d4045f0345910254699a05d60e0"
+    },
+    {
+      "path": "src/Naqla.Windows/WindowsRenameFileSystem.cs",
+      "bytes": 7449,
+      "sha256": "2f0fe85667ce66e7fdbca6dafc70b1f909bd1103aa4fee2230ccdeae60efa602"
+    },
+    {
+      "path": "tests/Naqla.Tests/BatchTests.cs",
+      "bytes": 20809,
+      "sha256": "8dd7061206b0bafe8dee25287f2344792c0b7e2553acc3143b6264f8cfd41185"
+    },
+    {
+      "path": "tests/Naqla.Tests/ConversionTests.cs",
+      "bytes": 12011,
+      "sha256": "ae4b1dec0bc7453ad58e462efb5eb2c607bc3216fed73fb9f8c83594435d1061"
+    },
+    {
+      "path": "tests/Naqla.Tests/FeatureTests.cs",
+      "bytes": 20230,
+      "sha256": "88cdea68c25dbc3c86a20f5f69d3d7a612384dd3dad449cafa14783530566264"
+    },
+    {
+      "path": "tests/Naqla.Tests/ModeTests.cs",
+      "bytes": 8160,
+      "sha256": "4f96963c9d3c2bf622e57bdd25ccace9ac1fe91ad1838737ece8f6d0c61591fa"
+    },
+    {
+      "path": "tests/Naqla.Tests/Naqla.Tests.csproj",
+      "bytes": 806,
+      "sha256": "5e9d98fc2d730362b39b5cad34d3caf39debae79f955828a8d1ea85ba814385a"
+    },
+    {
+      "path": "tests/Naqla.Tests/OptimizerTests.cs",
+      "bytes": 24402,
+      "sha256": "fd8505e01f57a577836f0191c82afe60e1e2b85def808e5579bfd1e16bb07946"
+    },
+    {
+      "path": "tests/Naqla.Tests/PdfToolkitTests.cs",
+      "bytes": 28008,
+      "sha256": "438309be0555f5856693ff85d8f2c6f16734cfcdbb27bfd3ca3a40477e7515f3"
+    },
+    {
+      "path": "tests/Naqla.Tests/Program.cs",
+      "bytes": 20592,
+      "sha256": "5473c67033dd2b908f998921ea6aa55375a568ff5d58b3ef8491098c6f6bac5a"
+    },
+    {
+      "path": "tests/Naqla.Tests/RenameTests.cs",
+      "bytes": 19520,
+      "sha256": "177c867669c5aa4c6759b9c150572fc8bf442ab595cf1feeea46f297ee14c2f3"
+    },
+    {
+      "path": "scripts/build.ps1",
+      "bytes": 3579,
+      "sha256": "c851f914bb356ff7a3bd3656a372b6fdd8d06df08c1ed46c965d4748eef4abd3"
+    },
+    {
+      "path": "scripts/fetch-heif-engine.ps1",
+      "bytes": 3732,
+      "sha256": "8b39b820f02dd7bbbc09ad765d8c68dec14d1f394127f5c007ab1e0a2b2df88c"
+    },
+    {
+      "path": "scripts/fetch-media-engine.ps1",
+      "bytes": 2454,
+      "sha256": "ce6e1c927796b5d071079c2bb64b55c70a13b411bce72afbd3941f32d3a71a71"
+    },
+    {
+      "path": "scripts/heif-engine.lock.json",
+      "bytes": 16901,
+      "sha256": "ccde764a6b13074aa5da0af0a849d3f4c3f70c2e2cb6d156e23eede50e0e67b1"
+    },
+    {
+      "path": "scripts/prepare-batch-desktop-test.ps1",
+      "bytes": 2519,
+      "sha256": "3235e6fdb2a4b897a7581a8787c833c703a190162b13dbc59aa8e4bc477fc393"
+    },
+    {
+      "path": "scripts/prepare-target-size-desktop-test.ps1",
+      "bytes": 2464,
+      "sha256": "d931b827db2639590622f416745639b2d68bf5feec61baf8cb1565a0f47de0af"
+    },
+    {
+      "path": "scripts/update-icons.ps1",
+      "bytes": 5771,
+      "sha256": "b66157ab59ae736ce1cbd714d7636ba95eb3cad5f3c7b1690a37475e604d28b6"
+    },
+    {
+      "path": "scripts/update-pdf-previews.ps1",
+      "bytes": 1792,
+      "sha256": "218a44df7de62d47db41b4fdf0f64788b5a33d6a9cc80dc448088e14880dca5d"
+    },
+    {
+      "path": "scripts/verify-batch-desktop-test.ps1",
+      "bytes": 1999,
+      "sha256": "388234bf086a91e9e23863c6790aa63d6ede0556c248ad829fcecf1d0ce33d33"
+    },
+    {
+      "path": "scripts/verify-diagnostic-package.ps1",
+      "bytes": 11888,
+      "sha256": "54b37ec0614fd21a6e10263bad722021d91e02356c1451182acd7eada712af08"
+    },
+    {
+      "path": "scripts/verify-target-size-desktop-test.ps1",
+      "bytes": 2841,
+      "sha256": "3b64ab79f496c988ef2d6d4d587ed5689d6d845bb6e10018ca2fccf0c91b1e25"
+    },
+    {
+      "path": "docs/ADVANCED-PLAN.md",
+      "bytes": 4919,
+      "sha256": "c6732b688a903e491b99ebb151b933451cde2a092922c8571ccd561e80d26565"
+    },
+    {
+      "path": "docs/BATCH-TESTING.md",
+      "bytes": 5994,
+      "sha256": "6e2bcb8632612cc362b3286dfe0ecf3795b13f75563c86befe3dfc690796c37b"
+    },
+    {
+      "path": "docs/CONVERSIONS.md",
+      "bytes": 10315,
+      "sha256": "95b383ceac5de28cadc5b67db3e4c80303e4c07ea71d77a36a5cc3d2dd1bd6cc"
+    },
+    {
+      "path": "docs/DESKTOP-TESTS.md",
+      "bytes": 5654,
+      "sha256": "3e56f2f144fd5f035fd35a512d3bda7937756f48085984ed00e8b7b300052a3f"
+    },
+    {
+      "path": "docs/DIAGNOSTICS.md",
+      "bytes": 10913,
+      "sha256": "9551546ca8efc862fa36854164ef36f3c70368e4ccdbd714efbdee13469aa3d2"
+    },
+    {
+      "path": "docs/FEATURE-AUDIT.md",
+      "bytes": 6102,
+      "sha256": "97ce658e8c052d9707343312898f91422b89aaa173b2f6404f7236af001a619c"
+    },
+    {
+      "path": "docs/MANUAL-TEST-AR.md",
+      "bytes": 4699,
+      "sha256": "d4860ad4cdb1d72b0096b5bc2d2a6a5a484808b73ea554e81851428a16600be3"
+    },
+    {
+      "path": "docs/PDF-TOOLKIT.md",
+      "bytes": 11628,
+      "sha256": "7cba9ccafd748e302ca8c4baef3a3ca06543c95eeccf8577672b7a78bb58c079"
+    },
+    {
+      "path": "docs/PLUGIN-THREAT-MODEL.md",
+      "bytes": 4063,
+      "sha256": "072ee24cd6b5fa24c3c6b3ac110b35719bed61b04ac111dc9d01f797e513f195"
+    },
+    {
+      "path": "docs/SMART-RENAME.md",
+      "bytes": 6717,
+      "sha256": "8abaeb5b3ea8e8b75e4244552dcb809ff231f6cc6387b5effc8c361e333b30f4"
+    },
+    {
+      "path": "docs/TARGET-SIZE.md",
+      "bytes": 9584,
+      "sha256": "c33252787ace367517a6a0e21693aff3df27a53444dd5f13989c8de68d2c7e24"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 34807,
+      "sha256": "14a80b897f1950c8219160da072998bc3b21d71495365a19156db267c1544735"
+    },
+    {
+      "path": "docs/WINDOWS-INTEGRATION.md",
+      "bytes": 8172,
+      "sha256": "be8bb45d71e2189f25bc9d79bb15539ff212ea2242c50520a55243152b8500f7"
+    }
+  ],
+  "limitations": [
+    "Windows native desktop automation APIs are disabled/unavailable in the exposed tools; physical checks remain MANUAL PENDING.",
+    "No segmentation/speech model or OCR/backend pack found in project assets.",
+    "No document-office backend found at the standard LibreOffice location.",
+    "7-Zip is present on developer PC but not in the product payload."
+  ]
+}

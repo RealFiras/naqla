@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType><UseWPF>true</UseWPF><UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Naqla.App.Program</StartupObject><ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>../../assets/Naqla.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Naqla.Windows/Naqla.Windows.csproj" />
+    <ProjectReference Include="../Naqla.Wheel/Naqla.Wheel.csproj" />
+    <ProjectReference Include="../Naqla.Conversion/Naqla.Conversion.csproj" />
+    <Using Remove="System.Windows.Forms" /><Using Remove="System.Drawing" />
+    <EmbeddedResource Include="../../assets/Naqla.ico" LogicalName="Naqla.Brand.Icon" />
+    <None Include="../../preview/index.html" Link="preview/index.html" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../preview/index.html')" />
+    <None Include="../../preview/pdf-toolkit.html" Link="preview/pdf-toolkit.html" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../preview/pdf-toolkit/*.png" Link="preview/pdf-toolkit/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../assets/pdf-test-files/*" Link="testing/pdf-fixtures/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../assets/Naqla-logo-transparent.png" Link="preview/LOGO.png" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../docs/TESTING.html" Link="TESTING.html" CopyToOutputDirectory="PreserveNewest" Condition="Exists('../../docs/TESTING.html')" />
+    <None Include="../../artifacts/media-engine/*" Link="media-engine/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../artifacts/heif-engine/**/*" Link="heif-engine/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../assets/licenses/**/*" Link="licenses/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../assets/native-crt/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../assets/native-crt/sources.json" Link="licenses/native-crt-sources.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup><InternalsVisibleTo Include="Naqla.Tests" /></ItemGroup>
+</Project>

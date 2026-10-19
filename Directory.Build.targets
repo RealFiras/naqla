@@ -1,0 +1,19 @@
+<Project>
+  <!-- The MIT PDFsharp package also ships sample/support assemblies, including
+       embedded Segoe WP demo fonts. Naqla uses only the core WPF/System/Shared
+       assemblies. Exclude unused sample fonts, charts, barcodes and signing code. -->
+  <Target Name="NaqlaExcludePdfsharpSamples" AfterTargets="ResolvePackageAssets">
+    <ItemGroup>
+      <_NaqlaUnusedPdfAssets Include="@(RuntimeCopyLocalItems);@(ResolvedCompileFileDefinitions)"
+        Condition="'%(Filename)' == 'PdfSharp.WPFonts' or '%(Filename)' == 'PdfSharp.Snippets-wpf' or '%(Filename)' == 'PdfSharp.Quality-wpf' or '%(Filename)' == 'PdfSharp.BarCodes-wpf' or '%(Filename)' == 'PdfSharp.Charting-wpf' or '%(Filename)' == 'PdfSharp.Cryptography'" />
+      <RuntimeCopyLocalItems Remove="@(_NaqlaUnusedPdfAssets)" />
+      <ResolvedCompileFileDefinitions Remove="@(_NaqlaUnusedPdfAssets)" />
+    </ItemGroup>
+  </Target>
+  <Target Name="NaqlaRemoveStalePdfsharpSamples" AfterTargets="CopyFilesToOutputDirectory">
+    <Delete Files="$(TargetDir)PdfSharp.WPFonts.dll;$(TargetDir)PdfSharp.Snippets-wpf.dll;$(TargetDir)PdfSharp.Quality-wpf.dll;$(TargetDir)PdfSharp.BarCodes-wpf.dll;$(TargetDir)PdfSharp.Charting-wpf.dll;$(TargetDir)PdfSharp.Cryptography.dll" />
+  </Target>
+  <Target Name="NaqlaRemoveStalePublishedPdfsharpSamples" AfterTargets="Publish">
+    <Delete Files="$(PublishDir)PdfSharp.WPFonts.dll;$(PublishDir)PdfSharp.Snippets-wpf.dll;$(PublishDir)PdfSharp.Quality-wpf.dll;$(PublishDir)PdfSharp.BarCodes-wpf.dll;$(PublishDir)PdfSharp.Charting-wpf.dll;$(PublishDir)PdfSharp.Cryptography.dll" />
+  </Target>
+</Project>

@@ -1,0 +1,374 @@
+{
+  "provider": "MSYS2 UCRT64 official packages",
+  "packages": [
+    {
+      "name": "mingw-w64-ucrt-x86_64-libheif",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libheif-1.23.6-1-any.pkg.tar.zst",
+      "sha256": "1dc60f9d1218d79ab56d3b3ce44b9bcc98e411f6e316db38acb33e9fe4ba21b9",
+      "version": "1.23.6-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libheif-1.23.6-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-cc-libs",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-cc-libs-16.2.0-6-any.pkg.tar.zst",
+      "sha256": "d8fff9e62443168bcda8ce746697243519c4f090ea607357ce94feac0bd10a50",
+      "version": "16.2.0-6",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-6.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-aom",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-aom-3.15.2-1-any.pkg.tar.zst",
+      "sha256": "e81f01d419f262e31275771fad18f93617f7b321deeb416e5ac39d70f295b286",
+      "version": "3.15.2-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-aom-3.15.2-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-brotli",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-brotli-1.2.0-1-any.pkg.tar.zst",
+      "sha256": "9cc89665496ea504751476eafba15c71c554aaf3004babc2004f7c07ffd60514",
+      "version": "1.2.0-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-brotli-1.2.0-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-dav1d",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-dav1d-1.5.4-1-any.pkg.tar.zst",
+      "sha256": "ccf26c6f29fd36f5692d57fd5e0fe3becec492e0b875fd5e04f47a9582eb8b37",
+      "version": "1.5.4-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-dav1d-1.5.4-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-kvazaar",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-kvazaar-2.3.2-1-any.pkg.tar.zst",
+      "sha256": "1f42ae66c7dd730a7ce8b93bd2fce4896e7b7bd46bb0d2b318c6dd55d5ae12ec",
+      "version": "2.3.2-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-kvazaar-2.3.2-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libde265",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libde265-1.1.3-1-any.pkg.tar.zst",
+      "sha256": "2d722373ff26d4f281cbfa49e4518ee00aa5d9ccbba0e6cbde7cade50124e9fa",
+      "version": "1.1.3-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libde265-1.1.3-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libjpeg-turbo",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libjpeg-turbo-3.2.0-1-any.pkg.tar.zst",
+      "sha256": "7c001d00df557cfee969ad43d37b9c31ae22869e8aac4091a89dc3ae6d95e11d",
+      "version": "3.2.0-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libjpeg-turbo-3.2.0-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libpng",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libpng-1.6.59-1-any.pkg.tar.zst",
+      "sha256": "7f8448e06eceba8f8ce130390addea49f767bdf8f6b7e7eede8ca6d595e3d3a8",
+      "version": "1.6.59-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libpng-1.6.59-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libtiff",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libtiff-4.7.2-2-any.pkg.tar.zst",
+      "sha256": "258e08a91e6b1703d41730ffe6080c2a40968fe90896b45716c1b41042775076",
+      "version": "4.7.2-2",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libtiff-4.7.2-2.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libx264",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libx264-0.165.r3222.b35605a-3-any.pkg.tar.zst",
+      "sha256": "10d3817153fc05832643ebc5da9aec940b4ae2d9dadb6643ac3c282985880434",
+      "version": "0.165.r3222.b35605a-3",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-x264-0.165.r3222.b35605a-3.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-openh264",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-openh264-2.6.0-2-any.pkg.tar.zst",
+      "sha256": "45c07f6ae0cc684d9560f83eb362ec38deb89d483318b20ccf99bc490739444b",
+      "version": "2.6.0-2",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-openh264-2.6.0-2.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-openjpeg2",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-openjpeg2-2.5.4-2-any.pkg.tar.zst",
+      "sha256": "2a4c148052b6f8e47abe5e98b29fd8942e2e3c17722ff00f172b1630897a10b9",
+      "version": "2.5.4-2",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-openjpeg2-2.5.4-2.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-openjph",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-openjph-0.32.0-1-any.pkg.tar.zst",
+      "sha256": "5ef96678170cf69ebb553723cf9209e61ce21f85b7afe084da7797d686e98b5c",
+      "version": "0.32.0-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-openjph-0.32.0-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-rav1e",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-rav1e-0.8.1-1-any.pkg.tar.zst",
+      "sha256": "00a03a734f96f66405ad79bae2ffb1c5cf2b050ef90a4ffa508ddbfdb64c0fb1",
+      "version": "0.8.1-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-rav1e-0.8.1-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-svt-av1",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-svt-av1-4.2.0-1-any.pkg.tar.zst",
+      "sha256": "87c97a68bab7dd67413ea0cae024c3d2e4bdc2f96fccf38365304642b1b44ee5",
+      "version": "4.2.0-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-svt-av1-4.2.0-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-x265",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-x265-4.3-1-any.pkg.tar.zst",
+      "sha256": "40dd235ba4294266ecad0eec661fae7db25dfe9df2ee9a7c3e07b0d079ae2034",
+      "version": "4.3-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-x265-4.3-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-zlib",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zlib-1.3.2-2-any.pkg.tar.zst",
+      "sha256": "841401182976d2f9e17e5c0ebaac51f2a8014140ea53d67625e91c8fb3c85ea0",
+      "version": "1.3.2-2",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-zlib-1.3.2-2.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libgcc",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libgcc-16.2.0-6-any.pkg.tar.zst",
+      "sha256": "80b2497f019977dd9528b1abc8621b1328a0115ab1f724047ccbb56bf323f11d",
+      "version": "16.2.0-6",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-6.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libstdc++",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libstdc%2B%2B-16.2.0-6-any.pkg.tar.zst",
+      "sha256": "33c5e58a85a538cf843a8672991cce591f0231d66da3b66a57629712d64be17f",
+      "version": "16.2.0-6",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-6.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libwinpthread",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libwinpthread-14.0.0.r495.g63ebe6cdb-1-any.pkg.tar.zst",
+      "sha256": "1f847f4f5d56d8f54cbc9b5ce339c36f4f208353e813d4b1e5648cf33138b9a2",
+      "version": "14.0.0.r495.g63ebe6cdb-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-crypto++",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-crypto%2B%2B-8.9.0-2-any.pkg.tar.zst",
+      "sha256": "34a524d2956926791a88f8fed87a0513dd2097c06325a111b241e9dc6da28193",
+      "version": "8.9.0-2",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-crypto++-8.9.0-2.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-jbigkit",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-jbigkit-2.1-6-any.pkg.tar.zst",
+      "sha256": "9e237d1041350e7436294cfa13d4bd3d1606d1f2a32ade2eb2958b4d4e79b7ad",
+      "version": "2.1-6",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-jbigkit-2.1-6.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-lerc",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-lerc-4.1.1-1-any.pkg.tar.zst",
+      "sha256": "c0afbf4832488d67030c6f313349cd814946c9a7bc3ae9fd54524825c9ca055d",
+      "version": "4.1.1-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-lerc-4.1.1-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libdeflate",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libdeflate-1.26-1-any.pkg.tar.zst",
+      "sha256": "17720c77bd01641a3554801cafd71d96fb7fff7427f4cc20ac9f36efb8cb3da0",
+      "version": "1.26-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libdeflate-1.26-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libwebp",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libwebp-1.6.0-1-any.pkg.tar.zst",
+      "sha256": "34ff8396c403d484c8777ad49ad0fc06dfb94fadf6f14bcf84d50c45bc6fd17e",
+      "version": "1.6.0-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libwebp-1.6.0-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-xz",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-xz-5.8.4-1-any.pkg.tar.zst",
+      "sha256": "a9d771f816d8c0c5bde152ffb27a687ede91079b8e77e5b8297efa3b5a835934",
+      "version": "5.8.4-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-xz-5.8.4-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-zstd",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-zstd-1.5.7-2-any.pkg.tar.zst",
+      "sha256": "dbdb8427280046a2b41697780aa4c52983b708082b0da4755951dc3bea96ca89",
+      "version": "1.5.7-2",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-zstd-1.5.7-2.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-lcms2",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-lcms2-2.19.1-1-any.pkg.tar.zst",
+      "sha256": "144518cc80679f7bcc1d31b5dd7ec92e8737a1d8162014e30c8c1c181f47a156",
+      "version": "2.19.1-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-lcms2-2.19.1-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-tzdata",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-tzdata-2026e-1-any.pkg.tar.zst",
+      "sha256": "f1809089f8ed5cec858ae8584289172896eb921be1e78ba583555f74e9015428",
+      "version": "2026e-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-tzdata-2026e-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-giflib",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-giflib-6.1.3-1-any.pkg.tar.zst",
+      "sha256": "9e7ac8feb0e2af6e0fce3c8ead1bd7bcaf018661d08033858c1e2657a04f6f1a",
+      "version": "6.1.3-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-giflib-6.1.3-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-gettext-runtime",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-gettext-runtime-1.0-1-any.pkg.tar.zst",
+      "sha256": "ba693dda4ac375af76ce481ff3a6e7481286546cc7dc6d56c7021dae34084157",
+      "version": "1.0-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-gettext-1.0-1.src.tar.zst"
+    },
+    {
+      "name": "mingw-w64-ucrt-x86_64-libiconv",
+      "url": "https://mirror.msys2.org/mingw/ucrt64/mingw-w64-ucrt-x86_64-libiconv-1.19-1-any.pkg.tar.zst",
+      "sha256": "9a500f38c2b91808741c62fae746b3e9110b33a1ecf5c30fa0c66dbedddf7e16",
+      "version": "1.19-1",
+      "source": "https://mirror.msys2.org/mingw/sources/mingw-w64-libiconv-1.19-1.src.tar.zst"
+    }
+  ],
+  "files": [
+    {
+      "name": "heif-dec.exe",
+      "sha256": "2c19bdbe80903375b0f2ce4ba1cbdecfe9e70e441b41fc5b17351401dd23acd2"
+    },
+    {
+      "name": "heif-enc.exe",
+      "sha256": "13f00a0b2e0c8e54a83029b373575e9aa58a2dda0a26a1963068790e98ff13a7"
+    },
+    {
+      "name": "heif-info.exe",
+      "sha256": "505bbe779279cfcddd09e75fd7e3398bd2ea5d6047035de99d400114f975fe84"
+    },
+    {
+      "name": "libLerc.dll",
+      "sha256": "1ffee78579c25b073267bcac8d0a6045d9bd446e010c7953b569b2629ca8a58a"
+    },
+    {
+      "name": "libSvtAv1Enc-4.dll",
+      "sha256": "34f015c70ac283ba90bf5bbe0fec6e6af0fcbd50762566826405c8ccfade6e75"
+    },
+    {
+      "name": "libaom.dll",
+      "sha256": "61c2c12b0fd9fb42b4cdb5eca107eded4abe6ba8d59941e33737260da6f5355e"
+    },
+    {
+      "name": "libbrotlicommon.dll",
+      "sha256": "c62c08223e450dfc2fff33c752cc228505ffd9d755201958ba800d5d30481a2c"
+    },
+    {
+      "name": "libbrotlidec.dll",
+      "sha256": "e270b6e576594ee8ee6e33ccc54e34a54304616dd6225652e11e49d6f17ef896"
+    },
+    {
+      "name": "libbrotlienc.dll",
+      "sha256": "82573820fe9cc3f57004b6603428e2fa1bfc9d2048707bfcead3cfc5ef3ab284"
+    },
+    {
+      "name": "libcryptopp.dll",
+      "sha256": "ca63c3b48b96f7fda821472723e261664869655845cd451972ec5a1246330642"
+    },
+    {
+      "name": "libdav1d-7.dll",
+      "sha256": "bbe67862f77c22f6f509684207b5363542e5b52c1a1faa354e12a11d072ad766"
+    },
+    {
+      "name": "libde265-0.dll",
+      "sha256": "2f68bea90a116aec63c6d5c5db6ef483166fdc2a09156986f23c90964c33a5d8"
+    },
+    {
+      "name": "libdeflate.dll",
+      "sha256": "61a60665da9fd15a0e8668c47424f325e1d74479c3f896fa7ae48ffcee4ca300"
+    },
+    {
+      "name": "libgcc_s_seh-1.dll",
+      "sha256": "791ebf66e99c7c1b4ed3666468cec45a0172b4c8942ac6c84c3e9cab3e1b5270"
+    },
+    {
+      "name": "libheif.dll",
+      "sha256": "bb649de56b20dd4e0a07e14f5c58f68300a7cde54cc71e760a0244a396e9d207"
+    },
+    {
+      "name": "libjbig-0.dll",
+      "sha256": "36b6155be36d24a19154a48177a09978ff6c26f48665d8c7bb5057aaace6b91c"
+    },
+    {
+      "name": "libjpeg-8.dll",
+      "sha256": "c63acd5a3231725aa96aa35444b74cd8d607a6fbdab1dd18b0e0ada7e39476d4"
+    },
+    {
+      "name": "libkvazaar-7.dll",
+      "sha256": "642f969e7118ae8e8068c30182fbda3cd6100c5f291f404d9f37d6fd00982c30"
+    },
+    {
+      "name": "liblzma-5.dll",
+      "sha256": "d97a260b8bb4f6affc34ec47249429240068b94bb6f7dc30c4d64daaafb3ac69"
+    },
+    {
+      "name": "libopenh264-7.dll",
+      "sha256": "6722d93cb98a1d804c5469b9f21a46e2a7acc4aa134c932b339cbd59fbe03ca2"
+    },
+    {
+      "name": "libopenjp2-7.dll",
+      "sha256": "94f9507828d391cf96d700d34918114f1c1e03f91dd1243a19275e0435690925"
+    },
+    {
+      "name": "libopenjph-0.32.dll",
+      "sha256": "df855ffad9c18824e64ba220be0d9f9101c6e73f21d418c34ee187a97b65ae1a"
+    },
+    {
+      "name": "libpng16-16.dll",
+      "sha256": "7f425fd2b41d83869bb31bf761b4fb315f11040d55540661f96e582e1ec79a36"
+    },
+    {
+      "name": "librav1e.dll",
+      "sha256": "bc549e2178589f371469d1bd23544859ff118e48218eae2bfca7126654988779"
+    },
+    {
+      "name": "libsharpyuv-0.dll",
+      "sha256": "d29380c7056383f3e7a80bf9e150f0b8c425c1cf2568d1336e88979ddc2307af"
+    },
+    {
+      "name": "libstdc++-6.dll",
+      "sha256": "4e4822dc4aaa99383f581dae7ab9464ae89346c5ca742f7efbcdebe20b0fe7b5"
+    },
+    {
+      "name": "libtiff-6.dll",
+      "sha256": "d047260c3d456f84a2f9cd801d3b57bee0357cade32724caf16006c64c5fe8ff"
+    },
+    {
+      "name": "libwebp-7.dll",
+      "sha256": "8dfe40c4e0abc90ddf18f080898987e01253d099b2b2d6daf7db521e55c00446"
+    },
+    {
+      "name": "libwebpmux-3.dll",
+      "sha256": "9bd85116a22923d648d6b0ad09f21d08df7bd3d8860b24a5b4a6d4ac788b7340"
+    },
+    {
+      "name": "libwinpthread-1.dll",
+      "sha256": "a5df05bf091bc2ba0a89f83a60d2049e9d434bb9631fec82faf20ff64a53456a"
+    },
+    {
+      "name": "libx264-165.dll",
+      "sha256": "a58995b5af6d0fcf5d17f354bfa54bb05d99056ed167eec9c8e86a3a63478ec1"
+    },
+    {
+      "name": "libx265-217.dll",
+      "sha256": "48a6c942cab3196d740d7af3cfc8359dc7bd833c87c1ca24b8d231b70daa9e18"
+    },
+    {
+      "name": "libzstd.dll",
+      "sha256": "48368ab0ca622d0ec12f41ce85d91f22866bf5da92c77a69a06483564c93816c"
+    },
+    {
+      "name": "zlib1.dll",
+      "sha256": "11cd91171765cd65f1c3362e3df67e5f5a618a6b88c8cdec899b802eaf1c7b0d"
+    }
+  ]
+}

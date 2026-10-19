@@ -1,0 +1,21 @@
+﻿{
+    "Sources":  [
+                    {
+                        "Name":  "source-a.pdf",
+                        "Pages":  4,
+                        "SHA256":  "53E1EB17DF366627DB65F136B2A66A2E4FA5762E257E3143C44A767A0981AD0C"
+                    },
+                    {
+                        "Name":  "source-b.pdf",
+                        "Pages":  2,
+                        "SHA256":  "E898669260F4B8B6F007817FD910E592F0D5AFA6ACC9D563A30D0634052FAB29"
+                    },
+                    {
+                        "Name":  "encrypted.pdf",
+                        "Pages":  1,
+                        "SHA256":  "940E1388D9DA06A2853E977FAFE21E5B61FC855734A09BA58A9915BC77CE032D"
+                    }
+                ],
+    "ActualExplorerDragVerified":  false,
+    "PdfEditorDesignApproved":  false
+}

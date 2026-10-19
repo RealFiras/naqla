@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><UseWindowsForms>true</UseWindowsForms><ApplicationManifest>../Naqla.App/app.manifest</ApplicationManifest><ApplicationIcon>../../assets/Naqla.ico</ApplicationIcon></PropertyGroup>
+  <ItemGroup><EmbeddedResource Include="../../artifacts/payload.zip" LogicalName="Naqla.Payload.zip" Condition="Exists('../../artifacts/payload.zip')" /></ItemGroup>
+</Project>

@@ -1,0 +1,319 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Naqla 0.8 · Windows testing</title><style>*{box-sizing:border-box}body{margin:0;background:#121820;color:#f5f0e6;font:15px/1.8 'Segoe UI',Tahoma,sans-serif}main{max-width:1100px;margin:auto;padding:28px}h1,h2,h3{color:#ffc35a}h1{font-size:27px}h2{margin-top:32px}a{color:#ffc35a}code{color:#8ed8c3;overflow-wrap:anywhere}pre{overflow:auto;background:#1c2530;padding:15px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{border:1px solid #344454;padding:10px;text-align:left;vertical-align:top}th{background:#263443}tbody tr:nth-child(2n){background:#17212b}p,li{overflow-wrap:anywhere}.ar{direction:rtl;text-align:right;border:1px solid #705d3d;padding:16px;background:#1c2530}strong{color:#fff0cd}@media(max-width:600px){main{padding:14px}table{display:block;overflow-x:auto}td{min-width:160px}}</style><main><div class="ar"><strong>دليل الاختبار الحالي · نقلة 0.8</strong><p>اسحب الملف واضغط Shift، ثم Ctrl للأدوات. حرّر Shift قبل Tab للتالي؛ Shift+Tab للسابق. الأصول محفوظة، وSmart Rename يحتاج تأكيداً لتغيير الأسماء فعلياً. اختبارات السحب الحقيقية والشاشات والتثبيت النظيف ما زالت يدوية.</p><a href="../preview/context-editors.html">مراجعة المحررات</a> · <a href="END-TO-END-TEST-REPORT.md">تقرير النتائج</a></div><h1>Naqla 0.8 — actual Windows acceptance</h1>
+<p><strong>MANUAL PENDING.</strong> Backend processing, offscreen WPF images and process smoke tests
+do not prove Explorer/OLE interaction. Record Windows version, display scale,
+monitor count, Naqla build and the row IDs below. Use disposable <strong>copies</strong> of your
+own fixtures in a local writable folder; keep an independent original/hash list.</p>
+<h2>Install and first activation</h2>
+<ol>
+<li>Run <code>artifacts/Naqla-Dev-Setup-win-x64.exe</code>. Keep “Launch Naqla” checked.
+   Startup is a visible per-user option, also available in the tray menu.</li>
+<li>Expect a tray icon and <strong>no main window</strong>. Right-click it → Diagnostics →
+   Show diagnostic status. Confirm logging is available, then <strong>Mark test start</strong>.</li>
+<li>In Explorer, grab a supported local file with the left mouse button. Keep the
+   button down, move beyond the normal drag threshold, and press Shift.</li>
+<li>Expect the existing small transparent Pixel-Modern wheel near the pointer.
+   Actual OLE delivery fills its hub with extension/size; a hook alone cannot do so.
+   Move slightly across the wheel if Explorer has not delivered DragEnter yet.</li>
+<li>Release Shift while <strong>still dragging</strong>. Tap Ctrl for Tools. Releasing Ctrl keeps
+   Tools selected; another Ctrl press returns to Convert.</li>
+<li>When Tools has several pages, center dots indicate the page. Tab advances;
+   Shift+Tab goes back. At most six tool sectors appear. These keys are intercepted
+   only during the confirmed drag, with Tools open and multiple pages available.</li>
+<li>Hover an available sector and release the left button. The wheel closes. A
+   contextual editor opens when the operation needs settings or confirmation;
+   otherwise processing starts. Conversion outputs use new collision-safe names
+   beside each source. <strong>Smart Rename changes actual names only after confirmation.</strong></li>
+<li>Escape, releasing outside the wheel or cancelling an editor must publish no
+   output for that cancelled task. A valid Explorer drop elsewhere follows Windows
+   behavior; Naqla cannot undo an unrelated destination's normal operation.</li>
+</ol>
+<h2>Gesture and lifecycle matrix</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Perform</th>
+<th>Required observation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W01</td>
+<td>First install and launch</td>
+<td>Tray only; no console/dashboard/onboarding</td>
+</tr>
+<tr>
+<td>W02</td>
+<td>Repeat launch</td>
+<td>A single resident instance</td>
+</tr>
+<tr>
+<td>W03</td>
+<td>Desktop file → drag + Shift</td>
+<td>Actual extension/size, matching file operation</td>
+</tr>
+<tr>
+<td>W04</td>
+<td>Explorer folder file → same</td>
+<td>Same behavior</td>
+</tr>
+<tr>
+<td>W05</td>
+<td>Arabic filename and folder</td>
+<td>Full operation succeeds, original preserved</td>
+</tr>
+<tr>
+<td>W06</td>
+<td>Ctrl down/up/down</td>
+<td>Tools persists after release; next press converts</td>
+</tr>
+<tr>
+<td>W07</td>
+<td>Tools Tab / Shift+Tab, every page</td>
+<td>Correct actions/dots, no stale hovered action</td>
+</tr>
+<tr>
+<td>W08</td>
+<td>Tab outside drag, Alt+Tab, Ctrl+Tab</td>
+<td>Normal Windows shortcuts remain usable</td>
+</tr>
+<tr>
+<td>W09</td>
+<td>Escape at hub/sector/editor</td>
+<td>No unintended conversion; no lingering overlay</td>
+</tr>
+<tr>
+<td>W10</td>
+<td>Release outside / unsupported file</td>
+<td>No Naqla processing or unrelated file loss</td>
+</tr>
+<tr>
+<td>W11</td>
+<td>Mixed and 10-file/200-file selections</td>
+<td>Only common tools; every source accounted for</td>
+</tr>
+<tr>
+<td>W12</td>
+<td>Fast repeated activation, busy operation</td>
+<td>No duplicate jobs or competing overlays</td>
+</tr>
+<tr>
+<td>W13</td>
+<td>Screen edges and each monitor at 100/150/200%</td>
+<td>Wheel/editor fits work area; usable controls</td>
+</tr>
+<tr>
+<td>W14</td>
+<td>Restart Explorer using Task Manager</td>
+<td>Icon reappears; next real drag works</td>
+</tr>
+<tr>
+<td>W15</td>
+<td>Cancel job, hide/reopen progress, Exit while busy</td>
+<td>Cancel cleanup, retained successes, no child workers</td>
+</tr>
+<tr>
+<td>W16</td>
+<td>Uncheck startup, upgrade, relaunch</td>
+<td>Disabled preference preserved</td>
+</tr>
+<tr>
+<td>W17</td>
+<td>Uninstall on a clean test account</td>
+<td>App/startup removed; originals/results/user-added files remain</td>
+</tr>
+</tbody>
+</table>
+<h2>Functional acceptance matrix</h2>
+<p>Import optional ZIP packs through tray → <strong>Local components / plugins…</strong>. Import is
+explicit and verifies this build's catalog. No network or installed Office is needed.
+The <code>speech</code> pack includes Base/Tiny; Base is preferred. <code>office</code> is a large separate
+component, not part of idle startup. Allow time for its first integrity check.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Fixture/action</th>
+<th>Verify independently</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F01</td>
+<td>Transparent PNG → JPG, then all image destinations</td>
+<td>Decode, dimensions, white JPG matte, real format</td>
+</tr>
+<tr>
+<td>F02</td>
+<td>JPEG with orientation/ICC; HEIC/AVIF, large/corrupt image</td>
+<td>Correct orientation/color or clear refusal; no fake output</td>
+</tr>
+<tr>
+<td>F03</td>
+<td>Compress at different qualities; rotate each angle</td>
+<td>Actual size reported; actual pixels/angle change</td>
+</tr>
+<tr>
+<td>F04</td>
+<td>Crop free/ratios, handles, move, zoom, middle-button pan</td>
+<td>Saved pixel rectangle matches oriented preview</td>
+</tr>
+<tr>
+<td>F05</td>
+<td>Target Size all four presets/custom, impossible target, optional resize</td>
+<td>Actual bytes ≤ target only when reported achieved; dimensions default intact</td>
+</tr>
+<tr>
+<td>F06</td>
+<td>Drag selected images together → merge PDF</td>
+<td>Correct page count and drag-source order</td>
+</tr>
+<tr>
+<td>F07</td>
+<td>Smart Rename single/batch/regex/swap/Unicode</td>
+<td>Before/After correct; Cancel unchanged; Confirm actual rename; Undo restores</td>
+</tr>
+<tr>
+<td>F08</td>
+<td>OCR English/Arabic/mixed image and scanned PDF</td>
+<td>Actual editable text, copy/TXT, no invented text on blank page</td>
+</tr>
+<tr>
+<td>F09</td>
+<td>Remove Background on real photos/hair/transparency</td>
+<td>Actual mask/PNG alpha, unchanged dimensions; judge edge quality manually</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>Video all advertised formats, silent video, rotation</td>
+<td>Decode full video/audio; unavailable audio extraction hidden</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Trim selected range; Frames single/every N/count/range</td>
+<td>Duration, actual frame times, correct orientation and dedicated output folder</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>Audio all formats; Normalize presets/custom</td>
+<td>Decode; loudness/true-peak measurements, original retained</td>
+</tr>
+<tr>
+<td>F13</td>
+<td>Edge silence trim, mono, mono → dual-channel</td>
+<td>Internal pauses retained; correct channel count</td>
+</tr>
+<tr>
+<td>F14</td>
+<td>Arabic/English/mixed continuous speech → SRT and VTT</td>
+<td>Listen and review words/timestamps; correct model limitations, editable cues</td>
+</tr>
+<tr>
+<td>F15</td>
+<td>PDF reorder/extract/delete/merge</td>
+<td>Real thumbnails, all pages accounted for, ranges validated, original vectors retained</td>
+</tr>
+<tr>
+<td>F16</td>
+<td>PDF numbers, Arabic/English/image watermark, rotate</td>
+<td>Output matches preview, opacity/position/scale, selected pages only</td>
+</tr>
+<tr>
+<td>F17</td>
+<td>PDF fit-width/page, zoom, pan, resize, RTL</td>
+<td>Three columns usable; preview current before Save</td>
+</tr>
+<tr>
+<td>F18</td>
+<td>PDF → PNG/JPG at each DPI, native text exports</td>
+<td>Correct pages/dimensions; DOCX/RTF text-only fidelity disclosed</td>
+</tr>
+<tr>
+<td>F19</td>
+<td>DOCX/TXT/RTF/HTML/ODT → each advertised destination</td>
+<td>Open in a second reader; Arabic/table/image/multipage; HTML assets included</td>
+</tr>
+<tr>
+<td>F20</td>
+<td>Privacy image/PDF/Office/audio/video, selective categories</td>
+<td>Removed/retained report, independent metadata inspection, unchanged content</td>
+</tr>
+<tr>
+<td>F21</td>
+<td>ZIP/7Z/TAR create/extract nested/empty/Unicode folders</td>
+<td>Contents and hashes match; new folder; no overwrite</td>
+</tr>
+<tr>
+<td>F22</td>
+<td>Corrupt/encrypted archive, traversal/link/bomb fixture</td>
+<td>Safe refusal and no outside writes; encrypted extraction unsupported</td>
+</tr>
+<tr>
+<td>F23</td>
+<td>Install two sample plugins, enable/disable/change/uninstall</td>
+<td>Disabled until consent, contextual actions, actual SHA-256/text statistics</td>
+</tr>
+<tr>
+<td>F24</td>
+<td>Every family: collisions, read-only output, cancel, batch partial failure</td>
+<td>Honest per-file outcome; no original content overwritten</td>
+</tr>
+</tbody>
+</table>
+<h2>Offline test</h2>
+<p>On a disposable test account/VM, install the development app and import desired
+packs while local. Disconnect that test environment's networking yourself, then
+repeat F01, F05, F08–F23. Expect no login, download or cloud request. Record actual
+observations. Source-code inspection is not a substitute for this test. Naqla's
+worker Job Objects limit resources/lifetime; they are <strong>not a network sandbox</strong>.</p>
+<h2>If Shift shows nothing — return these items</h2>
+<ul>
+<li>Row ID, build, Windows version, scale/monitor, source extension/category and
+  approximate size, Desktop versus Explorer, exact key order and whether Ctrl was
+  held before activation. No personal path is needed.</li>
+<li>The marked session's <code>session-*.jsonl</code> from <code>%LOCALAPPDATA%\Naqla\Diagnostics</code>
+  plus the diagnostic status text. The closed log schema excludes paths, filenames,
+  text contents and raw exception messages. Do not send rename recovery records.</li>
+<li>A cropped screenshot/short recording from grabbing the test fixture through Shift,
+  plus any error/result panel. Hide unrelated Explorer paths, personal names and files.
+  For a conversion failure, provide the result-panel details and output's actual
+  size/extension; share a non-sensitive fixture only if comfortable.</li>
+</ul>
+<p>Interpret the sequence with <a href="DIAGNOSTICS.md">DIAGNOSTICS.md</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Last event</th>
+<th>Investigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Missing <code>KeyboardHookInstalled</code> / <code>ShiftDown</code></td>
+<td>Hook registration, process integrity/elevation</td>
+</tr>
+<tr>
+<td><code>ShiftDown</code> → <code>GestureSuppressed</code></td>
+<td>Left button, threshold, Explorer/Desktop origin; reason is logged</td>
+</tr>
+<tr>
+<td><code>GestureCandidate</code>, no <code>OverlayShown</code></td>
+<td>Dispatch/native overlay placement or failure</td>
+</tr>
+<tr>
+<td><code>OverlayShown</code>, no <code>OleFileConfirmed</code>, timeout</td>
+<td>Explorer did not deliver CF_HDROP; overlay alone is not drag proof</td>
+</tr>
+<tr>
+<td><code>OleFileConfirmed</code>, no accepted sector</td>
+<td>Mode/page, enabled common action, Copy effect and pointer position</td>
+</tr>
+<tr>
+<td><code>OleDropAccepted</code> then failure</td>
+<td>Editor parameters, actual decoder/permissions/dependency; inspect result details</td>
+</tr>
+</tbody>
+</table>
+<p>The supported interaction cannot intercept every elevated/non-Explorer/virtual/cloud
+drag. See <a href="WINDOWS-INTEGRATION.md">WINDOWS-INTEGRATION.md</a>. Do not substitute a file
+picker, shell context menu or permanent drop zone when reporting a failed W03/W04.</p></main></html>

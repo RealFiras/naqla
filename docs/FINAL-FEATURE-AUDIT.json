@@ -1,0 +1,4438 @@
+{
+  "schema": 2,
+  "stage": "FINAL DEVELOPMENT AUDIT — backend verified; physical Windows acceptance pending",
+  "created_utc": "2026-10-19T17:34:27.427125+00:00",
+  "statuses": [
+    "VERIFIED",
+    "IMPLEMENTED / UNVERIFIED",
+    "PARTIAL",
+    "BROKEN",
+    "MISSING",
+    "UNSUPPORTED"
+  ],
+  "features": [
+    {
+      "feature": "Image: PNG → JPG",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: PNG → WEBP",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: PNG → PDF",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: PNG → AVIF",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: PNG → TIFF",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: PNG → HEIC",
+      "inputs": [
+        "PNG"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPG → PNG",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPG → WEBP",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPG → PDF",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPG → AVIF",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPG → TIFF",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPG → HEIC",
+      "inputs": [
+        "JPG"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPEG → PNG",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPEG → WEBP",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPEG → PDF",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPEG → AVIF",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPEG → TIFF",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: JPEG → HEIC",
+      "inputs": [
+        "JPEG"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: WEBP → PNG",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: WEBP → JPG",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: WEBP → PDF",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: WEBP → AVIF",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: WEBP → TIFF",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: WEBP → HEIC",
+      "inputs": [
+        "WEBP"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → PNG",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → JPG",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → WEBP",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → PDF",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → AVIF",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → TIFF",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: BMP → HEIC",
+      "inputs": [
+        "BMP"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: TIFF → PNG",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: TIFF → JPG",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: TIFF → WEBP",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: TIFF → PDF",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: TIFF → AVIF",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: TIFF → HEIC",
+      "inputs": [
+        "TIFF"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: AVIF → PNG",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: AVIF → JPG",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: AVIF → WEBP",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: AVIF → PDF",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: AVIF → TIFF",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: AVIF → HEIC",
+      "inputs": [
+        "AVIF"
+      ],
+      "outputs": [
+        "HEIC"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: HEIC → PNG",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: HEIC → JPG",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: HEIC → WEBP",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "WEBP"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: HEIC → PDF",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: HEIC → AVIF",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "AVIF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image: HEIC → TIFF",
+      "inputs": [
+        "HEIC"
+      ],
+      "outputs": [
+        "TIFF"
+      ],
+      "backend": "ImageConversions / Magick.NET / HeicEncoder / ImagePdf",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "One frame / 40 MP / Q8; JPEG white matte; HEIC requires bundled native closure",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MP4 → MOV",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MP4 → WEBM",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MP4 → GIF",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MP4 → MP3",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MP4 → M4A",
+      "inputs": [
+        "MP4"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MOV → MP4",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MOV → WEBM",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MOV → GIF",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MOV → MP3",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MOV → M4A",
+      "inputs": [
+        "MOV"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MKV → MP4",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MKV → MOV",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MKV → WEBM",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MKV → GIF",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MKV → MP3",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: MKV → M4A",
+      "inputs": [
+        "MKV"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: WEBM → MP4",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: WEBM → MOV",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: WEBM → GIF",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: WEBM → MP3",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: WEBM → M4A",
+      "inputs": [
+        "WEBM"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: AVI → MP4",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "MP4"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: AVI → MOV",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "MOV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: AVI → WEBM",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "WEBM"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: AVI → GIF",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "GIF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: AVI → MP3",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Video: AVI → M4A",
+      "inputs": [
+        "AVI"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "No-audio extraction is rejected only after drop; only fixed conversion settings",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: MP3 → M4A",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: MP3 → WAV",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: MP3 → FLAC",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: MP3 → AIFF",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: MP3 → OPUS",
+      "inputs": [
+        "MP3"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: M4A → MP3",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: M4A → WAV",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: M4A → FLAC",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: M4A → AIFF",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: M4A → OPUS",
+      "inputs": [
+        "M4A"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: WAV → MP3",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: WAV → M4A",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: WAV → FLAC",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: WAV → AIFF",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: WAV → OPUS",
+      "inputs": [
+        "WAV"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: FLAC → MP3",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: FLAC → M4A",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: FLAC → WAV",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: FLAC → AIFF",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: FLAC → OPUS",
+      "inputs": [
+        "FLAC"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: AIFF → MP3",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: AIFF → M4A",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: AIFF → WAV",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: AIFF → FLAC",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: AIFF → OPUS",
+      "inputs": [
+        "AIFF"
+      ],
+      "outputs": [
+        "OPUS"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: OPUS → MP3",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "MP3"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: OPUS → M4A",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "M4A"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: OPUS → WAV",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "WAV"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: OPUS → FLAC",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "FLAC"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Audio: OPUS → AIFF",
+      "inputs": [
+        "OPUS"
+      ],
+      "outputs": [
+        "AIFF"
+      ],
+      "backend": "MediaConverter / bundled FFmpeg 9.0.2",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Fixed encoding settings; repeated lossy conversion can degrade audio",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "PDF: PDF → PNG",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Up to 200 pages. PNG/JPG actual per-page rendering; TXT/DOCX/RTF native text only, scanned pages require separate OCR.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "PDF: PDF → JPG",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "JPG"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Up to 200 pages. PNG/JPG actual per-page rendering; TXT/DOCX/RTF native text only, scanned pages require separate OCR.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "PDF: PDF → TXT",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Up to 200 pages. PNG/JPG actual per-page rendering; TXT/DOCX/RTF native text only, scanned pages require separate OCR.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "PDF: PDF → DOCX",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Up to 200 pages. PNG/JPG actual per-page rendering; TXT/DOCX/RTF native text only, scanned pages require separate OCR.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "PDF: PDF → RTF",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "PdfConversions / PDFium / PdfPig",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Up to 200 pages. PNG/JPG actual per-page rendering; TXT/DOCX/RTF native text only, scanned pages require separate OCR.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/conversion-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: DOCX → PDF",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: DOCX → TXT",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: DOCX → RTF",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: DOCX → HTML",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: DOCX → ODT",
+      "inputs": [
+        "DOCX"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: TXT → DOCX",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: TXT → PDF",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: TXT → RTF",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: TXT → HTML",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: TXT → ODT",
+      "inputs": [
+        "TXT"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: RTF → DOCX",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: RTF → PDF",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: RTF → TXT",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: RTF → HTML",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: RTF → ODT",
+      "inputs": [
+        "RTF"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: HTML → DOCX",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: HTML → PDF",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: HTML → TXT",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: HTML → RTF",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: HTML → ODT",
+      "inputs": [
+        "HTML"
+      ],
+      "outputs": [
+        "ODT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: ODT → DOCX",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "DOCX"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: ODT → PDF",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: ODT → TXT",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "TXT"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: ODT → RTF",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "RTF"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Document: ODT → HTML",
+      "inputs": [
+        "ODT"
+      ],
+      "outputs": [
+        "HTML"
+      ],
+      "backend": "DocumentService / optional local LibreOffice",
+      "wheel": "Registered; only if its local encoder/component is available",
+      "status": "VERIFIED",
+      "automated": "PASSED — actual production dispatch, output validation and original hash",
+      "real_processing": "PASSED — actual production dispatch, output validation and original hash",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "64 MB source (16 MB text/HTML/RTF); macros/external resources refused. Formatting/fonts can differ. HTML saves local assets in a sibling folder.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/document-matrix.json"
+      ]
+    },
+    {
+      "feature": "Image compression",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original format or PNG"
+      ],
+      "backend": "ImageConversions",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Quality is adjustable; already optimized inputs may not shrink. Q8/single frame/40 MP.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Image crop",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original image format"
+      ],
+      "backend": "CropWindow / CropSelection",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Free/ratios/handles/move/zoom/pan implemented; physical mouse and DPI mapping acceptance remains manual.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Image rotation",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original image format"
+      ],
+      "backend": "ImageConversions",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "90/-90/180, oriented real pixels; single frame, Q8.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Image metadata strip",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "Original image format"
+      ],
+      "backend": "ImageConversions",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Supported basic stripping; advanced selective cleanup/reporting is a separate Privacy action.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Images to PDF merge",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "ImagePdf",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Actual selected-source order and image aspect ratios; bounded by shared image/page limits.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Target-size optimizer",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "PNG JPG WEBP AVIF TIFF HEIC"
+      ],
+      "backend": "TargetSizeOptimizer",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Actual measured cap and quality search; impossible targets never publish a successful result. Physical editor acceptance pending.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Remove background",
+      "inputs": [
+        "Images"
+      ],
+      "outputs": [
+        "PNG"
+      ],
+      "backend": "LocalModelService / CPU ONNX U2NetP",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Actual U2NetP CPU inference; synthetic shape tested. Representative photo/hair-edge quality remains manual.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "OCR",
+      "inputs": [
+        "Images",
+        "scanned PDFs"
+      ],
+      "outputs": [
+        "TXT",
+        "clipboard"
+      ],
+      "backend": "LocalModelService / isolated Tesseract worker",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Real English, Arabic and mixed-script OCR; scanned PDFs supported up to 100 pages. Accuracy/layout need review.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Video compression",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "MP4 MOV WEBM"
+      ],
+      "backend": "MediaConverter",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Selectable High/Balanced/Small quality. Already optimized inputs may not shrink; actual bytes reported.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Video trim",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Video"
+      ],
+      "backend": "AdvancedMediaService / FFmpeg",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Accurate re-encoding, finite in-range timestamps. Fast keyframe copy is not claimed exact.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Video rotation",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Video"
+      ],
+      "backend": "MediaConverter",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "90/-90/180, real re-encoding and orientation validation.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Video metadata removal",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Original container"
+      ],
+      "backend": "MediaConverter packet copy",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Supported tags removed by actual local media processing; mandatory/container tags may remain.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Video mute",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "Original container"
+      ],
+      "backend": "MediaConverter packet copy",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Requires an actual audio track, proven by asynchronous ffprobe; no-audio actions hidden.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Frame extraction",
+      "inputs": [
+        "Videos"
+      ],
+      "outputs": [
+        "PNG JPG folder"
+      ],
+      "backend": "AdvancedMediaService / actual FFmpeg PTS",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Actual PTS/orientation, max 300 frames. Repeated decoding can be slow for long media.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Subtitles",
+      "inputs": [
+        "Video",
+        "audio"
+      ],
+      "outputs": [
+        "SRT VTT"
+      ],
+      "backend": "LocalModelService / local whisper.cpp multilingual Base/Tiny",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Real English JFK and human Arabic word fixtures, Base preferred, actual SRT/VTT parsed independently by FFmpeg. Continuous/dialect/mixed speech accuracy remains manual.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Audio compression",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "MP3 M4A OPUS FLAC"
+      ],
+      "backend": "MediaConverter",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Selectable quality; real codec output and actual size, no universal reduction guarantee.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Audio trim",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Audio"
+      ],
+      "backend": "AdvancedMediaService / FFmpeg",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Real accurate trim with per-source range validation and independent duration/decode checks.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Audio metadata removal",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Original container"
+      ],
+      "backend": "MediaConverter packet copy",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Supported tags removed; mandatory codec/container metadata may remain.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Audio normalization",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Audio"
+      ],
+      "backend": "AdvancedMediaService / measured FFmpeg loudnorm",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Measured two-pass loudnorm and independent final LUFS/true-peak validation; no usable signal/unattainable targets fail honestly.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Trim silence",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Audio"
+      ],
+      "backend": "AdvancedMediaService / FFmpeg edge silence",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Leading/trailing edges only, configurable threshold/duration, internal pauses retained.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Channel conversion",
+      "inputs": [
+        "Audio"
+      ],
+      "outputs": [
+        "Mono",
+        "stereo"
+      ],
+      "backend": "AdvancedMediaService / actual audio channels",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Real mono/downmix or mono-to-dual-mono. Dual-mono is not spatial stereo.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Smart Rename",
+      "inputs": [
+        "Known regular files"
+      ],
+      "outputs": [
+        "Actual filesystem rename"
+      ],
+      "backend": "SmartRenameService / WindowsRenameFileSystem",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Actual confirmed filesystem renames, identity/hash/rollback/undo; contextual wheel accepts recognized file types.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Batch processing",
+      "inputs": [
+        "Supported multi-file selections"
+      ],
+      "outputs": [
+        "Per-file",
+        "aggregate outputs"
+      ],
+      "backend": "BatchProcessor",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Actual small-image batches 10/50/50/200 plus partial-failure/cancel/read-only/mixed-source tests; physical batch drag and long 4K sessions pending.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Privacy Clean",
+      "inputs": [
+        "Images PDF DOCX XLSX PPTX media"
+      ],
+      "outputs": [
+        "New file + cleanup report"
+      ],
+      "backend": "PrivacyCleanService / ImagePrivacy / OfficePrivacy / qpdf / FFmpeg",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Real GPS/XMP/IPTC/Office/PDF/media, independent output checks, actual reports. Not redaction/anonymization; unsafe high-depth re-encoding refused.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Plugin manifests/install/manager",
+      "inputs": [
+        "Local packages"
+      ],
+      "outputs": [
+        "Versioned enabled registrations"
+      ],
+      "backend": "PluginService / versioned local manager / isolated fixed-code host",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "PARTIAL",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "API 1 declarative SHA-256/text-statistics only. Separate fixed-code host, not arbitrary community code or an OS sandbox.",
+      "required_fixes": "Manual release gates; see limitations. General executable plugin hosting remains unsupported.",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "System tray/singleton/Exit",
+      "inputs": [
+        "Windows desktop"
+      ],
+      "outputs": [
+        "Background app"
+      ],
+      "backend": "Program / NotifyIcon / named mutex+event",
+      "wheel": "N/A / existing native interaction",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "Backend/state/render scope passes; physical UI acceptance pending",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Process lifecycle/NotifyIcon property smoke; actual tray screenshot, Explorer restart and clean-PC behavior pending.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Drag+Shift/OLE",
+      "inputs": [
+        "Explorer/Desktop CF_HDROP"
+      ],
+      "outputs": [
+        "Contextual wheel + actual dropped files"
+      ],
+      "backend": "DragGestureMonitor / OverlayWindow / OleDropSession",
+      "wheel": "N/A / existing native interaction",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "Backend/state/render scope passes; physical UI acceptance pending",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Only real CF_HDROP supplies identity; no physical Explorer/Desktop gesture evidence. Native UI automation unavailable.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Ctrl/Escape/wheel geometry",
+      "inputs": [
+        "Active drag"
+      ],
+      "outputs": [
+        "Tools/Convert",
+        "cancellation"
+      ],
+      "backend": "WheelModeState / PixelWheel / hooks",
+      "wheel": "N/A / existing native interaction",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "Backend/state/render scope passes; physical UI acceptance pending",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "State/geometry/offscreen tests pass; approved Tools-only paging, <=6 sectors, dots, Tab/Shift+Tab. Real OLE keys pending.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Installer/upgrade/uninstall",
+      "inputs": [
+        "Per-user Windows"
+      ],
+      "outputs": [
+        "Self-contained development build"
+      ],
+      "backend": "Naqla.Setup",
+      "wheel": "N/A / existing native interaction",
+      "status": "PARTIAL",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Staged ownership/path/hash/file preservation tested; actual per-user registry upgrade, clean-PC install/uninstall manual pending.",
+      "required_fixes": "Complete actual clean-account installer/upgrade/uninstall and registry rollback tests.",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF editor refinement",
+      "inputs": [
+        "PDF sessions"
+      ],
+      "outputs": [
+        "Working three-column editor"
+      ],
+      "backend": "PdfToolkitWindow",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "IMPLEMENTED / UNVERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "Backend/state/render scope passes; physical UI acceptance pending",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "Same three columns, real thumbnails, fit/zoom/pan/debounced preview. Final visual review and live native/DPI acceptance pending.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "PARTIAL",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Reorder",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Extract",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Delete",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Merge",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Page numbers",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Text watermark",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Image watermark",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "PDF Toolkit: Rotate",
+      "inputs": [
+        "PDF"
+      ],
+      "outputs": [
+        "PDF"
+      ],
+      "backend": "PdfToolkitService / PDFsharp-WPF 6.2.4; independent PdfPig/PDFium",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "20 PDFs/200 pages; encrypted/forms/layers refused; new outline text not searchable",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "IMPLEMENTED / UNVERIFIED",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Archive: Create ZIP",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "ArchiveService / ZIP/TAR/7za writer + independent SharpCompress reader",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "10k entries, 1 GB expanded, 512 MB/file, ratio 1000; no links/encrypted/split archives.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Archive: Create 7Z",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "ArchiveService / ZIP/TAR/7za writer + independent SharpCompress reader",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "10k entries, 1 GB expanded, 512 MB/file, ratio 1000; no links/encrypted/split archives.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Archive: Create TAR",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "ArchiveService / ZIP/TAR/7za writer + independent SharpCompress reader",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "10k entries, 1 GB expanded, 512 MB/file, ratio 1000; no links/encrypted/split archives.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Archive: Extract ZIP",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "ArchiveService / ZIP/TAR/7za writer + independent SharpCompress reader",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "10k entries, 1 GB expanded, 512 MB/file, ratio 1000; no links/encrypted/split archives.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Archive: Extract 7Z",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "ArchiveService / ZIP/TAR/7za writer + independent SharpCompress reader",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "10k entries, 1 GB expanded, 512 MB/file, ratio 1000; no links/encrypted/split archives.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    },
+    {
+      "feature": "Archive: Extract TAR",
+      "inputs": [
+        "Local files/folders or archive"
+      ],
+      "outputs": [
+        "Archive or extraction folder"
+      ],
+      "backend": "ArchiveService / ZIP/TAR/7za writer + independent SharpCompress reader",
+      "wheel": "Registered in existing contextual tools; optional packs required where indicated",
+      "status": "VERIFIED",
+      "automated": "PASSED — fresh full run plus affected post-fix suites",
+      "real_processing": "PASSED on the documented actual local fixtures",
+      "windows_gui": "MANUAL PENDING",
+      "limitations": "10k entries, 1 GB expanded, 512 MB/file, ratio 1000; no links/encrypted/split archives.",
+      "required_fixes": "Complete the applicable physical acceptance rows in MANUAL-WINDOWS-TESTS.md",
+      "initial_status": "MISSING",
+      "evidence": [
+        "artifacts/release-acceptance-10.0.13/results.json"
+      ]
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "src/Naqla.App/BatchProgressWindow.cs",
+      "bytes": 9948,
+      "sha256": "c111c7aebf31c691ae1ff543ed95a004fa2d389ae9baea369368200ee847dcab"
+    },
+    {
+      "path": "src/Naqla.App/CropWindow.cs",
+      "bytes": 13447,
+      "sha256": "cfaeab420a17c9dbac64932cd909e5917e287409278014bff240e32805a21c96"
+    },
+    {
+      "path": "src/Naqla.App/ExtensionsWindow.cs",
+      "bytes": 5621,
+      "sha256": "a80d9c56b39ca1c243474ac7d427d32a223e3a858fc3fb8d7dda3f5018158ef5"
+    },
+    {
+      "path": "src/Naqla.App/Naqla.App.csproj",
+      "bytes": 2382,
+      "sha256": "982718c447dca49b5823d361cf0f39de5355dfe7813fcac712af8d32be111269"
+    },
+    {
+      "path": "src/Naqla.App/PdfToolkitWindow.cs",
+      "bytes": 38548,
+      "sha256": "3985cb50aba05564da829f7f3c87d413627654fc9af26de8b24d9e408484eaa5"
+    },
+    {
+      "path": "src/Naqla.App/PixelButton.cs",
+      "bytes": 6469,
+      "sha256": "645703b354db6796165eaa3e8364a0bf03d808ea45aa21998e990c819425df65"
+    },
+    {
+      "path": "src/Naqla.App/PixelControls.cs",
+      "bytes": 2766,
+      "sha256": "f10174b7d5684049af8d3c0311932d860f00ddde7a496b157b6bc74103b5552d"
+    },
+    {
+      "path": "src/Naqla.App/ProcessingSettingsWindow.cs",
+      "bytes": 4758,
+      "sha256": "cb9ea0132e5cae6f2b78395690dbead3aba37fdab0adb98e5f37b462b8b4a001"
+    },
+    {
+      "path": "src/Naqla.App/Program.cs",
+      "bytes": 34880,
+      "sha256": "a730eb8f45a64c783e0c93b76d8c4349a323a14949e0a798cd1bfb6ce846a302"
+    },
+    {
+      "path": "src/Naqla.App/RenameWindow.cs",
+      "bytes": 10972,
+      "sha256": "f5dbde2956310394f8140a7e3ae51757dab6a959ac69bd4dc141d8c5544eabd6"
+    },
+    {
+      "path": "src/Naqla.App/TargetSizeWindow.cs",
+      "bytes": 17241,
+      "sha256": "066c8813f8ffd70e91a4b7a4a1ec0412c36d9f5d7ee36752fb070d0e7a7fb2b5"
+    },
+    {
+      "path": "src/Naqla.App/ToolDialogs.cs",
+      "bytes": 22602,
+      "sha256": "b25ba87d3e681a640ba5fb8237e82a1a8b02c1732510952b6add50d96c1b7725"
+    },
+    {
+      "path": "src/Naqla.Conversion/AdvancedMediaService.cs",
+      "bytes": 13339,
+      "sha256": "dbefa62b204974bb5ded21a608dfc7d205e63c1539059143384646bb931f40fc"
+    },
+    {
+      "path": "src/Naqla.Conversion/ArchiveService.cs",
+      "bytes": 13404,
+      "sha256": "af981d86ecdd29990990f44029f1c491b446f52b67e73034cc12804cf77a958e"
+    },
+    {
+      "path": "src/Naqla.Conversion/BatchProcessor.cs",
+      "bytes": 4449,
+      "sha256": "8be2eb3b245c73ad3b9d25eef18dfd8ceee94fced996e3e6cb55e8ceb2c9b73b"
+    },
+    {
+      "path": "src/Naqla.Conversion/ComponentStore.cs",
+      "bytes": 12229,
+      "sha256": "7bafbc588e1557c931acd8e66fce91d9c2e2593c4ec7a6ab59371de74c7b08d5"
+    },
+    {
+      "path": "src/Naqla.Conversion/DocumentService.cs",
+      "bytes": 14496,
+      "sha256": "de4191f2080f6f24df49bae4b0cc07cb924d75631790138c53ac27f7591f1894"
+    },
+    {
+      "path": "src/Naqla.Conversion/HeicEncoder.cs",
+      "bytes": 1802,
+      "sha256": "6a37544677da980fe0583b9b479328a5d5f054e99572c29e070e15d946288269"
+    },
+    {
+      "path": "src/Naqla.Conversion/ImageConversions.cs",
+      "bytes": 4341,
+      "sha256": "dccabb96eb576d5f3057cea512beea296598ef518b2b4f3a7a2230fcf6b6c991"
+    },
+    {
+      "path": "src/Naqla.Conversion/ImagePdf.cs",
+      "bytes": 3089,
+      "sha256": "9cbde471ff89c99fb06d39b6e49e38fe32a90eba76b82dfab8940e263440a498"
+    },
+    {
+      "path": "src/Naqla.Conversion/ImagePrivacy.cs",
+      "bytes": 11270,
+      "sha256": "cefddd17f5387f5a41c2c49f88555b1e4907e885598d82bf1af52a434e94f7aa"
+    },
+    {
+      "path": "src/Naqla.Conversion/LocalConversionService.cs",
+      "bytes": 18090,
+      "sha256": "bb0b093f8b3d88a4bdc71d513ab64100051a849609be96e43704b6737c6a7a4a"
+    },
+    {
+      "path": "src/Naqla.Conversion/LocalModelService.cs",
+      "bytes": 16340,
+      "sha256": "b9913daafbe81390dfcf8ab950a4a7cdd38063ecb80f4c3e6a2c911df2842b7f"
+    },
+    {
+      "path": "src/Naqla.Conversion/LocalProcess.cs",
+      "bytes": 4050,
+      "sha256": "42604f86c1f3f4a8c71b169ec708ac07fc5a2952ca9939768cf3222ea3647cb7"
+    },
+    {
+      "path": "src/Naqla.Conversion/MediaConverter.cs",
+      "bytes": 9646,
+      "sha256": "a07171119230913ff4fb1cc724db84e18f5481fb2b45de1f8eaa0075e30950c1"
+    },
+    {
+      "path": "src/Naqla.Conversion/MediaProbe.cs",
+      "bytes": 3281,
+      "sha256": "edb5bbc35b149fa6536587945fd48b77e55dafe8e0050da7ed75344c33b8000d"
+    },
+    {
+      "path": "src/Naqla.Conversion/Naqla.Conversion.csproj",
+      "bytes": 1077,
+      "sha256": "5d0acdb66ab50aeb61ae47d5ee66892449486c53ad0fe01a74a78da9838c33a1"
+    },
+    {
+      "path": "src/Naqla.Conversion/OcrWorker.cs",
+      "bytes": 1027,
+      "sha256": "e25d58ddc604095b4a9ccd1797ea8ac0cfa5e47eadd190cd3bf73532986b5254"
+    },
+    {
+      "path": "src/Naqla.Conversion/OfficePrivacy.cs",
+      "bytes": 7353,
+      "sha256": "f5f18b1c8d9c498fd100263e6accc3ea24ab2f67494df55e07d4d8adecfcd634"
+    },
+    {
+      "path": "src/Naqla.Conversion/OutputDirectory.cs",
+      "bytes": 1773,
+      "sha256": "b31b6ff79a9d955bc15764f075e83f683246e1151a20183a5a8e70a7cd8df934"
+    },
+    {
+      "path": "src/Naqla.Conversion/OutputFile.cs",
+      "bytes": 1236,
+      "sha256": "246ea27db9d052850207bfc8cf29fa4828e20a5e794a8155f1dd936ea6305d9d"
+    },
+    {
+      "path": "src/Naqla.Conversion/PdfConversions.cs",
+      "bytes": 8684,
+      "sha256": "1fe50fc88ff6679ed46d92be8a9f8c064ad34839c759fe0492fe81d8a607e12e"
+    },
+    {
+      "path": "src/Naqla.Conversion/PdfToolkitService.cs",
+      "bytes": 21664,
+      "sha256": "c8db2e462fa3263ec5a1dd60c36a9efb75b8d348fb94d3704dfcf74cee5e26eb"
+    },
+    {
+      "path": "src/Naqla.Conversion/PluginService.cs",
+      "bytes": 12640,
+      "sha256": "c94a620e0abdd547985cf4882a993c589ffd96f69d8d228a2ed1dc6e1f58f9a9"
+    },
+    {
+      "path": "src/Naqla.Conversion/PngToJpegConverter.cs",
+      "bytes": 4573,
+      "sha256": "659244f14ce1641dd27eb29077975d6af7393c3510437b2f3667b04cfd839018"
+    },
+    {
+      "path": "src/Naqla.Conversion/PrivacyCleanService.cs",
+      "bytes": 13439,
+      "sha256": "b7c6dab83763059477b385b0ccb6d20213d213730e00def4bcc196d738f51841"
+    },
+    {
+      "path": "src/Naqla.Conversion/ProcessJob.cs",
+      "bytes": 2433,
+      "sha256": "bfa9a13441c526a18cd5e44401ba0c611dbdd15e38aaf9f464d1b7ed82862ff8"
+    },
+    {
+      "path": "src/Naqla.Conversion/RasterImages.cs",
+      "bytes": 2401,
+      "sha256": "0fe2941ddf50e58b8c747daa2a4ce5b7fd88881a1163a9988eaa7deb1d3868fe"
+    },
+    {
+      "path": "src/Naqla.Conversion/SmartRenameService.cs",
+      "bytes": 13311,
+      "sha256": "4fa19b0e80c0a0d6a37e17c8bb36d59ac4df4f2be13fd018272c061e087531ff"
+    },
+    {
+      "path": "src/Naqla.Conversion/TargetSizeOptimizer.cs",
+      "bytes": 8108,
+      "sha256": "487d65b2d634f3071a875dcebcf72bf81bf291b7a636158f1aa2225dbca97f25"
+    },
+    {
+      "path": "src/Naqla.Core/AdvancedRequests.cs",
+      "bytes": 289,
+      "sha256": "2cfb50619f629058f023eb06d06d8a1bb4e3b91fe82283ed258135761a9ad272"
+    },
+    {
+      "path": "src/Naqla.Core/BatchProcessing.cs",
+      "bytes": 3081,
+      "sha256": "1cc2ccd7770cacc783bc76e09f6e208f40656d87a8ec5b24747f742c3a84305a"
+    },
+    {
+      "path": "src/Naqla.Core/ConversionRequest.cs",
+      "bytes": 3607,
+      "sha256": "5828f5a917296359a085f20abca142a59f097a573c7c4ac5814b0d600801403a"
+    },
+    {
+      "path": "src/Naqla.Core/CropSelection.cs",
+      "bytes": 1026,
+      "sha256": "32af704bd615519aa723fbff6d0718ac505340e5b267b33ec38d0d25f724d659"
+    },
+    {
+      "path": "src/Naqla.Core/Diagnostics.cs",
+      "bytes": 7177,
+      "sha256": "7e774765b98cddfb185ea9fb214fdf64443c5beeeb5103c071c4aa208ef3c1ed"
+    },
+    {
+      "path": "src/Naqla.Core/Files.cs",
+      "bytes": 7199,
+      "sha256": "a394662b0e5b98e272e347ad1eb68ec898a90e8982f083e4d5151b2caaf626b5"
+    },
+    {
+      "path": "src/Naqla.Core/ImageOptimization.cs",
+      "bytes": 3010,
+      "sha256": "4b050c52da636e8081d214ae96ba443af3ebef50d96a7ba651cd74fddb03d626"
+    },
+    {
+      "path": "src/Naqla.Core/LocalText.cs",
+      "bytes": 2427,
+      "sha256": "30c48b109818b0ec445bde96ad8ef42fa39a1c5f70f3adeafa5abef4009f4e44"
+    },
+    {
+      "path": "src/Naqla.Core/Naqla.Core.csproj",
+      "bytes": 36,
+      "sha256": "8d654c44b7bebb6b31a9f2f606927f45b5072193adc4eef8cce3f3cf3b278df3"
+    },
+    {
+      "path": "src/Naqla.Core/PdfEditing.cs",
+      "bytes": 8111,
+      "sha256": "51dc90cc3c2edfb5841aac96db86256575eccaac00c1ad42fdf840cd8456ba37"
+    },
+    {
+      "path": "src/Naqla.Core/Plugins.cs",
+      "bytes": 482,
+      "sha256": "3e4ace48b56dcb010ffc835732f13d72db064b3886f4fd3374c27543d94a852b"
+    },
+    {
+      "path": "src/Naqla.Core/Privacy.cs",
+      "bytes": 1118,
+      "sha256": "0a357ab85461ed85303cc6ab4e2e02f44309ac8d9da50e2631a9b08ee24a7aac"
+    },
+    {
+      "path": "src/Naqla.Core/ProcessingOptions.cs",
+      "bytes": 4211,
+      "sha256": "890d8b029a178714debc5e9e1f9b03ae054ae36b4c63d7ec8d0e1a2b31b54963"
+    },
+    {
+      "path": "src/Naqla.Core/Renaming.cs",
+      "bytes": 2702,
+      "sha256": "c87769d8992d6d0c237d59cf95969b4d838a96f69e3600a5605afc4500de79ca"
+    },
+    {
+      "path": "src/Naqla.Core/WheelModeState.cs",
+      "bytes": 646,
+      "sha256": "cc3af11bcdbe2fe1c55096ad1f0a42aff66badfd35e0ffb16083bab4e1db3d95"
+    },
+    {
+      "path": "src/Naqla.Core/WheelPaging.cs",
+      "bytes": 926,
+      "sha256": "03febd69f3504ddc16d63ad94c140c763f70d93688b84a4d836d428b8fc9af8c"
+    },
+    {
+      "path": "src/Naqla.Setup/InstallationFiles.cs",
+      "bytes": 8998,
+      "sha256": "cb6d7dde488673af91dbb7362098ee9d655331d21e1db28ff19447f29926648b"
+    },
+    {
+      "path": "src/Naqla.Setup/Naqla.Setup.csproj",
+      "bytes": 440,
+      "sha256": "f38e316936256da2423ad672478ec908185b607122acd5caceab4ab5c9336adc"
+    },
+    {
+      "path": "src/Naqla.Setup/Program.cs",
+      "bytes": 11099,
+      "sha256": "40f1ce2f75169b9243ec672baee14708e43a4f5df967e601ad267b8ecf7331e1"
+    },
+    {
+      "path": "src/Naqla.Wheel/Naqla.Wheel.csproj",
+      "bytes": 249,
+      "sha256": "902f529c39589cc7c8e75a7ee06b25f06b1f32ef2675601451a3c007a7916c23"
+    },
+    {
+      "path": "src/Naqla.Wheel/PixelWheel.cs",
+      "bytes": 14395,
+      "sha256": "c643d0644cce405f4be18f8d7559c9af8f304fec7ff1712a3192b0f64d578d79"
+    },
+    {
+      "path": "src/Naqla.Windows/DiagnosticLog.cs",
+      "bytes": 7277,
+      "sha256": "e16f77872bdd8c2d19dd7040f841a191eadcd4101383f82189579bac77218f17"
+    },
+    {
+      "path": "src/Naqla.Windows/DragGestureMonitor.cs",
+      "bytes": 8596,
+      "sha256": "d4bcbfa7dfdfbc5a4451dd89a5ea13dfa044cc5ca8b7016dd28d60862562e551"
+    },
+    {
+      "path": "src/Naqla.Windows/Naqla.Windows.csproj",
+      "bytes": 188,
+      "sha256": "3862f8e40788d413f96627f0839652d2b17cdf80cf99cb02be9388dec6c872bf"
+    },
+    {
+      "path": "src/Naqla.Windows/Native.cs",
+      "bytes": 2687,
+      "sha256": "e1cc71d026372cc681b1a3d20a017b5f5a13e44e8b9ef1f8485b5888a59192fc"
+    },
+    {
+      "path": "src/Naqla.Windows/OleDropSession.cs",
+      "bytes": 6530,
+      "sha256": "c2510fbea322b79797babe9e71c3512d1c2ed80160b65e7ff46dacf0119fe01a"
+    },
+    {
+      "path": "src/Naqla.Windows/OverlayWindow.cs",
+      "bytes": 3523,
+      "sha256": "8b7fea3e729106b0862fb7327991e288bc7b5d4045f0345910254699a05d60e0"
+    },
+    {
+      "path": "src/Naqla.Windows/WindowsRenameFileSystem.cs",
+      "bytes": 7449,
+      "sha256": "2f0fe85667ce66e7fdbca6dafc70b1f909bd1103aa4fee2230ccdeae60efa602"
+    },
+    {
+      "path": "tests/Naqla.Tests/AdvancedTests.cs",
+      "bytes": 7423,
+      "sha256": "bf78d7e0335eba9e8447113f31f98b38f633484dd59eae9e4819f38896388c2b"
+    },
+    {
+      "path": "tests/Naqla.Tests/ArchiveTests.cs",
+      "bytes": 5079,
+      "sha256": "3d2255eaefe96a7e62b718ebf8c1255c3e9c0a42b24fa0a1dca2cd4396ac2a80"
+    },
+    {
+      "path": "tests/Naqla.Tests/BatchTests.cs",
+      "bytes": 20809,
+      "sha256": "8dd7061206b0bafe8dee25287f2344792c0b7e2553acc3143b6264f8cfd41185"
+    },
+    {
+      "path": "tests/Naqla.Tests/ComponentPackTests.cs",
+      "bytes": 5203,
+      "sha256": "60c3440f1ed3fffae98f9a2084f17e6352b0721b717f08dd69ccc453cffce4c6"
+    },
+    {
+      "path": "tests/Naqla.Tests/ConversionTests.cs",
+      "bytes": 12011,
+      "sha256": "ae4b1dec0bc7453ad58e462efb5eb2c607bc3216fed73fb9f8c83594435d1061"
+    },
+    {
+      "path": "tests/Naqla.Tests/DocumentTests.cs",
+      "bytes": 6814,
+      "sha256": "e87e63cf871fc9d2b2b1fa14b9085a3076c92096b1459c63306d7929fc52025f"
+    },
+    {
+      "path": "tests/Naqla.Tests/FeatureTests.cs",
+      "bytes": 20230,
+      "sha256": "88cdea68c25dbc3c86a20f5f69d3d7a612384dd3dad449cafa14783530566264"
+    },
+    {
+      "path": "tests/Naqla.Tests/IntegrationTests.cs",
+      "bytes": 17584,
+      "sha256": "2aef48eb7f3e0ed2e2eb9a9c35d9a0c38d0070a889e50e74b7d3af15fe2a6dfd"
+    },
+    {
+      "path": "tests/Naqla.Tests/LocalModelTests.cs",
+      "bytes": 10800,
+      "sha256": "70a542c12153859e2313f1b43c0c271b2f53c830f31037c4d7a2ec7c27566f7a"
+    },
+    {
+      "path": "tests/Naqla.Tests/MatrixTests.cs",
+      "bytes": 8627,
+      "sha256": "630a148d66ddb0de0febaf04a0ff563d2ce25ae72c9637ae0cd2d7b2a85f5a0e"
+    },
+    {
+      "path": "tests/Naqla.Tests/ModeTests.cs",
+      "bytes": 8160,
+      "sha256": "4f96963c9d3c2bf622e57bdd25ccace9ac1fe91ad1838737ece8f6d0c61591fa"
+    },
+    {
+      "path": "tests/Naqla.Tests/Naqla.Tests.csproj",
+      "bytes": 1027,
+      "sha256": "df4ae4c78000738363bace4e9f2fc4156c107698ba520d11e5fbf121916018bd"
+    },
+    {
+      "path": "tests/Naqla.Tests/OfficeValidationTests.cs",
+      "bytes": 8056,
+      "sha256": "f43fadcd3b41ab0d294b082334811c1bdae683066a29114b44f3eeeb2329ccdd"
+    },
+    {
+      "path": "tests/Naqla.Tests/OptimizerTests.cs",
+      "bytes": 24402,
+      "sha256": "fd8505e01f57a577836f0191c82afe60e1e2b85def808e5579bfd1e16bb07946"
+    },
+    {
+      "path": "tests/Naqla.Tests/PdfToolkitTests.cs",
+      "bytes": 28008,
+      "sha256": "438309be0555f5856693ff85d8f2c6f16734cfcdbb27bfd3ca3a40477e7515f3"
+    },
+    {
+      "path": "tests/Naqla.Tests/PluginTests.cs",
+      "bytes": 6352,
+      "sha256": "b9ffa35db317a12cacfea1656410a31492655352505ce31fba0f511f710dd593"
+    },
+    {
+      "path": "tests/Naqla.Tests/PrivacyTests.cs",
+      "bytes": 11730,
+      "sha256": "5e3cc8954ecd56b7f141b766f823b8c4191bad1b7e4e3b3914303ffaa4919369"
+    },
+    {
+      "path": "tests/Naqla.Tests/Program.cs",
+      "bytes": 23682,
+      "sha256": "6d0f961c5193da0843e18ec570326c37fe7ff738c060ed7280984a83cc8aa04b"
+    },
+    {
+      "path": "tests/Naqla.Tests/RenameTests.cs",
+      "bytes": 19520,
+      "sha256": "177c867669c5aa4c6759b9c150572fc8bf442ab595cf1feeea46f297ee14c2f3"
+    },
+    {
+      "path": "tests/Naqla.Tests/StressCoverageTests.cs",
+      "bytes": 7698,
+      "sha256": "0dc4be46bab73292f0be9595c34ec3a4b715e4bf1c6b09ebb94c51ec88b67749"
+    },
+    {
+      "path": "scripts/audit-native-closure.py",
+      "bytes": 2578,
+      "sha256": "470a01e7be49db35f6790601649c3289fa1b59a6c22d2998ee07623183e62794"
+    },
+    {
+      "path": "scripts/build-component-catalog.py",
+      "bytes": 3570,
+      "sha256": "2174f5bbff26c4c1b5b2635649688941853f609fd9a7dc30de5dc659b96e82a8"
+    },
+    {
+      "path": "scripts/build-sample-plugins.py",
+      "bytes": 1297,
+      "sha256": "65e2354f10055a379585ad5308d85af72f9652baa817c63c6daac7cc7401ac39"
+    },
+    {
+      "path": "scripts/build.ps1",
+      "bytes": 247,
+      "sha256": "1f9732570f209b4f9666b6a4a46b036c6eec480994fec8ad838ab36676524a9d"
+    },
+    {
+      "path": "scripts/create-editor-gallery.py",
+      "bytes": 3555,
+      "sha256": "80777f5619bfe696ef25bb6e3149f8947a669c3b35f052df7239a5860e70db8c"
+    },
+    {
+      "path": "scripts/create-navigation-preview.py",
+      "bytes": 6256,
+      "sha256": "3a42763f6b6c0805579707934cd9b26c4c442446d4216becebe40972f39c8712"
+    },
+    {
+      "path": "scripts/discover-heif-engine.cjs",
+      "bytes": 5059,
+      "sha256": "8c3a2de9c664996ed73d6654482e8cb882dc98f00cd4f4fd8beebe800c146d59"
+    },
+    {
+      "path": "scripts/export-native-icons.cjs",
+      "bytes": 1548,
+      "sha256": "b24a586289ac7e7b9354d8d093d8e99ceaaa7ede64de36aed478ec0eca895dc1"
+    },
+    {
+      "path": "scripts/extract-office-component.py",
+      "bytes": 4950,
+      "sha256": "bee901726b0ad72599edffd14ed45b707f989a95f7270287503a9b13a1f174fc"
+    },
+    {
+      "path": "scripts/fetch-heif-engine.ps1",
+      "bytes": 3732,
+      "sha256": "8b39b820f02dd7bbbc09ad765d8c68dec14d1f394127f5c007ab1e0a2b2df88c"
+    },
+    {
+      "path": "scripts/fetch-media-engine.ps1",
+      "bytes": 2454,
+      "sha256": "ce6e1c927796b5d071079c2bb64b55c70a13b411bce72afbd3941f32d3a71a71"
+    },
+    {
+      "path": "scripts/fetch-optional-components.ps1",
+      "bytes": 1784,
+      "sha256": "3ef75d37ae7957f6e3fcd86e4b66a171befe561324bb93f9e23c72a20810c3de"
+    },
+    {
+      "path": "scripts/fetch-optional-components.py",
+      "bytes": 4466,
+      "sha256": "3ac8b149f280a97d753361194e9c3c3c7c947908fd70298f9d26b2ac2b23df90"
+    },
+    {
+      "path": "scripts/finalize-development-report.py",
+      "bytes": 30070,
+      "sha256": "569956c3b861c8041157b1c2f67ace52fb3c3ec7b82fbf5070ae271ede00a601"
+    },
+    {
+      "path": "scripts/heif-engine.lock.json",
+      "bytes": 16901,
+      "sha256": "ccde764a6b13074aa5da0af0a849d3f4c3f70c2e2cb6d156e23eede50e0e67b1"
+    },
+    {
+      "path": "scripts/package-development.ps1",
+      "bytes": 8448,
+      "sha256": "8ce3ff3120dcc996a63d4b8e59c696a8ac8ad49bc2f7ff9b4f17349b47b0d25b"
+    },
+    {
+      "path": "scripts/prepare-app-crt.py",
+      "bytes": 1992,
+      "sha256": "1f893305725b1bb5b6cce2e229943390ba34c1b7be3ce341783966c1910663da"
+    },
+    {
+      "path": "scripts/prepare-batch-desktop-test.ps1",
+      "bytes": 2519,
+      "sha256": "3235e6fdb2a4b897a7581a8787c833c703a190162b13dbc59aa8e4bc477fc393"
+    },
+    {
+      "path": "scripts/prepare-target-size-desktop-test.ps1",
+      "bytes": 2464,
+      "sha256": "d931b827db2639590622f416745639b2d68bf5feec61baf8cb1565a0f47de0af"
+    },
+    {
+      "path": "scripts/profile-workloads.py",
+      "bytes": 2117,
+      "sha256": "dd55ae4693991d6ce45a1aaac458f5c02adf8fedcb3c67b9074af750f8a3e016"
+    },
+    {
+      "path": "scripts/render-glass-preview.cjs",
+      "bytes": 4484,
+      "sha256": "cb95e0b8d72db9eea5e6ff17b7a16b88faafd95043a836c7ecb7c1720cf81ad2"
+    },
+    {
+      "path": "scripts/render-wheel-states.cjs",
+      "bytes": 6094,
+      "sha256": "a0c36337d890e4fb91e2ba108746395e4ed47d3c6f2d919b09d6c7094b83f28b"
+    },
+    {
+      "path": "scripts/update-icons.ps1",
+      "bytes": 5771,
+      "sha256": "b66157ab59ae736ce1cbd714d7636ba95eb3cad5f3c7b1690a37475e604d28b6"
+    },
+    {
+      "path": "scripts/update-pdf-previews.ps1",
+      "bytes": 1792,
+      "sha256": "218a44df7de62d47db41b4fdf0f64788b5a33d6a9cc80dc448088e14880dca5d"
+    },
+    {
+      "path": "scripts/update-testing-guide.py",
+      "bytes": 1937,
+      "sha256": "ff84dd3b2f8835d620757f825eac56cd7b6cd314e5969e7fa1b28e77b1adc9e5"
+    },
+    {
+      "path": "scripts/verify-batch-desktop-test.ps1",
+      "bytes": 1999,
+      "sha256": "388234bf086a91e9e23863c6790aa63d6ede0556c248ad829fcecf1d0ce33d33"
+    },
+    {
+      "path": "scripts/verify-diagnostic-package.ps1",
+      "bytes": 11887,
+      "sha256": "97dcc45cfffa1f31b681f0a1d0262466105311d058c93df4ca9888d907bf17c6"
+    },
+    {
+      "path": "scripts/verify-editor-previews.cjs",
+      "bytes": 2265,
+      "sha256": "9b33fd6b80e93cda62b378c37cee1c1bb0507e5290c77a641ea863073ebd32f1"
+    },
+    {
+      "path": "scripts/verify-portable-lifecycle.py",
+      "bytes": 4490,
+      "sha256": "64cbdbdca53e141746d86d4b875b4139e826755e0e6a670e70cd9961dff3d923"
+    },
+    {
+      "path": "scripts/verify-preview.cjs",
+      "bytes": 5945,
+      "sha256": "6bb4dff321267aa56cb58e8764099cc371eafb13f5128cf1edb0110b09687aa8"
+    },
+    {
+      "path": "scripts/verify-target-size-desktop-test.ps1",
+      "bytes": 2841,
+      "sha256": "3b64ab79f496c988ef2d6d4d587ed5689d6d845bb6e10018ca2fccf0c91b1e25"
+    },
+    {
+      "path": "scripts/write-performance-report.py",
+      "bytes": 3697,
+      "sha256": "119e5421cc6e94334e8f532a35a8a57db69e561e6565ef5fde6f7d3a0a5f020d"
+    },
+    {
+      "path": "scripts/write-release-verification.py",
+      "bytes": 3399,
+      "sha256": "6bae897ec3e00c8795d0d8fab6a94ac30a2a2a5b6ec1db5748071ca55b5f0df5"
+    },
+    {
+      "path": "Directory.Build.props",
+      "bytes": 696,
+      "sha256": "3849f34b44605fe3a618e001723601ec4e2377bd9622cd00933e0707d688f0cb"
+    },
+    {
+      "path": "Directory.Build.targets",
+      "bytes": 1606,
+      "sha256": "0d973b4a7d9539dd683163a294886f732021034cf1ce7eff69958aa9deff6d3f"
+    },
+    {
+      "path": "Naqla.sln",
+      "bytes": 9395,
+      "sha256": "be6776cc03d20fe0d425af47d2074a703ee2e60dc77ef92432e5415fcff9056b"
+    },
+    {
+      "path": "assets/component-catalog.json",
+      "bytes": 3813973,
+      "sha256": "b088faf622b4faa1690825162363705a5a1bc9b69b4322fed5a2be9d1efa1e3a"
+    },
+    {
+      "path": "assets/native-crt/sources.json",
+      "bytes": 1823,
+      "sha256": "528af9036db57e9c8b93eb45d54b74ebc9a3288d510c878d278f630129c6446f"
+    }
+  ],
+  "limitations": [
+    "docs\\KNOWN-LIMITATIONS.md",
+    "Physical native GUI, clean-PC and disconnected-network acceptance remain MANUAL PENDING."
+  ],
+  "build": "0.8.0-development.1"
+}
