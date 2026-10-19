@@ -3,11 +3,11 @@ Tokens remain in memory; this script does not save or print credentials. Explici
 keep draft/upload separate from publication. Never replaces a published release.
 """
 from pathlib import Path
-import argparse,hashlib,json,posixpath,re,subprocess,urllib.request,urllib.error,urllib.parse
+import argparse,hashlib,json,posixpath,re,subprocess,urllib.request,urllib.error,urllib.parse,time
 ROOT=Path(__file__).resolve().parents[1]; REPO='RealFiras/naqla'; TAG='v0.8.0-beta.1'
 
 def main():
-    args=argparse.ArgumentParser();args.add_argument('--phase',choices=('draft','upload','publish'),required=True);phase=args.parse_args().phase
+    args=argparse.ArgumentParser();args.add_argument('--phase',choices=('draft','upload','publish'),required=True);args.add_argument('--release-id',type=int);options=args.parse_args();phase=options.phase
     credential=subprocess.run(['git','credential','fill'],input='protocol=https\nhost=github.com\n\n',text=True,capture_output=True,timeout=30,cwd=ROOT)
     if credential.returncode:raise RuntimeError('GitHub credential helper failed')
     fields=dict(x.split('=',1) for x in credential.stdout.splitlines() if '=' in x)
@@ -22,14 +22,25 @@ def main():
     notes=(ROOT/'docs/releases'/f'{TAG}.md').read_text(encoding='utf-8')
     base=f'https://github.com/{REPO}/blob/{TAG}/docs/releases/'
     notes=re.sub(r'\]\((\.\./[^)]+)\)',lambda m:']('+urllib.parse.urljoin(base,m[1])+')',notes)
-    releases=api('/repos/'+REPO+'/releases?per_page=100')
-    release=next((x for x in releases if x['tag_name']==TAG),None)
+    state_file=ROOT/'artifacts/public-release-draft.json'
+    state=json.loads(state_file.read_text(encoding='utf-8')) if state_file.exists() else {}
+    saved=state.get('Id') if state.get('Repository')==REPO and state.get('Tag')==TAG else None
+    release_id=options.release_id or saved
+    if release_id:
+        release=api('/repos/'+REPO+'/releases/'+str(release_id))
+        assert release['name']=='Naqla 0.8.0-beta.1 — Windows x64','Unexpected release identity'
+    else:
+        releases=api('/repos/'+REPO+'/releases?per_page=100&fresh='+str(time.time_ns()))
+        release=next((x for x in releases if x['tag_name']==TAG),None)
     if release and not release['draft']:
         print('Release already published: '+release['html_url']);return
     if release is None:
         release=api('/repos/'+REPO+'/releases','POST',{'tag_name':TAG,'target_commitish':'main','name':'Naqla 0.8.0-beta.1 — Windows x64','body':notes,'draft':True,'prerelease':True})
     else:
-        release=api('/repos/'+REPO+'/releases/'+str(release['id']),'PATCH',{'body':notes,'prerelease':True})
+        # A draft without an existing Git tag can become "untagged-*" when edited.
+        # Keep its explicit identity on every update and persist the server ID.
+        release=api('/repos/'+REPO+'/releases/'+str(release['id']),'PATCH',{'tag_name':TAG,'target_commitish':'main','body':notes,'prerelease':True})
+    state_file.write_text(json.dumps({'Repository':REPO,'Tag':TAG,'Id':release['id']}),encoding='utf-8')
     print('Draft ready: '+str(release['id']),flush=True)
     if phase=='draft':return
     output=Path((ROOT/'artifacts/public-release-path.txt').read_text(encoding='utf-8-sig').strip()).resolve()
@@ -62,7 +73,7 @@ def main():
     if phase=='publish':
         remote_sha=subprocess.check_output(['git','ls-remote','origin','refs/heads/main'],cwd=ROOT,text=True).split()[0]
         assert remote_sha==sha,'Push the verified source commit before publishing'
-        published=api('/repos/'+REPO+'/releases/'+str(release['id']),'PATCH',{'target_commitish':sha,'draft':False,'prerelease':True,'body':notes,'make_latest':'false'})
+        published=api('/repos/'+REPO+'/releases/'+str(release['id']),'PATCH',{'tag_name':TAG,'target_commitish':sha,'draft':False,'prerelease':True,'body':notes,'make_latest':'false'})
         print('Published official beta: '+published['html_url'],flush=True)
 
 if __name__=='__main__':
