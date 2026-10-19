@@ -41,7 +41,7 @@
 
 التثبيت لحسابك في `%LOCALAPPDATA%\Programs\Naqla`، ولا يحتاج صلاحيات مدير أو
 SDK أو Python أو Node على جهاز المستخدم. إذا أغلقتها أو لم تختَر تشغيلها بعد التثبيت،
-اضغط **Win+R** وشغّل:
+افتح **Start → Naqla**. إذا منعت سياسة جهازك إنشاء الاختصار، اضغط **Win+R** وشغّل:
 
 ```text
 "%LOCALAPPDATA%\Programs\Naqla\Naqla.App.exe"

@@ -44,7 +44,8 @@ files or downloads engines/models in the background.
 
 Installation is per user under `%LOCALAPPDATA%\Programs\Naqla`. The self-contained
 package needs no SDK, Python, Node or administrator rights on the target PC. If you
-exited or unchecked launch after installation, press **Win+R** and run:
+exited or unchecked launch after installation, open **Start → Naqla**. If your PC's
+policy prevents shortcut creation, press **Win+R** and run:
 
 ```text
 "%LOCALAPPDATA%\Programs\Naqla\Naqla.App.exe"

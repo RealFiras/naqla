@@ -4,6 +4,15 @@ using Naqla.Setup;
 
 internal static partial class Program
 {
+    private static void InstallerNetworkFetch()
+    {
+        var package = EngineDownloads.Lock().packages.Last(x => x.name.EndsWith("-zlib", StringComparison.Ordinal));
+        var cache = Path.Combine(folder, "fresh-network-cache");
+        var archive = EngineDownloads.Fetch(package.url, package.sha256, cache, true, default).GetAwaiter().GetResult();
+        Check(InstallationFiles.Hash(archive).Equals(package.sha256, StringComparison.OrdinalIgnoreCase), "Actual network download checksum differs");
+        var cached = EngineDownloads.Fetch(package.url, package.sha256, cache, false, default).GetAwaiter().GetResult();
+        Check(cached == archive && !Directory.GetFiles(cache, "*.partial").Any(), "Verified cache reuse or partial cleanup failed");
+    }
     private static void RunInstallerDownloadTests()
     {
         Run("Installer cache refuses corrupt bytes, untrusted origins and cancellation without network", () =>

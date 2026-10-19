@@ -1,0 +1,79 @@
+{
+  "Build": "0.8.0-beta.1",
+  "Type": "Focused public-beta acceptance; historical full processing baseline is separate",
+  "CurrentUserInstallAndStartup": {
+    "Build": "0.8.0-beta.1",
+    "Installer": "Naqla-Setup-0.8.0-beta.1-win-x64.exe",
+    "InstallerSHA256": "645e992fa0cf7f437485672adfb3f52cddbb4c227371600a54fb0763372b4525",
+    "InstallSucceeded": true,
+    "InstalledPayloadFilesCompared": 633,
+    "OwnedFilesHashVerified": 725,
+    "HeifNativePinsVerified": 34,
+    "BundledRuntime": "10.0.13",
+    "BundledRuntimeLoaded": true,
+    "StandaloneMicrosoftCrtBundled": false,
+    "StartupConfigured": true,
+    "StartMenuShortcutVerified": true,
+    "InstalledAppReady": true,
+    "TrayVisibleProperty": true,
+    "SingletonDuplicateExitCode": 0,
+    "LocalDiagnosticsExcludePrivatePaths": true,
+    "PublicPacksImported": [
+      "ocr",
+      "background",
+      "speech",
+      "archives",
+      "pdf-metadata"
+    ],
+    "OfflineInstallerCacheModeUsed": true,
+    "ActualLoginRestartTested": false,
+    "PhysicalExplorerDesktopGestureVerified": false,
+    "CleanAccountOrUninstallVerified": false,
+    "Classification": "OFFICIAL PUBLIC BETA; manual acceptance gates remain",
+    "HistoricalProcessingBaseline": "123 distinct checks / 136 pairs, including private Office, recorded separately; not a new full run"
+  },
+  "InstallerAndPackGroups": [
+    {
+      "Test": "Installer cache refuses corrupt bytes, untrusted origins and cancellation without network",
+      "Passed": true,
+      "Milliseconds": 18
+    },
+    {
+      "Test": "Real installer extracts pinned FFmpeg and Zstandard HEIF packages and executes native engines",
+      "Passed": true,
+      "Milliseconds": 8997
+    },
+    {
+      "Test": "Explicit installer network fetch downloads and verifies a real pinned upstream archive",
+      "Passed": true,
+      "Milliseconds": 1335
+    },
+    {
+      "Test": "Five public packs without proprietary CRT install and execute actual OCR/background/speech/archive/privacy engines",
+      "Passed": true,
+      "Milliseconds": 58795
+    }
+  ],
+  "InstalledAssemblyFixtureConversions": {
+    "ActualInstalledAssemblies": true,
+    "ActualInstalledNativeEngines": true,
+    "PngToJpg": true,
+    "IndependentWpfJpegDecode": true,
+    "WhiteMatte": true,
+    "CollisionNaming": true,
+    "PngToHeic": true,
+    "PngToPdf": true,
+    "OriginalHashPreserved": true,
+    "PhysicalExplorerGesture": false,
+    "HostRuntime": "10.0.2"
+  },
+  "RuntimeClarification": "Actual installed tray startup loaded bundled 10.0.13. The isolated installed-assembly fixture host used developer runtime 10.0.2.",
+  "NotExecuted": [
+    "Actual Explorer/Desktop OLE gesture",
+    "Actual login/reboot startup",
+    "Clean-account upgrade/uninstall",
+    "DPI/multimonitor physical input",
+    "Physically disconnected PC"
+  ],
+  "PublicOfficePackAvailable": false
+}
